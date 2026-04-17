@@ -1,0 +1,60 @@
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# IDE
+# ========================
+.vscode/
+.idea/
+*.iml
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# Java / Kotlin / Gradle
+# ========================
+backend/build/
+backend/.gradle/
+backend/out/
+backend/bin/
+
+# Wrapper logs
+backend/gradlew.bat
+backend/gradlew
+
+# (opzionale: se vuoi tenerli versionati, rimuovi le 2 righe sopra)
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# ========================
+# Database
+# ========================
+*.sqlite
+*.db
+
+# ========================
+# Docker
+# ========================
+*.env
+
+# ========================
+# Misc
+# ========================
+*.tmp
+*.swp

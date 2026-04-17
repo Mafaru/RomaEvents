@@ -1,0 +1,25 @@
+1- start Docker:
+
+docker-compose -d
+
+cancella container docker e volumi:
+
+docker-down -v
+
+2- Crea il db con init_db.py
+
+3- accedi a pgadmin http://localhost:8080 :
+
+email:...
+password: admin123
+
+4- Crea il server:
+
+hostname : postgres
+port: 5452
+username: postgres
+password: postgres
+
+5- fai partire gradle: 
+
+PS C:\Users\mario\Desktop\RomaEvents\backend\backend> .\gradlew.bat bootRun
