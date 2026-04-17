@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 
 @Entity
 @Table(name = "events")
-data class Event(
+class Event(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,20 +15,20 @@ data class Event(
     @Column(nullable = false)
     val title: String,
 
-    val description: String?,
+    val description: String? = null,
 
-    val rawDateText: String?,
+    val rawDateText: String? = null,
 
-    val address: String?,
+    val address: String? = null,
 
-    val latitude: Double?,
-    val longitude: Double?,
+    val latitude: Double? = null,
+    val longitude: Double? = null,
 
     @ManyToOne
     @JoinColumn(name = "category_id")
-    val category: Category?,
+    val category: Category? = null,
 
-    val sourceUrl: String?,
+    val sourceUrl: String? = null,
 
     val createdAt: LocalDateTime? = null
 )

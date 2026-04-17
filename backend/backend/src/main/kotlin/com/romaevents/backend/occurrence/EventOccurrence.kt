@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 
 @Entity
 @Table(name = "event_occurrences")
-data class EventOccurrence(
+class EventOccurrence(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

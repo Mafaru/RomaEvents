@@ -4,7 +4,7 @@ import jakarta.persistence.*
 
 @Entity
 @Table(name = "categories")
-data class Category(
+class Category(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,5 +13,5 @@ data class Category(
     @Column(nullable = false)
     val name: String,
 
-    val description: String?
+    val description: String? = null
 )

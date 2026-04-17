@@ -1,4 +1,4 @@
-package com.romaevents.backend.event
+package com.romaevents.backend.occurrence
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
@@ -23,4 +23,6 @@ interface EventOccurrenceRepository : JpaRepository<EventOccurrence, Long> {
         @Param("start") start: LocalDateTime,
         @Param("end") end: LocalDateTime
     ): List<EventOccurrence>
+
+    fun findByEventId(eventId: Long): List<EventOccurrence>
 }

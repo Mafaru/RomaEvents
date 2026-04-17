@@ -23,3 +23,10 @@ password: postgres
 5- fai partire gradle: 
 
 PS C:\Users\mario\Desktop\RomaEvents\backend\backend> .\gradlew.bat bootRun
+
+riempimento randomico db: 
+
+INSERT INTO events (title, description, address, latitude, longitude)
+VALUES
+('Concerto Roma', 'Evento musicale', 'Via Roma', 41.9028, 12.4964),
+('Mostra Arte', 'Mostra contemporanea', 'Via Milano', 41.90, 12.48);
