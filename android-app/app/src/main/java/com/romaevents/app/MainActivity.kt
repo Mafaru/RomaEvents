@@ -47,8 +47,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openMapForEvent(eventId: Long) {
-        bottomNavigation.selectedItemId = R.id.nav_map
+        bottomNavigation.menu.findItem(R.id.nav_map).isChecked = true
         showFragment(MapFragment.newInstance(eventId))
+    }
+
+    fun goBackToEvents() {
+        bottomNavigation.menu.findItem(R.id.nav_events).isChecked = true
+        showFragment(EventsFragment())
     }
 
     private fun showFragment(fragment: Fragment) {

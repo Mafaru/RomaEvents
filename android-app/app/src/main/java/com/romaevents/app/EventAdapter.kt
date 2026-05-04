@@ -49,9 +49,24 @@ class EventAdapter(
 
         holder.titleText.text = event.title
         holder.categoryText.text = event.category ?: "Categoria"
-        holder.dateText.text = "📅 ${formatDate(event.nextOccurrence)}"
+        holder.dateText.text = "📅 ${DateUtils.formatDateTime(event.nextOccurrence)}"
         holder.addressText.text = "📍 ${event.address ?: "Indirizzo non disponibile"}"
         holder.statusText.text = event.status ?: "PROSSIMO"
+
+        when (event.status) {
+            "IN_CORSO" -> {
+                holder.statusText.setTextColor(0xFF2E7D32.toInt())
+                holder.statusText.text = "● IN CORSO"
+            }
+            "PROSSIMO" -> {
+                holder.statusText.setTextColor(0xFF1565C0.toInt())
+                holder.statusText.text = "● PROSSIMO"
+            }
+            else -> {
+                holder.statusText.setTextColor(0xFF757575.toInt())
+                holder.statusText.text = "● ${event.status ?: "STATO NON DISPONIBILE"}"
+            }
+        }
 
         holder.itemView.setOnClickListener {
             onClick(event)
