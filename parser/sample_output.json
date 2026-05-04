@@ -1,5 +1,366 @@
 [
   {
+    "title": "Robert Mapplethorpe. Le forme della bellezza, all'Ara Pacis",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/robert-mapplethorpe-le-forme-della-bellezza-ara-pacis.page",
+    "theme_text": "Fotografia - Mostre",
+    "raw_date_text": "29 maggio - 4 ottobre",
+    "description": "Derrick Cross, 1985 © Robert Mapplethorpe Foundation. Dal 29 maggio al 4 ottobre 2026, il Museo dell’Ara Pacis ospita la mostra Robert Mapplethorpe. Le forme della bellezza: una selezione di circa 200 fotografie, che esplorano il concetto di bellezza come perfezione assoluta e rigore formale. L’esposizione, curata da Denis Curti , è promossa da Roma Capitale, Assessorato alla Cultura e al Coordinamento delle iniziative riconducibili alla Giornata della Memoria, Sovrintendenza Capitolina ai Beni Culturali e Marsilio Arte, organizzata con Zètema Progetto Cultura e Marsilio Arte, in collaborazione con la Robert Mapplethorpe Foundation di New York. Robert Mapplethorpe (New York,1946-1989) non fotografa soggetti, ma scolpisce lo spazio attraverso l’obiettivo della sua Hasselblad, conferendo ad ogni scatto un’aura di assoluta classicità, con visione geometrica e ricerca della perfezione. La mostra, che si distingue per una serie di contenuti inediti, si concentra sulla ricerca della forma pura, dove il corpo umano, i volti e le nature morte vengono trattati con la stessa maniacale attenzione alla luce e alle geometrie. Robert Mapplethorpe. Le forme della bellezza è il capitolo conclusivo di un importante progetto espositivo che ha toccato prima Venezia, alle Stanze della Fotografia, e poi Milano, a Palazzo Reale. Ulteriori informazioni e prenotazioni sul sito del Museo dell'Ara Pacis.",
+    "location_text": null,
+    "popup_event_text": "Robert Mapplethorpe. Le forme della bellezza",
+    "coordinates": {
+      "latitude": 41.90580042930832,
+      "longitude": 12.475495796114956
+    },
+    "normalized_dates": {
+      "raw_date_text": "29 maggio - 4 ottobre",
+      "occurrences": [
+        {
+          "start_date": "2026-05-29",
+          "end_date": "2026-10-04",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "\"La Festa\", fra un brindisi e l'altro l'incontro tra due culture",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/la-festa-incontro-tra-due-culture-teatro-india.page",
+    "theme_text": "Teatro",
+    "raw_date_text": "6 - 17 maggio",
+    "description": "La Festa, ph Manuela Giusto Debutta in prima nazionale al Teatro India, dal 6 al 17 maggio , La Festa , uno spettacolo di Leonardo Manzan che dà vita a una cerimonia antichissima , una supra, una festa per far incontrare Italia e Georgia e coinvolgere il pubblico in una maratona di brindisi, simbolo di unione e resistenza. Leonardo Manzan firma la regia e, insieme a Rocco Placidi la scrittura del testo di un ambizioso progetto di dialogo interculturale , frutto della coproduzione internazionale tra Teatro di Roma, ERT – Emilia Romagna Teatro Fondazione, TPE – Teatro Piemonte Europa, in collaborazione con la compagnia residente del Georgian New Theater. L’opera si configura come un esperimento di confronto tra culture lontane , offrendo al pubblico italiano un’occasione preziosa per immergersi nelle tensioni e nelle speranze che oggi attraversano la Georgia, confine estremo d’Europa, Paese dalla forte identità, ma da sempre in dialogo con l’Occidente. Con La Festa, Manzan propone un lavoro corale guidato da un cast internazionale: un dialogo artistico e umano che vede protagonisti gli interpreti italiani e georgiani Giorgi Baratashvili, Paola Giannini , Zurab Papuashvili e Anna Tsereteli. Tra rito e scena, il cuore della drammaturgia si ispira alla supra , il tradizionale banchetto georgiano: una maratona di cibo e vino che si trasforma in un rito catartico di liberazione emotiva scandito da discorsi solenni. A guidare questa cerimonia è il tamada , figura carismatica e quasi dittatoriale che stabilisce l’ordine dei brindisi e i temi da trattare nei discorsi: della pace alla memoria, dall’amicizia all’assenza. Lo spettacolo trasforma questa tradizione in una macchina scenica dal ritmo serrato, dove si incontrano, su una simbolica linea di confine ricoperta da frammenti di vetro, una turista europea e tre giovani attori di Tbilisi. Mentre tutto il pubblico è invitato a prendere parte ai brindisi, si rivivono gli ultimi anni di vita della compagnia teatrale di cui gli interpreti georgiani facevano parte, ripercorrendo così la storia recente della Georgia. La Festa diventa una zona di passaggio tra passato e futuro, un simbolo di incontro che nasconde, sotto il fragore dei calici, il senso profondo della solitudine e la lotta di un popolo per il riconoscimento della propria libertà. Attraverso questo dialogo, la protagonista scopre non solo la realtà di un popolo che rivendica la propria identità, e insieme a essa, il riconoscimento europeo, ma anche qualcosa che riguarda tutti noi, in un mondo che mescola speranze, incertezze e scontri con l’altro. Brindisi dopo brindisi, potrà infine emergere che, nell’incontro con lo straniero, è molto più forte ciò che ci accomuna di ciò che ci divide. Ulteriori informazioni e prenotazioni sulla pagina dedicata del Teatro di Roma.",
+    "location_text": "Lungotevere Vittorio Gassman",
+    "popup_event_text": "La Festa, tra un brindisi e l'altro",
+    "coordinates": {
+      "latitude": 41.8694767,
+      "longitude": 12.4722705
+    },
+    "normalized_dates": {
+      "raw_date_text": "6 - 17 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-06",
+          "end_date": "2026-05-17",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "same_month_range"
+    }
+  },
+  {
+    "title": "City Lights: Tokyo, a maggio alla Casa del Cinema",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/city-lights-tokyo-maggio-2026.page",
+    "theme_text": "Cinema",
+    "raw_date_text": "3 - 30 maggio",
+    "description": "City Lights-Tokyo, Lost in Translation ©Casa del Cinema Sono ambientati a Tokyo i cinque capolavori , realizzati da grandi autori di epoche e nazionalità diverse, in programma alla Casa del Cinema dal 3 al 13 maggio (con repliche fino al 30) nell'ambito del ciclo \" City Lights\" . Si inizierà domenica 3 maggio alle ore 20 con Lost in Translation – L’amore tradotto di Sofia Coppola , con due interpreti d’eccezione come Bill Murray e Scarlett Johansson , che si incontrano, stringono amicizia e s’innamorano sullo sfondo di una città sospesa tra tradizione e modernità, dove comunicare è sempre più difficile. Giovedì 7 maggio alle ore 20, sarà la volta di Perfect Days di Wim Wenders che realizza una silenziosa meditazione sul valore del tempo e sulla dignità delle piccole cose: al centro del film, la vita di un solitario addetto alla pulizia dei bagni pubblici, scandita da gesti ripetuti, musiche su vecchie audiocassette e fugaci incontri quotidiani. Al termine della proiezione , il critico cinematografico Carlo Giuliano e il regista e divulgatore Ezio Fratto incontreranno il pubblico. Sabato 9 maggio alle ore 18 si terrà Viaggio a Tokyo , il capolavoro di Yasujirō Ozu , uno dei film più amati e celebrati nella storia del cinema. Il punto di partenza è la visita di una coppia anziana ai figli che vivono nella capitale, ma il loro itinerario diventa il pretesto per raccontare le trasformazioni di un Paese che si avvia verso una modernità che porta con sé numerose incertezze. Martedì 12 maggio alle ore 20, il pubblico potrà assistere a Cane randagio di Akira Kurosawa , opera spartiacque nella storia del cinema giapponese, che fonde le suggestioni del neorealismo italiano con una sensibilità tipicamente noir destinata, nel decennio successivo, a dar vita a un autentico filone. L’ultimo appuntamento del ciclo avrà luogo mercoledì 13 maggio alle ore 20 con Tokyo Godfathers di Satoshi Kon e Shôgo Furuya , fiaba metropolitana sospesa tra Dickens e il John Ford di In nome di Dio : il film è un affresco lucidissimo, insieme struggente e vitale, sulla marginalità urbana e sulla necessità di costruire dei legami per sopravvivere nei contesti più duri. Ulteriori informazioni e prenotazioni sul sito della Casa del Cinema. City Lights-Tokyo, Cane randagio, ©Casa del Cinema",
+    "location_text": "Largo Marcello Mastroianni",
+    "popup_event_text": "City Lights, Tokyo",
+    "coordinates": {
+      "latitude": 41.9110064,
+      "longitude": 12.4880336
+    },
+    "normalized_dates": {
+      "raw_date_text": "3 - 30 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-03",
+          "end_date": "2026-05-30",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "same_month_range"
+    }
+  },
+  {
+    "title": "Al Museo Napoleonico \"L’imperatrice e la sorella. Ombre di potere\"",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/museo-napoleonico-imperatrice-e-sorella-ombre-potere.page",
+    "theme_text": "Musei Civici - Teatro - Eventi ad ingresso libero",
+    "raw_date_text": "5 maggio",
+    "description": "Al Museo Napoleonico, martedì 5 maggio alle 18.30, si ricorda il 205° anniversario della morte di Napoleone Bonaparte a Sant’Elena con lo spettacolo L’imperatrice e la sorella. Ombre di potere, un progetto originale della Compagnia Teatrale romana La Clessidra con la supervisione artistica di Carlo Micciché. La pièce, ambientata la sera stessa del 5 maggio 1821, mette in scena un colloquio immaginario tra l’Imperatore (Davide Ingannamorte), l’ex moglie Joséphine (Laura Alferi) e la sorella Elisa (Carlotta di Lorenzo), già Granduchessa di Toscana, indagando i contrastanti sentimenti che legano i protagonisti fino a un confronto catartico. Drammaturgia di Stella Isoli e della stessa Alferi , che ne firma anche la regia; costumi a cura della Sartoria teatrale Lab Costume. Ingresso libero fino a esaurimento posti. Per informazioni contattare lo 060608 consultare il SITO del museo.",
+    "location_text": "Piazza di Ponte Umberto I, 1",
+    "popup_event_text": "Al Museo Napoleonico \"L’imperatrice e la sorella. Ombre di potere\"",
+    "coordinates": {
+      "latitude": 41.901781,
+      "longitude": 12.4720387
+    },
+    "normalized_dates": {
+      "raw_date_text": "5 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-05",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Banda della Polizia Locale, i concerti di maggio",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/banda-polizia-locale-concerti-maggio-2026.page",
+    "theme_text": "Musica Fino al",
+    "raw_date_text": "20 maggio",
+    "description": "Anche nel mese di maggio la Banda Musicale del Corpo di Polizia Locale di Roma Capitale torna protagonista con un calendario di appuntamenti istituzionali e cerimoniali che accompagneranno alcuni eventi della città. Di seguito il calendario degli eventi in programma : Domenica 3 maggio ore 11.00 - Parco Archeologico dell'Appia Antica c/o Antiquarium di Lucrezia Romana - Concerto Note al Museo II Lunedì 4 maggio ore 10.00 - Ambasciata di Spagna in Piazza Navona - Inaugurazione nuova sede della Cancelleria dell'Ambasciata Martedì 5 maggio ore 10.30 - Sala Consiliare Luigi Petroselli Municipio XI Via M. Mazzacurati 73/75 - Seminario \"In viaggio sul Mississippi. Lezione concerto alla scoperta del Jazz.\" Giovedì 7 maggio ore 11.00 - Circo Massimo - Race for the Cure Komen Italia Domenica 17 maggio ore 11.00 - Piazza Cola di Rienzo - IX Edizione di Autoantiqua Mercoledì 20 maggio ore 17.00 - I.C. Mar dei Caraibi plesso Caterina del Segurana - Via C. Segurana 2/3 - Festa di Primavera Il programma potrebbe subire variazioni.",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "20 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-20",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Joana Mallwitz e Augustin Hadelich a Santa Cecilia",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/joana-mallwitz-e-augustin-hadelich-a-santa-cecilia.page",
+    "theme_text": "Musica",
+    "raw_date_text": "30 aprile - 3 maggio",
+    "description": "Joana Mallwitz, © simon_pauly Un debutto di assoluto rilievo segna la stagione dell'Accademia di Santa Cecilia: giovedì 30 aprile alle ore 20, sabato 2 e domenica 3 maggio alle ore 18, la Sala Santa Cecilia ospita per la prima volta Joana Mallwitz , la direttrice tedesca che dalla stagione 2023/2024 è alla guida della Konzerthausorchester Berlin (prima donna a ricoprire questo incarico in una delle principali istituzioni berlinesi). Joana Mallwitz. che ha iniziato la sua carriera a 19 anni, è oggi la più giovane direttrice musicale alla guida di un'istituzione nel panorama classico di Berlino. In programma la Sinfonia n. 5 di Beethoven , Danze di Galánta di Kodály e il Concerto per violino di Čajkovskij , che vedrà come solista il talentuoso Augustin Hadelich . L'apertura del programma è affidata alle Danze di Galánta di Kodály , un omaggio vibrante al folklore e allo spirito indomito del popolo ungherese, dove i ritmi della tradizione popolare vengono trasfigurati in una scrittura orchestrale di grande brillantezza. Segue il celebre Concerto per violino di Čajkovskij, uno dei capisaldi del repertorio virtuosistico, affidato all'archetto di Augustin Hadelich . Violinista celebrato per la profondità interpretativa e una tecnica impeccabile. Il culmine della serata è rappresentato dalla Sinfonia n. 5 di Beethoven . Dalle celebri quattro note iniziali, simbolo del \" destino che bussa alla porta\" , la sinfonia si snoda in un percorso di tensione drammatica e risoluzione trionfale. Mallwitz guiderà l'Orchestra attraverso questa architettura monumentale, offrendo al pubblico romano l'occasione di scoprire una delle voci direttoriali più magnetiche della scena attuale. Ulteriori Informazioni e prenotazioni sul sito dell' Accademia Nazionale di Santa Cecilia. Augustin Hadelich, @Suxiao_Yang",
+    "location_text": "Via Pietro de Coubertin 30",
+    "popup_event_text": "Joana Mallwitz e Augustin Hadelich in concerto",
+    "coordinates": {
+      "latitude": 41.928969,
+      "longitude": 12.4707899
+    },
+    "normalized_dates": {
+      "raw_date_text": "30 aprile - 3 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-04-30",
+          "end_date": "2026-05-03",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "\"She Devil 14\", al Macro rassegna di videoarte femminile",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/she-devil-14-macro-rassegna-videoarte-femminile.page",
+    "theme_text": "Arte",
+    "raw_date_text": "29 aprile - 30 agosto",
+    "description": "Dal 29 aprile al 30 agosto il Macro ospita She Devil 14, storica rassegna di videoarte femminile nata nel 2006 da un’idea di Stefania Miscetti. She Devil esplora con ironia e leggerezza lo spirito diabolico e bizzarro con cui l’esperienza artistica femminile attraversa il quotidiano, sovvertendone le regole e offrendo nuove prospettive di lettura del mondo. Il titolo si ispira a un’eroina Marvel e al celebre film del 1989 di Susan Seidelman , e incarna fin dall’origine un’attitudine ribelle e visionaria. Progetto corale per definizione, She Devil coinvolge ad ogni edizione artiste e curatrici italiane e internazionali , dalle più giovani alle più affermate, invitandole a indagare un tema specifico attraverso il linguaggio del video. La rassegna si propone come una piattaforma aperta, in cui opere e prospettive critiche diverse convivono in un discorso a più voci, dando forma alle molteplicità dei mondi e delle visioni femminili. She Devil 14 affronta una delle emozioni primarie: la paura . A partire dalle urgenze e dalle criticità del nostro quotidiano, le opere in mostra esplorano questo sentimento attraverso una molteplicità di punti di vista e di forme – film d’artista, video-performance, documentari, animazioni – indagandone le diverse declinazioni e modalità di rappresentazione. La narrazione visiva mette la paura in dialogo con molteplici aspetti dell’esistenza: la caducità, la violenza, il rapporto con la natura e il territorio, l’identità e il senso di appartenenza nelle sue dimensioni personali, sociali e politiche. Ne emerge un percorso poliedrico che non si limita a illuminare le sfaccettature contemporanee della paura, ma riesce anche a immaginarne il superamento, aprendo prospettive di liberazione. Madrina di questa edizione: Nathalie Djurberg. Ulteriori informazioni e prenotazioni sul sito del MACRO.",
+    "location_text": "Via Nizza",
+    "popup_event_text": "She Devil 14, rassegna di videoarte",
+    "coordinates": {
+      "latitude": 41.9125231,
+      "longitude": 12.5004127
+    },
+    "normalized_dates": {
+      "raw_date_text": "29 aprile - 30 agosto",
+      "occurrences": [
+        {
+          "start_date": "2026-04-29",
+          "end_date": "2026-08-30",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "Teatro Ostia Antica Festival. Il senso del passato",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/teatro-ostia-antica-festival-il-senso-del-passato-2026.page",
+    "theme_text": "Iniziative ed Eventi - Teatro",
+    "raw_date_text": "25 giugno - 18 luglio",
+    "description": "Il Teatro di Roma torna in scena a Ostia Antica dove, dal 25 giugno al 18 luglio si svolgerà la seconda edizione del Teatro Ostia Antica Festival. Il Senso del Passato. Nello straordinario scenario del Teatro Romano di Ostia un cartellone di respiro internazionale che intreccia la forza del mito classico con i linguaggi della contemporaneità , offrendo uno sguardo sulle sfide del presente. Dalla tragedia greca alla danza d’avanguardia, il Festival si distingue per l’incontro tra tradizione e l’innovazione della scena contemporanea, attraverso le creazioni di quattro maestri della scena nazionale e internazionale: Theodoros Terzopoulos, Asterios Peltekis , Angelin Preljocaj e Filippo Dini. PROGRAMMA 25 e 26 giugno Le Baccanti di Euripide Il grande Maestro greco Theodoros Terzopoulos porta in scena per la settima volta il testo di Euripide. Dioniso è l’archetipo del rifugiato e l’arte del teatro un viaggio di rifugiati con continue trasformazioni. 4 e 5 luglio Lysistrata di Aristofane Adattamento e regia Asterios Peltekis Lysistrata non è semplicemente una commedia sulla guerra e sull’amore. Si propone come un’opera profondamente politica e profondamente umana, incentrata su quel momento in cui una società, stremata dalla sofferenza, cerca urgentemente un nuovo modo di organizzarsi. 10 e 11 luglio Requiem(s) - Danza Coreografia di Angelin Preljocaj Angelin Preljocaj porta in scena, nello straordinario scenario del Teatro romano di Ostia, Requiem(s ), un’intensa riflessione sulla memoria, la perdita e il rapporto profondo tra vita e morte. 17 e 18 luglio Alcesti di Euripide Filippo Dini Accostarsi ad Alcesti di Euripide fa paura, perché significa accostarsi alla Morte. Ad una morte inaccettabile, forse la più inaccettabile di tutte: la morte di una vittima sacrificale. Al tempo stesso Alcesti è, per i filosofi, la prima meditazione sulla morte nella storia dell’Occidente. Ulteriori informazioni e prenotazioni sul sito del Teatro di Roma.",
+    "location_text": "Viale dei Romagnoli 717",
+    "popup_event_text": "Teatro Ostia Antica Festival. Il senso del passato",
+    "coordinates": {
+      "latitude": 41.7592432,
+      "longitude": 12.3006075
+    },
+    "normalized_dates": {
+      "raw_date_text": "25 giugno - 18 luglio",
+      "occurrences": [
+        {
+          "start_date": "2026-06-25",
+          "end_date": "2026-07-18",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "Roméo et Juliette di Charles Gounod al Teatro dell'Opera",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/romeo-et-juliette-gounod-teatro-opera-2026.page",
+    "theme_text": "Musica",
+    "raw_date_text": "28 aprile - 6 maggio",
+    "description": "© Fabrizio Sansoni-Teatro dell'Opera di Roma Roméo et Juliette di Charles Gounod va in scena per la prima volta al Teatro dell’Opera di Roma . Dal 28 aprile al 6 maggio 2026 il Costanzi ospita il titolo in cinque atti su libretto di Jules Barbier e Michel Carré, in un nuovo allestimento firmato da Luca De Fusco , al suo debutto al lirico capitolino. Sul podio Daniel Oren , Maestro del Coro Ciro Visco . La prima dell'opera, martedì 28 aprile , è trasmessa in diretta su Radio 3. Grande classico del repertorio francese, l’opera si inserisce nell’ambito di un triennio di cooperazione col Teatro di Roma, di cui De Fusco è attualmente direttore artistico. De Fusco immagina la contrapposizione tra Capuleti e Montecch i dentro un film in bianco e nero degli anni '40, in cui gli unici personaggi portatori di vita, in contrapposizione ai toni scuri della morte, sono proprio i due protagonisti. Proiezioni video sulla scena animano sogni, ricordi e immaginazione della coppia di celebri amanti, in uno spazio in continua trasformazione, in cui le figure di Romeo e Giulietta si muovono in una dimensione fortemente simbolica. Marta Crisolini Malatesta cura scene e costumi, Gigi Saccomandi le luci, Alessandro Papa i video e Alessandra Panzavolta i movimenti coreografici. Nei panni di Juliette Nino Machaidze , soprano georgiano affermatosi a livello internazionale dopo il debutto nel 2008 al Festival di Salisburgo proprio nel ruolo di Juliette. Si alterna con lei nel ruolo Vannina Santoni (2, 5 maggio). Roméo è Vittorio Grigolo , che veste nuovamente i panni del Roméo di Gounod, a cui ha dato voce alla Scala nel 2011 e al Met nel 2017. Si alterna con lui nel ruolo di Roméo Duke Kim (2, 5 maggio). Accanto ai protagonisti diversi artisti in ascesa: Nicolas Courjal (Frère Laurent, Le Duc de Vérone), Mihai Damian (Mercutio), A ya Wakizono (Stéphano), Christian Senn (Capulet), Valerio Borgioni (Tybalt), Géraldine Chauvet (Gertrude), Raffaele Feo (Benvolio), Alessio Verna (Gregorio) e, da \"Fabbrica\" Young Artist Program, Alejo Álvarez Castillo (Pâris). Prima rappresentazione: martedì 28 aprile 2026, ore 20.00 e in diretta su Radio3 Repliche: giovedì 30 aprile ore 20.00; sabato 2 maggio ore 18.00; domenica 3 maggio ore 16.30; martedì 5 maggi o ore 20.00; mercoledì 6 maggio ore 20.00. Ulteriori informazioni e prenotazioni sul sito del Teatro dell'Opera .",
+    "location_text": "Piazza Beniamino Gigli",
+    "popup_event_text": "Roméo et Juliette di Charles Gounod",
+    "coordinates": {
+      "latitude": 41.9006803,
+      "longitude": 12.4959803
+    },
+    "normalized_dates": {
+      "raw_date_text": "28 aprile - 6 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-04-28",
+          "end_date": "2026-05-06",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "\"Volta la carta\", al Teatro Tor Bella Monaca",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/eve-volta-la-carta-teatro-tor-bella-monaca-mun06.page",
+    "theme_text": "Teatro",
+    "raw_date_text": "30 aprile - 3 maggio \"Volta la carta\" è lo spettacolo, di e con",
+    "description": "Deborah Ponzo , in programma dal 30 aprile al 3 maggio al T eatro Tor Bella Monaca realizzato con il sostegno del Teatro Trastevere e del Centro Studi Acting di Lucilla Lupaioli . A metà tra un monologo di stand up comedy, una favola malsana e il teatro di narrazione, \"Volta la carta\" è un richiamo al cambiamento, è assumersi il rischio di non voler scegliere la prima immagine o ipotesi di realtà proposta ma entrare giocando nella successiva, scegliendo l’esperienza invece della meta, con la possibilità di inciampare in esilaranti “storie sbagliate”. In giornate con ritmi serrati tendenti alla performance e alla produttività, Giovanna mette in discussione le narrazioni rosee e i falsi miti di progresso che l’hanno accompagnata nel corso di una vita, lo fa in maniera ironica e forse dissacrante. Ulteriori informazioni e prenotazioni alla pagina dedicata di Teatri in Comune.",
+    "location_text": "Via Bruno Cirino",
+    "popup_event_text": "Volta la carta",
+    "coordinates": {
+      "latitude": 41.8697777,
+      "longitude": 12.6339798
+    },
+    "normalized_dates": {
+      "raw_date_text": "30 aprile - 3 maggio \"Volta la carta\" è lo spettacolo, di e con",
+      "occurrences": [
+        {
+          "start_date": "2026-04-30",
+          "end_date": null,
+          "type": "single"
+        },
+        {
+          "start_date": "2026-05-03",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "multiple_full_dates"
+    }
+  },
+  {
+    "title": "CineMente, XII edizione di psicanalisi e cinema",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/cinemente-rassegna-di-psicanalisi-e-cinema-2026.page",
+    "theme_text": "Eventi ad ingresso libero - Cinema",
+    "raw_date_text": "7 maggio - 25 giugno",
+    "description": "Giunge alla dodicesima edizione CineMente. Rinascite il progetto che trasforma la sala cinematografica in uno spazio privilegiato dove analizzare azioni e sentimenti attraverso la lente del cinema e della psicoanalisi. La rassegna, in programma al Palazzo Esposizioni dal 7 maggio al 25 giugno , è un progetto ideato e curato da Palazzo Esposizioni Roma, Centro Sperimentale di Cinematografia-Cineteca Nazionale, Società Psicoanalitica Italiana. Promosso da Assessorato alla Cultura di Roma Capitale e Azienda Speciale Palaexpo. Gli incontri in programma sono coordinati e presentati da Fabio Castriota. Ogni proiezione , scelta per la capacità di narrare le dinamiche dell'esistere, è seguita da un confronto tra registi, psicoanalisti e pubblico , per esplorare insieme le complessità e le fragilità della nostra dimensione individuale e sociale. Cinemente rappresenta da anni il baricentro delle iniziative cinematografiche curate da Palazzo Esposizioni Roma, la sintesi del suo sguardo sul mondo, grazie alla sinergia con il Centro Sperimentale di Cinematografia - Cineteca Nazionale e la Società Psicoanalitica Italiana. Quest'anno lo sguardo è rivolto alla rinascita : si esplora il profondo rinnovamento psicologico che emerge come luce dopo una crisi, un trauma o un periodo di sofferenza. Ci si confronta con relazioni complesse, malattia, disabilità, dipendenze, esistenze irregolari e sfide ambientali, cercando di superare vecchi schemi mentali, verso una maggiore chiarezza e intenzionalità nella vita. In un’epoca in cui l’umanità sembra aver smarrito ogni logica e freno, la rinascita esige un passo più lento e meditativo, capace di risvegliare quell'empatia che, come una fenice, risorge dalle ceneri del caos presente. Ingresso libero fino a esaurimento posti con prenotazione consigliata EVENTI DELLA RASSEGNA Cosa sarà Segue incontro con il regista Francesco Bruni , Chiara Buoncristiani e Tommaso Romani 7 maggio 2026 ore 20:00 La vita da grandi Segue incontro con la regista Greta Scarano , Martina Balbo di Vinadio e Chiara Pazzagli 14 maggio 2026 ore 20:00 Vivere Segue incontro con la regista Francesca Archibugi , Valeria Condino e Leonardo Spanò 28 maggio 2026 ore 20:00 Ovosodo Segue incontro con il regista Paolo Virzì , Andrea Francesco Auletta e Filippo Maria Moscati 4 giugno 2026 ore 20:00 Il tempo che ci vuole Segue incontro con la regista Francesca Comencini, Mariaclotilde Colucci e Agostina Toscano 11 giugno 2026 ore 20:00 Come se non ci fosse un domani Segue incontro con i registi Riccardo Cremona e Matteo Keffer , Roberta Caporale e Antonino Sorce 18 giugno 2026 ore 20:00 Gioia mia Segue incontro con la regista Margherita Spampinato , Alice Piacentini e Alexandro Fortunato 25 giugno 2026 ore 20:00 Ulteriori Informazioni e prenotazioni sul sito di Palazzo Esposizioni Roma.",
+    "location_text": "Scalinata di Via Milano 9a",
+    "popup_event_text": "CineMente. Rinascita",
+    "coordinates": {
+      "latitude": 41.8977304,
+      "longitude": 12.4916557
+    },
+    "normalized_dates": {
+      "raw_date_text": "7 maggio - 25 giugno",
+      "occurrences": [
+        {
+          "start_date": "2026-05-07",
+          "end_date": "2026-06-25",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "L'arte libera la pace",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/arte-libera-pace-rome-art-week-peace.page",
+    "theme_text": "Mostre - Eventi ad ingresso libero",
+    "raw_date_text": "24 aprile",
+    "description": "Anche le opere realizzate dagli alunni e dagli insegnanti delle Scuole d'arte e dei mestieri di Roma Capitale parteciperanno alla giornata speciale di \" Rome Art Week – Raw for peace \" dedicata alla pace , come testimonianza viva del valore universale del dialogo e della convivenza attraverso i linguaggi della cultura contemporanea. L’evento dal titolo \"L’arte libera la pace\" si svolgerà venerdì 24 aprile presso la Scuola \"Arti Ornamentali\" , in via San Giacomo 11, con accesso libero, dalle 16.00 alle 19.30 In occasione di questa giornata, artisti, curatori, gallerie e spazi culturali daranno vita a eventi diffusi in tutta la città di Roma, tra arte, poesia, musica, letteratura e performance, creando una rete di appuntamenti aperti al pubblico e un messaggio condiviso di partecipazione e responsabilità culturale in favore della pace.",
+    "location_text": "via San Giacomo 11",
+    "popup_event_text": "\"Rome Art Week – Raw for peace\" - L’arte libera la pace",
+    "coordinates": {
+      "latitude": 41.908170247531054,
+      "longitude": 12.478980982622016
+    },
+    "normalized_dates": {
+      "raw_date_text": "24 aprile",
+      "occurrences": [
+        {
+          "start_date": "2026-04-24",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Prima del temporale, al Teatro Argentina",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/prima-del-temporale-teatro-argentina.page",
+    "theme_text": "Teatro",
+    "raw_date_text": "5 - 10 maggio \"Prima del temporale\" è il titolo dello spettacolo diretto da",
+    "description": "Massimo Popolizio , con Umberto Orsini , Flavio Francucci e Diamara Ferrero in scena al Teatro Argentina dal 5 al 10 maggio . Con un rovesciamento della percezione del tempo tipica dei sogni, un vecchio attore, nella mezz’ora che lo separa dall’entrare in scena per recitare da protagonista nel Temporale di Strindberg , si trova a rivivere, in un tempo senza fine, alcuni momenti della propria vita. La colonna sonora della realtà di un teatro che si sta animando fuori dal suo camerino diventa il pretesto e l’invito a volte spensierato e a volte commosso ad aggirarsi e addirittura a dialogare con i fantasmi del proprio passato in un mescolarsi senza logica temporale, dove un suono ne evoca un altro: una risata riporta ad un momento di gioia, un lungo silenzio ad una perdita lontana nel tempo. Massimo Popolizio ha voluto aggirarsi intorno alla figura dell’attore con la delicatezza con cui si cerca di svelare dei segreti che vogliono comunque restare misteriosi e offrire un ritratto di artista che si stacchi da ogni intento celebrativo. In una scenografia di forte impatto evocativo, dove il suono e le immagini creano un dialogo immaginario col protagonista, si assiste al lungo viaggio verso quel “Temporale” che viene vissuto come un’ultima meta non ancora raggiunta, ma appena rimandata. Orsini si lascia guidare da Popolizio con la fiducia del vecchio attore che affida alla discrezione del più giovane il compito di raccontare frammenti della sua vita e la storia del nostro paese dal dopoguerra ad oggi. Ulteriori informazioni eprenotazioni alla pagina dedicata del Teatro di Roma.",
+    "location_text": "Largo di Torre Argentina",
+    "popup_event_text": "Prima del temporale",
+    "coordinates": {
+      "latitude": 41.8961444,
+      "longitude": 12.4762742
+    },
+    "normalized_dates": {
+      "raw_date_text": "5 - 10 maggio \"Prima del temporale\" è il titolo dello spettacolo diretto da",
+      "occurrences": [],
+      "matched_pattern": "unparsed"
+    }
+  },
+  {
+    "title": "Tre sorelle. Nevica. Che senso ha? al Teatro India",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/tre-sorelle-nevica-che-senso-ha-teatro-india.page",
+    "theme_text": "Teatro",
+    "raw_date_text": "28 aprile - 3 maggio",
+    "description": "Dal 28 aprile al 3 maggio Liv Ferracchiati porta in scena al Teatro India una riscrittura di Tre sorelle di Anton Čechov , con una regia che esplora il senso di immobilità e il desiderio di cambiamento in chiave moderna. L’opera, scritta nel 1900 , narra le vicende di Olga, Maša e Irina, bloccate in una provincia oppressiva e incapaci di realizzare il sogno di tornare a Mosca. Ferracchiati accentua l’attualità del testo, mettendo in luce la precarietà emotiva e il vuoto delle relazioni umane. La scenografia minimalista e gli elementi contemporanei amplificano il senso di alienazione, mentre il linguaggio recitativo alterna classicismo e modernità. Il regista gioca con ironia e introspezione, rivelando le fratture interiori dei personaggi e le loro aspirazioni irrisolte. Il risultato è un ritratto intenso e universale dell’incompiutezza dell’esistenza, che parla al pubblico di oggi con una forza disarmante fino a toccare profondamente il cuore di ogni singolo spettatore. Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro di Roma.",
+    "location_text": "Lungotevere Vittorio Gassman",
+    "popup_event_text": "Tre sorelle. Nevica. Che senso ha?",
+    "coordinates": {
+      "latitude": 42.1564178,
+      "longitude": 11.9021206
+    },
+    "normalized_dates": {
+      "raw_date_text": "28 aprile - 3 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-04-28",
+          "end_date": "2026-05-03",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "\"Herencias\", tra memoria, libertà e diritti civili",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/herencias-tra-memoria-liberta-e-diritti-civili-2026.page",
+    "theme_text": "Eventi ad ingresso libero - Teatro",
+    "raw_date_text": "29 aprile e 4 - 8 maggio",
+    "description": "La morte è solo occhi - Nora Strejilevich Si apre il 4 maggio al Teatro Palladium – Università Roma Tre , la quinta edizione di Herencias – scritture di memoria e identità, un’immersione nella cultura civile ispanica attraverso un ciclo di performance teatrali e dialoghi sulle parole della memoria: vittima , attesa , testimone , terrorismo, educazione , fosse , corpo . Un lessico di testimonianza dei traumi del passato che si confronta con un presente ancora segnato da discriminazione, violenza, emarginazione. Il programma della rassegna, basata su importanti testi teatrali di autrici e autori provenienti da Spagna (Andalusia, Madrid, Paesi Baschi, Valencia), Argentina, Messico, è curato da Simone Trecca e organizzato in collaborazione con il Dipartimento di Lingue Letterature e Culture Straniere , con la Real Academia de España a Roma e con l’ Instituto Cervantes di Roma. Una anteprima della rassegna di terrà mercoledì 29 aprile ore 10.30, presso la Real Academia de España a Roma (Piazza San Pietro in Montorio 3), dal titolo De algún tiempo a esta parte (in lingua originale), di Max Aub . Diretto e interpretato da Esther Lázaro. Un potente monologo del 1939 in cui Emma, una donna ebrea nella Vienna appena annessa al Terzo Reich, dialoga con il marito defunto. Attraverso questo confronto immaginario, la protagonista ripercorre la perdita del figlio, della dignità e dei propri diritti sotto la violenza nazista. L’opera trasforma il dolore privato in una denuncia universale contro antisemitismo e indifferenza, configurandosi come una delle testimonianze più lucide e laceranti della letteratura dell’esilio spagnolo sulla tragedia della Shoah. Incontro con il pubblico - Le parole della memoria: VITTIMA Dopo lo spettacolo, Esther Lázaro dialogherà con Simone Trecca e José Corrales Díaz-Pavón intorno alla parola \"Vittima\" , a partire dalla rappresentazione del dolore e della perdita, tra memoria storica, violenza e responsabilità della testimonianza. IL PROGRAMMA AL TEATRO PALLADIUM Lunedì 4 maggio ore 17.00 – Ovillo. Fili di memoria Incontro con il pubblico - Le parole della memoria: ATTESA lunedì 4 maggio ore 18.45 - La morte è solo occhi Incontro con il pubblico - Le parole della memoria: TESTIMONE martedì 5 maggio ore 18.30- L'ultima cena Incontro con il pubblico - Le parole della memoria: TERRORISMO mercoledì 6 maggio ore 19.00 - La sfera che ci contiene Incontro con il pubblico - Le parole della memoria: EDUCAZIONE giovedì 7 maggio ore 18.30 - I mangiatori di terra Incontro con il pubblico - Le parole della memoria: FOSSE venerdì 8 maggio ore 19.00 - Malagueñas (Il gene rosso) Incontro con il pubblico - Le parole della memoria: CORPO Herencias, scritture di memorie e identità 29 aprile Anteprima presso la Real Academia de España a Roma Dal 4 all'8 maggio al Teatro Palladium Ingresso gratuito Scarica il programma Herencias completo e dettagliato. Ulteriori informazioni e prenotazioni sul sito del Teatro Palladium.",
+    "location_text": "Piazza Bartolomeo Romano 8",
+    "popup_event_text": null,
+    "coordinates": {
+      "latitude": 41.8624769,
+      "longitude": 12.4854816
+    },
+    "normalized_dates": {
+      "raw_date_text": "29 aprile e 4 - 8 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-04-29",
+          "end_date": null,
+          "type": "single"
+        },
+        {
+          "start_date": "2026-05-08",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "multiple_full_dates"
+    }
+  },
+  {
     "title": "Acrobati, fachiri e luna park a La Vaccheria",
     "detail_url": "https://www.comune.roma.it/web/it/evento/acrobati-fachiri-luna-park-la-vaccheria.page",
     "theme_text": "Fotografia - Eventi ad ingresso libero - Mostre",
@@ -16,16 +377,11 @@
       "occurrences": [
         {
           "start_date": "2026-04-24",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-07-05",
-          "end_date": null,
-          "type": "single"
+          "end_date": "2026-07-05",
+          "type": "range"
         }
       ],
-      "matched_pattern": "multiple_full_dates"
+      "matched_pattern": "cross_month_range"
     }
   },
   {
@@ -188,6 +544,30 @@
     }
   },
   {
+    "title": "Romasuona. La musica in Italia 1970-79, al Palazzo Esposizioni",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/romasuona-musica-in-italia-1970-79.page",
+    "theme_text": "Mostre - Musica",
+    "raw_date_text": "1 maggio - 12 luglio",
+    "description": "Tank Trip, Festival di Villa Pamphilj, Roma, 25-27 maggio 1972, © Giovanni Coccia Dal 1 maggio al 12 luglio il Palazzo Esposizioni Roma ospita la mostra \" RomaSuona. La musica in Italia 1970-79\". La mostra, a cura di Guido Bellachioma , racconta la musica intesa come necessità di vita, spazio comune in cui le persone si riconoscono, si scontrano, si ritrovano… la musica che si contamina con la poesia, la controcultura, la pittura, il cinema e il teatro, e diventa motore pulsante di trasformazione culturale, sociale. L’iniziativa nasce nell’ambito dell’impegno assunto da Palazzo Esposizioni Roma nella valorizzazione delle correnti culturali che hanno attraversato la città di Roma, sia attraverso le personalità artistiche che qui sono nate, sia attraverso quanti, provenendo da altri ambiti culturali, l’hanno nutrita facendone un crocevia di scambi e sperimentazioni internazionali. Il periodo preso in esame sono gli anni Settanta , un decennio nel quale Roma è stata l’eccezionale crocevia di artisti, idee, linguaggi, suoni che hanno contagiato l’Italia e dialogato con il resto del mondo. Il singolare contributo dato dalla musica a questo decennio, è rivissuto attraverso l’ allestimento a cura del collettivo THREES , gli ideatori del festival internazionale di musica Terraforma . Il percorso è costellato da una serie di materiali e documenti riguardanti i maggiori protagonisti dell’epoca come Francesco De Gregori , Antonello Venditti, Rino Gaetano , Renato Zero , Lucio Battisti , Franco Battiato , Mia Martini , David Bowie , Patti Smith , Genesis, Pink Floyd , Rolling Stones , Led Zeppelin , Miles Davis, Banco del Mutuo Soccorso , PFM , Area , Le Orme , Osanna , Rovescio della Medaglia : circa 700 fotografie (molte delle quali inedite), video, manifesti, biglietti di concerti, riviste musicali, fanzine, volantini, libri, copertine di vinili, strumenti musicali, una mappatura dei luoghi della musica a Roma (club, parchi, sale concerto, etc.), insieme a una colonna sonora di brani emblematici, con edizioni originali e rivisitazioni contemporanee, alcune appositamente realizzate. Vengono inoltre prodotte e realizzate per l’occasione una serie di video interviste a cura di Stefano Pistolini con Renzo Arbore , Dario Salvatori , Francesca Marciano e Roberto D’Agostino . La musica non è semplice sottofondo ma scandisce i tempi del racconto espositivo, lo accompagna e lo amplifica. In dialogo con la grande mostra dedicata a Mario Schifano che si svolge contemporaneamente al piano nobile di Palazzo Esposizioni, Romasuona apre il percorso espositivo con la famosa serata organizzata al Piper Club di Roma il 28 dicembre 1967 intitolata Grande angolo, sogni & stelle in cui andò in scena, tra multiproieizioni di film, luci strobo, sitar e danze, il gruppo rock progressive Le stelle di Mario Schifano. Una serata pensata da Schifano per coinvolgere artisti, musicisti, performer, poeti, in nome di quella felice commistione fra arti diverse originate dalla volontà di trasformare il momento creativo da fatto isolato d’avanguardia a elemento del tessuto connettivo metropolitano. Su questo stesso afflato collettivo, la mostra chiude con l’evocazione del primo Festival internazionale dei poeti, organizzato dal 28 al 30 giugno del 1979 a Castelporziano da Simone Carella , Franco Cordelli, Ulisse Benedetti sotto l’egida dell’allora assessore alla cultura di Roma, Renato Nicolini, al quale parteciparono migliaia di giovani e che vide avvicendarsi sulla spiaggia libera di Castelporziano ad Ostia tra gli altri, i poeti Dario Bellezza , Fernanda Pivano , Dacia Maraini , il poeta russo Evtušenko, assieme ai maggiori esponenti della poesia statunitense, tra i quali Gregory Corso , Lawrence Monsanto Ferlinghetti, John Giorno e Allen Ginsbgerg. La mostra è promossa da Assessorato alla Cultura di Roma Capitale e Azienda Speciale Palaexpo. Ideata, prodotta e organizzata da Azienda Speciale Palaexpo. Ulteriori informazioni alla pagina dedicata del Palazzo Esposizioni Roma.",
+    "location_text": "Via Nazionale 194",
+    "popup_event_text": "Romasuona. La musica in Italia 1970-79",
+    "coordinates": {
+      "latitude": 41.8995261,
+      "longitude": 12.4901928
+    },
+    "normalized_dates": {
+      "raw_date_text": "1 maggio - 12 luglio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-01",
+          "end_date": "2026-07-12",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
     "title": "Le stagioni del Teatro di Roma. Volti, memorie e visioni",
     "detail_url": "https://www.comune.roma.it/web/it/evento/le-stagioni-del-teatro-di-roma-vito-pandolfi.page",
     "theme_text": "Eventi ad ingresso libero",
@@ -209,35 +589,6 @@
         }
       ],
       "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Romasuona. La musica in Italia 1970-79, al Palazzo Esposizioni",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/romasuona-musica-in-italia-1970-79.page",
-    "theme_text": "Mostre - Musica",
-    "raw_date_text": "28 aprile - 12 luglio",
-    "description": "Tank Trip, Festival di Villa Pamphilj, Roma, 25-27 maggio 1972, © Giovanni Coccia Dal 28 aprile al 12 luglio il Palazzo Esposizioni Roma ospita la mostra \" RomaSuona. La musica in Italia 1970-79\". La mostra, a cura di Guido Bellachioma , racconta la musica intesa come necessità di vita, spazio comune in cui le persone si riconoscono, si scontrano, si ritrovano… la musica che si contamina con la poesia, la controcultura, la pittura, il cinema e il teatro, e diventa motore pulsante di trasformazione culturale, sociale. L’iniziativa nasce nell’ambito dell’impegno assunto da Palazzo Esposizioni Roma nella valorizzazione delle correnti culturali che hanno attraversato la città di Roma, sia attraverso le personalità artistiche che qui sono nate, sia attraverso quanti, provenendo da altri ambiti culturali, l’hanno nutrita facendone un crocevia di scambi e sperimentazioni internazionali. Il periodo preso in esame sono gli anni Settanta , un decennio nel quale Roma è stata l’eccezionale crocevia di artisti, idee, linguaggi, suoni che hanno contagiato l’Italia e dialogato con il resto del mondo. Il singolare contributo dato dalla musica a questo decennio, è rivissuto attraverso l’ allestimento a cura del collettivo THREES , gli ideatori del festival internazionale di musica Terraforma . Il percorso è costellato da una serie di materiali e documenti riguardanti i maggiori protagonisti dell’epoca come Francesco De Gregori , Antonello Venditti, Rino Gaetano , Renato Zero , Lucio Battisti , Franco Battiato , Mia Martini , David Bowie , Patti Smith , Genesis, Pink Floyd , Rolling Stones , Led Zeppelin , Miles Davis, Banco del Mutuo Soccorso , PFM , Area , Le Orme , Osanna , Rovescio della Medaglia : circa 700 fotografie (molte delle quali inedite), video, manifesti, biglietti di concerti, riviste musicali, fanzine, volantini, libri, copertine di vinili, strumenti musicali, una mappatura dei luoghi della musica a Roma (club, parchi, sale concerto, etc.), insieme a una colonna sonora di brani emblematici, con edizioni originali e rivisitazioni contemporanee, alcune appositamente realizzate. Vengono inoltre prodotte e realizzate per l’occasione una serie di video interviste a cura di Stefano Pistolini con Renzo Arbore , Dario Salvatori , Francesca Marciano e Roberto D’Agostino . La musica non è semplice sottofondo ma scandisce i tempi del racconto espositivo, lo accompagna e lo amplifica. In dialogo con la grande mostra dedicata a Mario Schifano che si svolge contemporaneamente al piano nobile di Palazzo Esposizioni, Romasuona apre il percorso espositivo con la famosa serata organizzata al Piper Club di Roma il 28 dicembre 1967 intitolata Grande angolo, sogni & stelle in cui andò in scena, tra multiproieizioni di film, luci strobo, sitar e danze, il gruppo rock progressive Le stelle di Mario Schifano. Una serata pensata da Schifano per coinvolgere artisti, musicisti, performer, poeti, in nome di quella felice commistione fra arti diverse originate dalla volontà di trasformare il momento creativo da fatto isolato d’avanguardia a elemento del tessuto connettivo metropolitano. Su questo stesso afflato collettivo, la mostra chiude con l’evocazione del primo Festival internazionale dei poeti, organizzato dal 28 al 30 giugno del 1979 a Castelporziano da Simone Carella , Franco Cordelli, Ulisse Benedetti sotto l’egida dell’allora assessore alla cultura di Roma, Renato Nicolini, al quale parteciparono migliaia di giovani e che vide avvicendarsi sulla spiaggia libera di Castelporziano ad Ostia tra gli altri, i poeti Dario Bellezza , Fernanda Pivano , Dacia Maraini , il poeta russo Evtušenko, assieme ai maggiori esponenti della poesia statunitense, tra i quali Gregory Corso , Lawrence Monsanto Ferlinghetti, John Giorno e Allen Ginsbgerg. La mostra è promossa da Assessorato alla Cultura di Roma Capitale e Azienda Speciale Palaexpo. Ideata, prodotta e organizzata da Azienda Speciale Palaexpo. Ulteriori informazioni alla pagina dedicata del Palazzo Esposizioni Roma.",
-    "location_text": "Via Nazionale 194",
-    "popup_event_text": "Romasuona. La musica in Italia 1970-79",
-    "coordinates": {
-      "latitude": 41.8995261,
-      "longitude": 12.4901928
-    },
-    "normalized_dates": {
-      "raw_date_text": "28 aprile - 12 luglio",
-      "occurrences": [
-        {
-          "start_date": "2026-04-28",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-07-12",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "multiple_full_dates"
     }
   },
   {
@@ -339,16 +690,11 @@
       "occurrences": [
         {
           "start_date": "2026-05-19",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-06-21",
-          "end_date": null,
-          "type": "single"
+          "end_date": "2026-06-21",
+          "type": "range"
         }
       ],
-      "matched_pattern": "multiple_full_dates"
+      "matched_pattern": "cross_month_range"
     }
   },
   {
@@ -368,16 +714,11 @@
       "occurrences": [
         {
           "start_date": "2026-04-17",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-04-23",
-          "end_date": null,
-          "type": "single"
+          "end_date": "2026-04-23",
+          "type": "range"
         }
       ],
-      "matched_pattern": "multiple_full_dates"
+      "matched_pattern": "cross_month_range"
     }
   },
   {
@@ -397,381 +738,11 @@
       "occurrences": [
         {
           "start_date": "2026-04-25",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-05-03",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "multiple_full_dates"
-    }
-  },
-  {
-    "title": "Festa della Resistenza, IV edizione al Mattatoio",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/eve-festa-resistenza-2026.page",
-    "theme_text": "Iniziative ed Eventi - Memoria",
-    "raw_date_text": "23 -26 aprile",
-    "description": "Dal 23 al 26 aprile torna, per la sua IV edizione, la Festa della Resistenza : quattro giornate di cultura, dibattito, partecipazione collettiva, spettacolo e musica. Per il 2026, il programma , a cura di Silvia Barbagallo, conta o ltre 100 appuntamenti quasi totalmente a ingresso libero e gratuito fra lectio, presentazioni, teatro, proiezioni, musica, mostre e percorsi eleggendo a sede principale il rinnovato Mattatoio di Testaccio. Il palinsesto di eventi coinvolgerà anche luoghi della memoria e della storia , musei, biblioteche, cinema e teatri in tutta la città. Un percorso che tocca il Museo Storico della Liberazione, il Mausoleo Ossario Garibaldino, il Parco dei Martiri di Forte Bravetta e il Cimitero di Guerra del Commonwealth, includendo gli itinerari del Museo Diffuso della Resistenza tra Porta San Paolo, San Saba e il Gianicolo. Il programma si estenderà inoltre alla Casa della Memoria e della Storia, all'Archivio Storico Capitolino, al Museo della Repubblica Romana e della Memoria Garibaldina, alla Casina delle Civette e al Bunker di Villa Torlonia e alla Casa Museo Alberto Moravia. Il dialogo con la città proseguirà nella Biblioteca Enzo Tortora, negli spazi di Palazzo Esposizioni Roma, fino a raggiungere il Teatro dell'Opera, il Teatro Tor Bella Monaca, il Teatro del Lido di Ostia, la Casa del Cinema e il Nuovo Cinema Aquila. Questa edizione – che si aprirà al Mattatoio il 23 aprile alle 16.30 con i saluti del Sindaco di Roma Capitale, Roberto Gualtieri , e dell’Assessore alla Cultura e al Coordinamento delle iniziative riconducibili alla Giornata della Memoria, Massimiliano Smeriglio – connette idealmente le celebrazioni per l’ 81° Anniversario della Liberazione all’indissolubile traguardo degli 80 anni dell’Assemblea Costituente. L’obiettivo è rintracciare i fili che uniscono la lotta partigiana alla stesura della nostra Carta fondamentale, rivolgendo un omaggio speciale alle 21 Madr i Costituenti che trasformarono la passione civile in fondamenta della democrazia. Nel corso della manifestazione, alcune aree verranno intitolate a figure chiave quali Tina Anselmi, Adele Bei, Nilde Iotti, Lina Merlin e Teresa Noce , ma anche Piero Calamandrei e Sandro Pertini . In occasione dell’81° Anniversario della Liberazione, Roma Capitale lancia un’importante campagna di comunicazione che riaccende la memoria e porta in tutta la città i volti di cinque protagoniste della Resistenza e della nascita della Repubblica: Lina Merlin, Maria Agamben, Nilde Iotti, Teresa Noce e Angela M. Guidi. Attraverso un linguaggio grafico che richiama la pop art e il fumetto, l’iniziativa ritrae queste figure straordinarie nella loro giovinezza, per restituire alla contemporaneità tutta l'energia della loro azione politica e civile. Leggi l 'articolo dedicato su questo sito . Sui diversi palchi del Mattatoio si alterneranno tante e tanti ospiti, tra cui: Marianna Aprile, Viola Ardone , Sonia Bergamasco , Gianrico Carofiglio, Luciana Castellina, Filippo Ceccarelli, Alfonso Celotto , Davide Conti, Lella Costa , Annalisa Cuzzocrea, Marco Damilano , Giancarlo De Cataldo, Concita De Gregorio , Paolo di Paolo, Emiliano Fittipaldi , Anna Foglietta, Giordano Gasperini , Umberto Gentiloni, Raffaele Giuliani , Lucia Goracci, Isabella Insolvibile , Djarah Kan, Gad Lerner, Mimmo Lucano, Francesca Mannocchi , Dacia Maraini, Valentina Petrini , Ottavia Piccolo, Antonella Polimeni , Michela Ponzani, Alessandro Portelli , Daniela Preziosi, Vanessa Roghi , Roberto Saviano, Igiaba Scego , Marino Sinibaldi, Ermanno Taviani , Benedetta Tobagi, Fabio Tonacci e molti altri. La Festa della Resistenza di Roma 2026 è promossa e sostenuta dall ’Assessorato alla Cultura e al coordinamento delle iniziative riconducibili alla Giornata della Memoria di Roma Capitale, con il coordinamento del Dipartimento Attività Culturali e in collaborazione con Municipio Roma I e il Municipio Roma XII , con Sovrintendenza Capitolina ai Beni culturali, Istituzione Biblioteche di Roma e con Anfim, Archivio Flamigni, Azienda Speciale Palaexpo, Associazione Fondo Alberto Moravia, Casa della Memoria e della Storia, Fondazione Bellonci, Fondazione Cinema per Roma, Fondazione Mattatoio, Fondazione Musica per Roma, Fondazione Teatro dell'Opera di Roma, Fondazione Teatro di Roma, TIC - Teatri in Comune, Fondazione Una Nessuna Centomila, Nuovo Cinema Aquila, Università Roma Tre, Roma Tre Dipartimento Public History . Mobility Partner: Atac. Supporto organizzativo di Zètema Progetto Cultura. Il calendario completo , suscettibile di variazioni e con tutte le info, è disponibile alla pagina dedicata di CultureRoma",
-    "location_text": "Piazza orazio giustiniani",
-    "popup_event_text": "Festa della Resistenza",
-    "coordinates": {
-      "latitude": 41.8763185,
-      "longitude": 12.4736298
-    },
-    "normalized_dates": {
-      "raw_date_text": "23 -26 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-23",
-          "end_date": "2026-04-26",
+          "end_date": "2026-05-03",
           "type": "range"
         }
       ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Angelin Preljocaj, tra sacro, memoria e rito",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/preljocaj-tra-sacro-memoria-e-rito.page",
-    "theme_text": "Danza",
-    "raw_date_text": "14 - 19 aprile",
-    "description": "Serata Preljocaj - Annonciation ph Fabrizio Sansoni - Opera di Roma Per la prima volta, tre lavori fondamentali del repertorio del coreografo francese Angelin Preljocaj sono riuniti in un’unica serata al Teatro dell’Opera di Roma . Dal 14 al 19 aprile 2026 al Teatro Nazionale , il Corpo di Ballo diretto da Eleonora Abbagnato affronta Annonciation (1995), duetto ispirato all’episodio evangelico che indaga il momento della Rivelazione a Maria; La Stravaganza (1997), che mette in dialogo suggestioni barocche e sensibilità contemporanee; e Noces (1989), su musica di Stravinskij , rilettura del rito nuziale. Il programma attraversa oltre un decennio della produzione di Preljocaj, dagli anni Ottanta ai Novanta, restituendo un percorso coerente e stratificato che mette in relazione spiritualità, memoria e ritualità collettiva . Ad aprire la serata è Annonciation (1995), intenso duetto per due danzatrici ispirato all’episodio evangelico dell’Annunciazione. Sulla partitura che accosta le sonorità elettroniche del compositore Stéphane Roy al Magnificat di Antonio Vivaldi . La coreografia indaga il momento della Rivelazione come esperienza fisica e trasformativa, mettendo al centro la tensione tra accettazione e resistenza. Il gesto coreografico, essenziale e incisivo, rende visibile il conflitto tra l’abbandono a un destino già scritto e l’impulso a opporsi, trasformando il corpo in luogo di negoziazione tra dimensione sacra e istanza umana. Nel ruolo di Maria le soliste Marta Marigliani e Giorgia Calenda . La prima ballerina Federica Maine , in alternanza con Annalisa Cianci , interpreta L’Arcangelo. La Stravaganza (1997), corpo centrale del Trittico, mette in dialogo epoche e culture, riflettendo anche il percorso biografico di Preljocaj, figlio di immigrati. Da un lato la tradizione europea, evocata dalla musica barocca di Vivaldi, dall’altro la modernità e l’energia del presente. Creata originariamente per il New York City Ballet, la coreografia mette in scena una migrazione simbolica, in cui il passato riaffiora continuamente, le identità si confrontano e il tempo si configura come un ciclo, in un perpetuo ritorno. Protagonisti del passo a due l’étoile Susanna Salvi e il primo ballerino Michele Satriano che insieme a Claudio Cocino danza anche nel duo maschile. Negli assoli l’étoile Alessandra Amato e il solista Gabriele Consoli. Serata Preljocaj - Noces_ph Fabrizio Sansoni - Opera di Roma Chiude il programma Noces (1989), una delle creazioni più emblematiche di Preljocaj, su musica di Igor Stravinskij. Ispirato ai riti matrimoniali della tradizione dell’Europa orientale, il balletto trasforma il cerimoniale delle nozze in una dimensione che esprime una tensione costante tra individuo e comunità, desiderio e costrizione. Nato in Francia da famiglia di origine albanese, Angelin Preljocaj è tra i coreografi più influenti della scena contemporanea. Formatosi tra danza classica e moderna, ha lavorato con figure come Merce Cunningham prima di fondare la propria compagnia nel 1984. Le sue creazioni sono oggi presenti nei repertori delle principali istituzioni coreutiche internazionali, dal Balletto dell’Opéra di Parigi al New York City Ballet, e si distinguono per un linguaggio che unisce rigore formale e forte componente espressiva. Nel 2019 è stato nominato membro dell’Académie des Beaux-Arts. Dopo la prima al Teatro Nazionale di martedì 14 aprile alle ore 20.00, la serata dedicata ad Angelin Preljocaj torna in scena mercoledì 15 (ore 20.00), giovedì 16 (ore 20.00), venerdì 17 (ore 20.00), sabato 18 (ore 18.00) e domenica 19 aprile (ore 16.30). Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro dell'Opera.",
-    "location_text": "Via del Viminale 51",
-    "popup_event_text": "Angelin Preljocaj tra socro, memoria e rito",
-    "coordinates": {
-      "latitude": 41.8997893,
-      "longitude": 12.4948154
-    },
-    "normalized_dates": {
-      "raw_date_text": "14 - 19 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-14",
-          "end_date": "2026-04-19",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "\"Lost Objects\", all'Auditorium la prima esecuzione italiana",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/lost-objects-prima-esecuzione-italiana-auditorium.page",
-    "theme_text": "Musica",
-    "raw_date_text": "16 aprile",
-    "description": "Foto di Peter Serling La Fondazione Musica per Roma in collaborazione con l’ American Academy in Rome presenta “Lost Objects”, un concerto di grande rilievo internazionale che segna la prima esecuzione italiana dell’opera firmata da tre tra i più influenti compositori della scena contemporanea: Michael Gordon, David Lang e Julia Wolfe , con libretto di Deborah Artman . “Lost Objects”, in programma giovedì 16 aprile all'Auditorium Parco della Musica Ennio Morricone (Sala Petrassi) è un’esperienza musicale rara e intensa, capace di trasformare la memoria in suono e la perdita in rito collettivo, confermando ancora una volta il ruolo della Fondazione Musica per Roma come punto di riferimento per la grande musica contemporanea internazionale. Diretto da Tonino Battista , “Lost Objects” è un’opera di teatro musicale potente e visionaria che esplora il significato della memoria e della perdita, intrecciando linguaggi sonori e suggestioni provenienti da epoche e mondi diversi. Commissionato dal Dresdner Musikfestspiele in collaborazione con Concerto Köln e il RIAS Kammerchor, il lavoro rappresenta il secondo grande progetto di composizione condivisa tra Gordon, Lang e Wolfe, figure centrali della scena musicale internazionale e fondatori del collettivo Bang on a Can. “Lost Objects” si sviluppa a partire dalla struttura di un oratorio barocco, attraversato però da una forte tensione contemporanea. Il risultato è un affresco sonoro stratificato e sorprendente: tre voci soliste, coro misto, ensemble rock e orchestra barocca si fondono in una materia musicale densa e suggestiva. Le sonorità acustiche si intrecciano con strumenti amplificati, mentre la voce umana dialoga con timbri arcaici e moderni, creando un’esperienza immersiva e profondamente emotiva. Sul palco, un cast di altissimo livello internazionale: l’ensemble vocale Ekmeles , il Bang on a Can Lost Objects Ensemble direttamente da New York, il Coro da Camera “Ottorino Respighi” di Latina diretto da Pompeo Vernile e il P MCE Parco della Musica Contemporanea Ensemble. Ulteriori informazioni e prenotazioni alla pagina dedicata dell' Auditorium Parco della Musica.",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
-    "normalized_dates": {
-      "raw_date_text": "16 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-16",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "RUFA on screen 2026, rassegna di audiovisivi al Cinema Aquila",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/rufa-on-screen-2026-cinema-aquila.page",
-    "theme_text": "Eventi ad ingresso libero - Cinema",
-    "raw_date_text": "14 - 16 aprile",
-    "description": "Dal 14 al 16 aprile 2026 presso il Nuovo Cinema Aquila di Roma (Pigneto – Via L’Aquila 66/74) RUFA – Rome University of Fine Arts , istituzione di Alta formazione artistica, multidisciplinare e internazionale parte del gruppo Plena Education, presenta RUFA ON SCREEN 2026 , la rassegna cinematografica dedicata alle opere audiovisive realizzate dagli studenti e dagli alunni dei corsi di Cinema, Film Arts, Computer Animation and Visual Effects, e Fotografia e Audiovisivo. Durante le tre giornate, il pubblico può assistere a proiezioni, partecipare a incontri con professionisti dell’industria audiovisiva e confrontarsi con registi, produttori e distributori. In questa edizione, per la prima volta, le proiezioni includono anche le opere degli studenti di Fotografia e Audiovisivo, a testimonianza del rinnovamento del corso triennale RUFA, che integra una forte componente video accanto alla fotografia tradizionale. Le 28 opere che vengono proiettate nei tre giorni di rassegna sono state selezionate tra 66 contenuti inviati da studenti e alunni, dalla commissione interna composta da Andrés Rafael Zabala , Alessandro Marinelli , Andrea Costantini , Pietro Ciccotti e Livia Barbieri. RUFA ON SCREEN nasce con l’obiettivo di offrire agli studenti e agli alunni dell’Accademia un’opportunità concreta per presentare le proprie opere sul grande schermo, favorendo il dialogo con il mondo della produzione, della distribuzione e della promozione cinematografica. Le opere selezionate in concorso sono suddivise nelle seguenti categorie: Cortometraggi di finzione; Opere di animazione o sperimentali; Documentari. Tra gli ospiti attesi figurano importanti professionisti del settore, tra cui i registi e sceneggiatori Matteo Rovere , Daniele Ciprì e Riccardo Grandi , Carlo Rodomonti , Head of Marketing and Innovation di Rai Cinema, Mirko Perri , sound designer vincitore di quattro David di Donatello, e Michele Franzese , Founder di Future Week® e Direttore creativo di SCAI Comunicazione. RUFA ON SCREEN 2026 prevede l’assegnazione di quattro premi ufficiali, assegnati da Esen Studios, Sayonara Film e Lers Film, costituiti da contratti di distribuzione della durata di un anno, finalizzati all’iscrizione dei film vincitori a festival nazionali e internazionali. Accanto ai premi ufficiali, saranno conferiti ulteriori riconoscimenti grazie al contributo dei partner dell’iniziativa. L’evento è promosso da Roma Culture. L'ingresso è libero fino a esaurimento posti .",
-    "location_text": null,
-    "popup_event_text": "RUFA on screen 2026",
-    "coordinates": {
-      "latitude": 41.890674167049,
-      "longitude": 12.525572153512822
-    },
-    "normalized_dates": {
-      "raw_date_text": "14 - 16 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-14",
-          "end_date": "2026-04-16",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "L'estasi della lotta, al Teatro Torlonia",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/estasi-della-lotta-teatro-torlonia-2026.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "16 - 19 aprile L'estasi della lotta,",
-    "description": "©LAC_Lugano-Luca_Del_Pia Il palcoscenico del Teatro Torlonia accoglie dal 16 al 19 aprile L’estasi della lotta , un progetto intimo e personale di Carlotta Viscovo , attrice torinese per anni portavoce dei lavoratori e delle lavoratrici dello spettacolo, nato dal desiderio di raccontare Camille Claudel non come vittima paranoica e amante abbandonata, ma rendendo onore alla sua opera. Lo spettacolo, scritto da Angela Demattè , pone l’attenzione su Camille e Carlotta, due artiste in lotta divise tra l’ambizione legata alla propria arte e l’ansia di verità e di giustizia. In scena un corpo che si fa scultura e che dialoga con la scultura. Dietro e insieme a questo, le parole e le immagini concrete e quotidiane, logiche e forti di una vita presente e passata, quella di Carlotta e delle sue lotte sindacali. Un personaggio terzo attraversa Carlotta e Camille, indagando il rapporto tra corpo e protesta, tra la dimensione intima e il ruolo politico dell’artista, tra l’arte e il mercato, l’ambizione e l’autosabotaggio. La parola come strumento di lotta non basta, occorre tornare al corpo, farlo vibrare nella sua potenza, per raggiungere l’estasi. Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro di Roma.",
-    "location_text": "Via Lazzaro Spallanzani",
-    "popup_event_text": "L'estasi della lotta",
-    "coordinates": {
-      "latitude": 41.9123747,
-      "longitude": 12.5108472
-    },
-    "normalized_dates": {
-      "raw_date_text": "16 - 19 aprile L'estasi della lotta,",
-      "occurrences": [],
-      "matched_pattern": "unparsed"
-    }
-  },
-  {
-    "title": "\"Aura Satz. Lei ricalibra\", mostra sull'arte del suono",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/aura-satz-lei-ricalibra-mostra-arte-del-suono.page",
-    "theme_text": "Musica - Mostre",
-    "raw_date_text": "23 aprile - 14 giugno",
-    "description": "©AuditoriumArte \"Aura Satz. Le ricalibra\" è il titolo della mostra visitabile dal 23 aprile al 14 giugno presso AuditoriumArte , lo spazio espositivo dedicato alle mostre temporaneee all'interno dell'Auditorium Parco della Musica Ennio Morricone. La mostra, curata da Anna Cestelli Guidi, è la prima personale italiana della film-maker e sound artist Aura Satz, che prosegue la rassegna dedicata all’arte del suono in AuditoriumArte, One Space/One Sound. In mostra alcuni videoritratti delle pioniere della musica elettronica, compositrici, spesso dimenticate, che hanno contribuito in modo decisivo allo sviluppo di tecnologie, di sistemi di notazione, di pratiche di codifica e alla stessa materialità del suono, quali Daphne Oram , Laurie Spiegel e Beatriz Ferreyra . Accanto ai tre video, la mostra presenta la proiezione di un film sulla percussionista contemporanea non udente Evelyn Glennie (1965). Tutta la mostra ruota attorno alla ricalibrazione del suono nella musica elettronica attraverso il dial , la manopola di controllo del suono, come nella serie dei disegni She recalibrates , come dispositivo capace di affinare e dunque ricalibrare l’ascolto da una prospettiva femminista, restituendo visibilità a queste compositrici e affermandole come figure femminili di riferimento, liberatorie e rivoluzionarie, che hanno rimesso al centro dell’attenzione l’ascolto, ricalibrando il suono attraverso la sperimentazione e l’immaginazione, per ridefinire il nostro modo di entrare in relazione con il mondo. Ulteriori informazioni alla pagina dedicata dell' Auditorium Parco della Musica.",
-    "location_text": "Via Pietro de Coubertin 30",
-    "popup_event_text": "Aura Satz. Lei ricalibra",
-    "coordinates": {
-      "latitude": 41.928969,
-      "longitude": 12.4707899
-    },
-    "normalized_dates": {
-      "raw_date_text": "23 aprile - 14 giugno",
-      "occurrences": [
-        {
-          "start_date": "2026-04-23",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-06-14",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "multiple_full_dates"
-    }
-  },
-  {
-    "title": "\"It’s Happening Again\". Mostra personale di Adrian Tranquilli",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/its-happening-again-mostra-adrian-tranquilli.page",
-    "theme_text": "Mostre",
-    "raw_date_text": "11 aprile - 24 maggio",
-    "description": "It’s Happening Again, 2026. Foto: Giorgio Benni. Courtesy Studio Stefania Miscetti \"It’s Happening Again\": è il titolo della mostra personale dell’artista Adrian Tranquilli ospitata dall’ 11 aprile al 24 maggio 2026, nelle sale al piano terra del Museo di Roma a Palazzo Braschi . L’iniziativa è promossa da Roma Capitale, Assessorato alla Cultura e al Coordinamento delle iniziative riconducibili alla Giornata della Memoria, Sovrintendenza Capitolina ai Beni Culturali ed è organizzata da Studio Stefania Miscetti, con i servizi museali di Zètema Progetto Cultura. Il progetto espositivo, composto da tre installazioni inedite ( My Little White Book , 2026, Endsong , 2025, e In Excelsis 6 , 2024), porta alla luce i temi cardine della produzione artistica di Adrian Tranquilli, frutto di una ricerca trentennale che attinge a un materiale vasto – dall’arte alla musica, dalla letteratura all’antropologia culturale e sociale. Su queste basi l’artista ha costruito la sua visione personale, accogliendo riferimenti culturali diversi, alcuni appartenenti ad un linguaggio universalmente riconoscibile, come quello supereroico, incentrandosi su figure che hanno inciso profondamente sull’immaginario collettivo: quella dell’eroe e del suo opposto, l’antieroe. Protagonista di questo nuovo capitolo ospitato dal Museo di Roma è l’antieroe per eccellenza: il Joker. Nelle opere prodotte per l’occasione, My Little White Book , un grande libro a parete che sembra esplodere dall’interno, e nella scultura totemica dal titolo Endsong , Tranquilli utilizza materiali che suggeriscono il principio di precarietà, come la carta da gioco, ricostruendo elementi che, al contrario, evocano atemporalità e monumentalità. Nella mostra c’è un’eco dell’immaginario di Stanley Kubrick, in particolare il monolite di 2001: Odissea nello Spazio , e di David Lynch . Ancora una volta, il linguaggio musicale, fondamentale nella ricerca dell’artista, è elemento centrale del progetto espositivo, realizzato per l’occasione. I “castelli di carte” di Tranquilli diventano metafora della crisi e dell’instabilità delle strutture del potere, della storia, tema con il quale l’artista si era già confrontato realizzando l’opera All is Violent, All is Bright del 2009 – una sorta di maquette ingrandita di San Pietro, composta da più di 50.000 carte da gioco con centinaia di diverse raffigurazioni del Joker. Il percorso si completa con un’altra installazione monumentale, la scultura In Excelsis 6, attraverso la quale il simbolismo e la visionarietà diventano l’occasione per indagare principi concreti come identità, realtà, conoscenza, e lo stato della cultura contemporanea. Lo spettatore viene così posto di fronte ad una narrazione visiva in cui la dimensione ludica sfocia nel tragico. L’esposizione è accompagnata da un testo critico di Benedetta Casini . Ulteriori informazioni e prenotazioni sul sito del Museo di Roma.",
-    "location_text": "Piazza San Pantaleo 10",
-    "popup_event_text": "It's happening again. Mostra personale di Adrian Tranquilli",
-    "coordinates": {
-      "latitude": 41.8972775,
-      "longitude": 12.4727772
-    },
-    "normalized_dates": {
-      "raw_date_text": "11 aprile - 24 maggio",
-      "occurrences": [
-        {
-          "start_date": "2026-04-11",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-05-24",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "multiple_full_dates"
-    }
-  },
-  {
-    "title": "\"Come nei giorni migliori\" al Teatro India",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/come-giorni-migliori-teatro-india.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "15 - 19 aprile",
-    "description": "Torna al Teatro India , dal 15 al 19 aprile, \" Come nei giorni migliori \", l'opera prima del giovane drammaturgo Diego Pleuteri , con la regia di Leonardo Lidi . Sul palcoscenico Alessandro Bandini e Alfonso De Vreese , finalisti per il Premio Ubu 2023 come migliori attori under 35, raccontano la storia di una coppia nella sua quotidianità, interrogando il pubblico per cercare di scoprire insieme il significato dell'amore. Una produzione Teatro Stabile di Torino - Teatro Nazionale , scene e luci di Nicolas Bovey , costumi di Aurora Damanti , foto di Luigi De Palma . Maggiori informazioni sulla pagina dedicata del sito Teatro di Roma .",
-    "location_text": "lungotevere vittorio gassman 1",
-    "popup_event_text": "Come nei giorni migliori",
-    "coordinates": {
-      "latitude": 41.8686672,
-      "longitude": 12.4718528
-    },
-    "normalized_dates": {
-      "raw_date_text": "15 - 19 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-15",
-          "end_date": "2026-04-19",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Quattro mamme scelte a caso, al Teatro Tor Bella Monaca",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/quattro-mamme-scelte-a-caso-teatro-tor-bella-monaca.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "9 - 11 aprile \"Quattro mamme scelte a caso\" è il titolo dello spettacolo in programma dal 9 all’11 aprile , ore 21, al",
-    "description": "Teatro Tor Bella Monaca (Via Bruno Cirino). Dedicato ad Annibale Ruccello , per la regia di Mauro Toscanelli , \"Quattro mamme scelte a caso\" è una carrellata feroce e grottesca su quattro madri partenopee che, una alla volta, conducono lo spettatore dentro un universo disagiato, dominato da un cinico pragmatismo e da un’apparente anestesia emotiva nei confronti del mondo e degli affetti. Al centro di ogni ritratto c’è un rapporto madre-figlio vissuto come un legame morbosamente lancinante, un’ossessione straziante che si manifesta però attraverso l’inconsapevole comicità tipica della scrittura di Annibale Ruccello. Le quattro donne sono interpretate da quattro attori uomini, scelta che rafforza l’idea ruccelliana secondo cui l’identità di genere non è altro che uno dei tanti ruoli da incarnare sulla scena. Ne emerge un’apologia crudele di un mondo al tramonto, disilluso, ormai incapace di credere a qualsiasi resurrezione. In questo contesto, la follia liberatoria delle quattro madri risuona con una forza sorprendentemente attuale, rivelandosi al tempo stesso comica e tragica. Ulteriori informazioni e prenotazioni alla pagina dedicata di Teatri in Comune.",
-    "location_text": "Via Bruno Cirino",
-    "popup_event_text": "Quattro mamme scelte a caso",
-    "coordinates": {
-      "latitude": 41.8697777,
-      "longitude": 12.6339798
-    },
-    "normalized_dates": {
-      "raw_date_text": "9 - 11 aprile \"Quattro mamme scelte a caso\" è il titolo dello spettacolo in programma dal 9 all’11 aprile , ore 21, al",
-      "occurrences": [],
-      "matched_pattern": "unparsed"
-    }
-  },
-  {
-    "title": "\"Pathos\", mostra collettiva alla Galleria Angelica",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/pathos-mostra-collettiva-galleria-angelica.page",
-    "theme_text": "Mostre - Eventi ad ingresso libero",
-    "raw_date_text": "21 - 28 aprile",
-    "description": "Cosa succede quando un artista smette di resistere a ciò che lo travolge? Intorno a questa domanda Nicoletta Rossotti , storica dell'arte, curatrice e Coordinatrice Nazionale del Settore Artistico dell'Accademia Internazionale Medicea, ha costruito “Pathos” – un'esposizione collettiva che inaugura il 21 aprile 2026, visitabile dalle 18.30 dello stesso giorno fino al 28 aprile, alla Galleria Angelica di Roma (via Sant'Agostino 11), con il Patrocinio del Municipio I Centro Storico. L'apertura sarà introdotta dai saluti istituzionali dell'On. Francesca Leoncini e da interventi di personalità del mondo della cultura. La serata sarà accompagnata da letture poetiche e dall'esecuzione al violino di brani di Ennio Morricone – compositore che del pathos ha fatto la propria cifra stilistica. Frutto di anni di ricerca sul campo, la mostra concepita dalla Rossotti riunisce artisti diversi – per linguaggio, per generazione, per sensibilità – attorno a una visione precisa e controcorrente: pathos come energia generativa , la stessa forza che, se attraversata fino in fondo, distingue l'artigiano dal Maestro. Il pathos degli antichi greci era il lato oscuro e irrazionale dell'anima, quella parte di noi che sfugge al controllo e che, proprio per questo, spaventa. Oggi, in un'epoca in cui tutto viene ottimizzato, filtrato e reso presentabile, scegliere di metterlo in mostra è un atto culturale preciso. “Per gli artisti in esposizione, 'Pathos' si traduce letteralmente in passione. Per chi vive l’arte come sintesi perfetta del tempo in cui si consuma, ossia l’arte dei Maestri – afferma la curatrice – tutto ciò equivale a quel trasporto intimo, a quella miscellanea di sensazioni che genera motu proprio verso un’idea, verso un principio, verso un credo o verso l’uomo che rappresenta quella moltitudine di concetti che sembrano coesistere” . Gli artisti selezionati con attenzione da Nicoletta Rossotti non si assomigliano e per questo si completano: ognuno porta la propria risposta, a volte scomoda, a volte silenziosa, ma sempre autentica e capace di restituire al visitatore una costellazione di verità personali. Oltre ottanta opere in mostra , di seguito la lista completa degli artisti : Alessandra Zaffino, Alessandro Fontana, Alexandra Schaffer, Andrzej Malinowski, Angela Greco, Anna Maria Campus, Carla Patella, Carlos Sablon, Dario Calì, Diana Molè, Diego De Santis, Eleonora Perillo, Elisa Pezzina, Elisabetta Castello, Ester Martinez, Fabrizio Farina, Francesca Diana Martines, Francisca Fructuoso, Fredy Villamil, Gisela Verdessi, Iginia Bianchi, Jarosław Kukowski, Kandal Lukas, Katrina Sadrak, Laura Casali, Letizia Cucciarelli, Lidia Di Giorgio, Lineda Buffa, Lorena Andrea Reyes Clavijo, Luciano Mancuso, Luisa Ciampi, Lukas Kandl, Madame Tescar, Marcin Kolpanowicz (Kolpan), Marilena Memmi, Miyuki Takanashi, Nikolai Mashukov, Nina Tescar, Paola D'Antuono, Paolo Mariani, Paolo Pozzetti, Paquita Madrid, Piera Bachiocco, Piergiorgio Dessì, Pierpaolo Mancinelli, Pietro Olivieri, Riccardo Salusti, Roberto Panico, Rosanna De Cecca, Sabrina Barbagallo, Simona Capuano, Stefan Beiu, Stefano Zaniboni, Sylvia Ann Teri, F. Bruschi (Artista Volutamente Anonimo). Tra gli artisti ospiti si segnalano: Wang Yancheng, Elena Radcenco, Mauro Petito e MaMà dots. Ingresso libero.",
-    "location_text": "Via di Sant'Agostino 11",
-    "popup_event_text": "Pathos, mostra collettiva",
-    "coordinates": {
-      "latitude": 41.900707253851046,
-      "longitude": 12.47452186645564
-    },
-    "normalized_dates": {
-      "raw_date_text": "21 - 28 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-21",
-          "end_date": "2026-04-28",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "\"Le false confidenze\" al Teatro Argentina",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/le-false-confidenze-al-teatro-argentina-2026.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "14 aprile - 3 maggio",
-    "description": "© Manuela Giusto Al Teatro Argentina , dal 14 aprile al 3 maggio, va in scena la commedia \"Le false confidenze\", di Pierre de Marivaux, con traduzione e regia di Arturo Cirillo . Prodotta dal Teatro di Roma , in sinergia con Marche Teatro e Teatro Stabile di Catania , l’opera si presenta come un moderno trattato psicoanalitico sui sentimenti, tra il falso delle confidenze e il vero del cuore, dove l’amore può germogliare inaspettatamente. Accanto a Cirillo, anche impegnato sul palco come attore, il nutrito ed eccellente cast è composto da Elena Sofia Ricci , Giacomo Vigentini , Rosario Giglio , Orietta Notari , Francesco Petruzzelli , Giulia Trippetta e Giacinto Palmarini . Allestimento scenico di Dario Gessati . Maggiori informazioni sulla pagina dedicata del sito Teatro di Roma .",
-    "location_text": "Teatro Argentina - Largo di Torre Argentina, 52",
-    "popup_event_text": "Le false confidenze",
-    "coordinates": {
-      "latitude": 41.9315612,
-      "longitude": 12.4764183
-    },
-    "normalized_dates": {
-      "raw_date_text": "14 aprile - 3 maggio",
-      "occurrences": [
-        {
-          "start_date": "2026-04-14",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-05-03",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "multiple_full_dates"
-    }
-  },
-  {
-    "title": "Arte e creatività alla Casina di Raffaello",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/arte-creativita-casina-raffaello-2026.page",
-    "theme_text": "Eventi per bambini e ragazzi",
-    "raw_date_text": "11 aprile -10 maggio",
-    "description": "Ogni fine settimana Casina di Raffaello, lo spazio arte e creatività di Roma Capitale nel cuore di Villa Borghese, propone per le famiglie con bambine e bambini un ampio programma di l aboratori e letture animate per far vivere ai partecipanti esperienze ludico-educative volte a favorire abilità manipolative ed espressive e a stimolare l’immaginazione creativa. Le attività del sabato sono dedicate alle storie che fanno crescere: racconti di bambine e bambini alle prese con la scoperta di sé per dar voce alle proprie emozioni. I laboratori sono dedicati alla figura di Pippi Calzelunghe, per immergersi nel suo mondo colorato, vivace e anticonvenzionale, scoprendone i valori di libertà, amicizia e fantasia che ancora oggi continuano ad affascinare lettori di tutte le età. Nelle letture animate vengono proposti degli albi illustrati che parlano di bambine e bambini, di identità e di immaginazione. I laboratori e le letture animate della domenica invece permetteranno alle famiglie con le loro bambine e bambini di vivere una giornata dedicata ai quattro elementi - Terra, Acqua, Aria, Fuoco – facendo loro toccare e conoscere posti e culture anche lontane, attraverso storie che profumano di natura, avventura e meraviglia. Un’occasione per ascoltare, immaginare e scoprire insieme la forza e la magia che ci circondano. Si segnala, inoltre, che fino a domenica 10 maggio , nella Sala Natura al primo piano dell’edificio, è in corso la mostra Aquiloni e Trottole dal Giappone a cura e in collaborazione con l’ Istituto Giapponese di Cultura di Roma . Aquiloni e trottole roteano e volano in Giappone da più di 1200 anni; ancora oggi se ne costruiscono migliaia di esemplari artigianali, utilizzando design e colori della tradizione o caratteristici delle diverse regioni di produzione. I pezzi in mostra, provenienti dall’intero territorio nazionale, forniscono preziose informazioni etnografiche sul Giappone, con le varianti locali e i richiami alle ricorrenze stagionali. Tecniche ancestrali, materiali non artefatti come legno e carta e colori vivi incontrano levità e gioco in un’espressione che in Giappone è ancora sorprendentemente attuale e tramandata. Info e dettagli, costi e orari sono consultabili sul sito www.casinadiraffaello.it e sulle relative pagine social. Il CALENDARIO delle attività.",
-    "location_text": "Viale della casina di raffaello",
-    "popup_event_text": "Laboratori e letture animate a Casina di Raffaello",
-    "coordinates": {
-      "latitude": 41.9127361,
-      "longitude": 12.4862042
-    },
-    "normalized_dates": {
-      "raw_date_text": "11 aprile -10 maggio",
-      "occurrences": [
-        {
-          "start_date": "2026-04-11",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-05-10",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "multiple_full_dates"
-    }
-  },
-  {
-    "title": "Festival del Verde e del Paesaggio 2026",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/festival-verde-e-paesaggio-2026.page",
-    "theme_text": "Verde urbano - Iniziative ed Eventi",
-    "raw_date_text": "10 - 12 aprile",
-    "description": "Dal 10 al 12 aprile 2026 il giardino pensile dell’Auditorium Parco della Musica Ennio Morricone ospita la XV edizione del Festival del Verde e del Paesaggio. Nato a Roma, il Festival è oggi uno dei principali appuntamenti italiani dedicati alla cultura del paesaggio e alla relazione tra natura e città. Il tema dell’edizione 2026, Fare parentele , invita a ripensare il rapporto tra esseri umani, ambiente e spazio urbano come una rete di relazioni interdipendenti. Piante, suolo, acqua, architettura e comunità diventano parti di uno stesso ecosistema che prende forma tanto nelle scelte collettive quanto nei gesti quotidiani. Per tre giorni il giardino pensile dell’Auditorium si trasforma in una piazza verde attraversata da piante, incontri, giardini temporanei ed elementi di progetto che esplorano il rapporto tra interno ed esterno. Uno spazio progettato come paesaggio urbano praticabile dove il verde diventa esperienza pubblica e occasione per immaginare nuovi modi di abitare la città e riflettere sul futuro degli ambienti urbani. Diverse le tematiche affrontate nei tre giorni di eventi, ciascuna con proprio programma dedicato: Ripensare la città, Coltivare il giardino, Abitare la Casa, Mangiare il Paesaggio, Passeggiare tra i mercati, Esplorare in famiglia. Orari Manifestazione: Venerdì 10/04, sabato 11/04, domenica 12/04: dalle ore 10:00 alle ore 19:00 La manifestazione si svolge all’aperto e si terrà anche in caso di pioggia. In tal caso, nessun rimborso sarà dovuto. Ulteriori informazioni e prenotazioni sul sito del Festival del verde e del paesaggio.",
-    "location_text": "Via Pietro de Coubertin 30",
-    "popup_event_text": "Festival del Verde e del Paesaggio 2026",
-    "coordinates": {
-      "latitude": 41.929717666435266,
-      "longitude": 12.4749310198384
-    },
-    "normalized_dates": {
-      "raw_date_text": "10 - 12 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-10",
-          "end_date": "2026-04-12",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Festival Contaminazioni 2026, al Mattatoio",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/festival-contaminazioni-2026-mattatoio.page",
-    "theme_text": "Eventi ad ingresso libero - Teatro",
-    "raw_date_text": "6 -12 aprile",
-    "description": "Dal 6 al 12 aprile il Mattatoio di Roma (Piazza Orazio Giustiniani 4) ospita Contaminazioni 2026 la diciottesima edizione del Festival di libere espressioni artistiche ideato e diretto da allieve e allievi dell’Accademia d’Arte Drammatica “Silvio d’Amico”. Tra testi inediti, studi a partire da grandi opere letterarie e lavori che centralizzano l’espressione teatrale e cinematografica tramite il mezzo musicale o del movimento, gli allievi e le allieve dei corsi di recitazione, regia e drammaturgia hanno la possibilità di proporre esperimenti teatrali e cinematografici interamente autogestiti, nello spirito di collaborazione e responsabilità artistica che accompagna il festival da 18 anni. Il progetto è promosso dall’Assessorato alla Cultura di Roma Capitale, Azienda Speciale Palaexpo e Fondazione Mattatoio di Roma – Città delle Arti ed è realizzato dall’Accademia Nazionale d’Arte Drammatica Silvio d’Amico. L'ingresso è gratuito con prenotazione alla mail: prenotazioni-pelanda@accademiasilviodamico.it",
-    "location_text": null,
-    "popup_event_text": "Festival Contaminazioni",
-    "coordinates": {
-      "latitude": 41.876043400107946,
-      "longitude": 12.473957122276321
-    },
-    "normalized_dates": {
-      "raw_date_text": "6 -12 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-06",
-          "end_date": "2026-04-12",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "\"Caos e Armonia\", il Festival delle Scienze 2026",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/festival-delle-scienze-2026-caos-e-armonia.page",
-    "theme_text": "Iniziative ed Eventi",
-    "raw_date_text": "15 - 19 aprile",
-    "description": "Dal 15 al 19 aprile 2026 torna all’ Auditorium Parco della Musica Ennio Morricone il Festival delle Scienze di Roma. “Caos e armonia” è il tema della XXI edizione che propone un ricco programma che comprende conferenze, laboratori, workshop, spettacoli ed eventi per famiglie. \"Caos e armonia\" dunque, per rappresentare che l’universo e la vita sono il frutto di trasformazioni, disordine, simmetrie, opportunità. Una danza incessante, appunto, fra caos e armonia, proprio come quella che le vibrazioni sonore disegnano sulla sabbia nell’immagine guida di questa edizione del Festival. Un bilanciamento vitale che non smette di sorprenderci: dall’esplosione caotica del Big Bang agli equilibri dinamici degli ecosistemi, dall’apparente casualità delle mutazioni genetiche alle spirali logaritmiche delle conchiglie, e ai miliardi di impulsi elettrici che si coordinano per dare vita alla forma più complessa di ordine, il pensiero, generando emozioni e coscienza. E che si riflette non solo nelle discipline scientifiche che studiano questi fenomeni, ma anche nelle tante altre forme di conoscenza ed espressione umana: le dissonanze e le improvvisazioni della musica contemporanea; le armonie che nascono dalle narrazioni non lineari di letteratura e arti visive; l’emergere di nuove forme di coesione sociale dall’instabilità di pandemie o rivoluzioni; il modo in cui le dinamiche caotiche dei complessi sistemi economici generano (o distruggono) equilibri più o meno stabili. Caos e armonia non sono opposti, ma forze in perenne dialogo. Esplorarli significa iniziare a comprendere il cambiamento, per abitare con consapevolezza il nostro futuro. Nei cinque giorni il Festival propone Eventi per il pubblico (conferenze e spettacoli), Educational (eventi pensati per le scuole e i ragazzi) Weekend famiglie (attività dedicate a grandi e piccini). Per ulteriori informazioni e prenotazioni visita la pagina dedicata dell 'Auditorium Parco della Musica.",
-    "location_text": "Via Pietro de Coubertin 30",
-    "popup_event_text": "Caos e Armonia, Festival delle Scienze 2026",
-    "coordinates": {
-      "latitude": 41.928969,
-      "longitude": 12.4707899
-    },
-    "normalized_dates": {
-      "raw_date_text": "15 - 19 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-04-15",
-          "end_date": "2026-04-19",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
+      "matched_pattern": "cross_month_range"
     }
   }
 ]

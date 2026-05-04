@@ -148,11 +148,11 @@ def normalize_raw_date_text(raw_date_text: str | None, default_year: int = 2026)
         }
 
     parsers = [
-        ("multiple_full_dates", parse_multiple_full_dates),
-        ("multiple_days_same_month", parse_multiple_days_same_month),
-        ("cross_month_range", parse_cross_month_range),
-        ("same_month_range", parse_same_month_range),
-        ("single_date", parse_single_date),
+    ("cross_month_range", parse_cross_month_range),
+    ("same_month_range", parse_same_month_range),
+    ("multiple_full_dates", parse_multiple_full_dates),
+    ("multiple_days_same_month", parse_multiple_days_same_month),
+    ("single_date", parse_single_date),
     ]
 
     for pattern_name, parser in parsers:

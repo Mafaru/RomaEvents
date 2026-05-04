@@ -26,8 +26,16 @@ class EventController(
     }
 
     @GetMapping("/map")
-    fun getEventsForMap(): List<EventListDto> {
-        return eventService.getEventsForMap()
+    fun getEventsForMap(
+        @RequestParam lat: Double,
+        @RequestParam lon: Double,
+        @RequestParam(defaultValue = "10.0") radiusKm: Double
+    ): List<EventMapResponse> {
+        return eventService.getMapEvents(
+            lat = lat,
+            lon = lon,
+            radiusKm = radiusKm
+        )
     }
 
     @GetMapping("/{id}")
