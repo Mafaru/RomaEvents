@@ -10,6 +10,10 @@ class EventRepository {
         return ApiService.getEventDetail(id)
     }
 
+    suspend fun searchEvents(query: String): List<Event> {
+        return ApiService.searchEvents(query)
+    }
+
     suspend fun getMapEvents(
         lat: Double,
         lon: Double,

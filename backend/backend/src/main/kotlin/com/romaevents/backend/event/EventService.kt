@@ -213,4 +213,40 @@ class EventService(
         val c = 2 * atan2(sqrt(a), sqrt(1 - a))
         return earthRadiusKm * c
     }
+    
+    
+    fun searchEvents(query: String): List<EventListDto> {
+        val keywords = query
+            .lowercase()
+            .split(Regex("\\s+"))
+            .map { it.trim() }
+            .filter { it.length >= 4 }
+            .distinct()
+
+        if (keywords.isEmpty()) {
+            return emptyList()
+        }
+
+        return getAllEventsForList()
+            .map { event ->
+                val title = event.title.lowercase()
+
+                val score = keywords.count { keyword ->
+                    title.contains(keyword)
+                }
+
+                event to score
+            }
+            .filter { (_, score) ->
+                score >= 2
+            }
+            .sortedByDescending { (_, score) ->
+                score
+            }
+            .map { (event, _) ->
+                event
+            }
+    }
+
+    
 }

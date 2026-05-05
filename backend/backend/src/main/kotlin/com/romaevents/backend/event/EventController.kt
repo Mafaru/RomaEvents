@@ -42,4 +42,9 @@ class EventController(
     fun getEventById(@PathVariable id: Long): EventDetailDto {
         return eventService.getEventById(id)
     }
+
+    @GetMapping("/search")
+    fun searchEvents(@RequestParam query: String): List<EventListDto> {
+        return eventService.searchEvents(query)
+    }
 }

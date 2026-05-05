@@ -11,7 +11,7 @@ import kotlinx.serialization.json.Json
 
 object ApiService {
 
-    private const val BASE_URL = "http://10.0.2.2:8081"
+    private const val BASE_URL = "http://172.20.10.3:8081"
 
     private val client = HttpClient(Android) {
         install(ContentNegotiation) {
@@ -23,6 +23,12 @@ object ApiService {
 
     suspend fun getEvents(): List<Event> {
         return client.get("$BASE_URL/events").body()
+    }
+
+    suspend fun searchEvents(query: String): List<Event> {
+        return client.get("$BASE_URL/events/search") {
+            parameter("query", query)
+        }.body()
     }
 
     suspend fun getEventDetail(id: Long): EventDetail {

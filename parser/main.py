@@ -3,7 +3,7 @@ from scraper import parse_event_list, parse_event_detail
 from normalizer import normalize_raw_date_text
 from importer import import_items
 
-MAX_PAGES = 3
+MAX_PAGES = 10
 
 
 def main():
