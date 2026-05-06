@@ -1,9 +1,9 @@
 package com.romaevents.app
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.view.Gravity
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.*
@@ -29,7 +29,6 @@ class ScannerActivity : AppCompatActivity() {
     private lateinit var cameraExecutor: ExecutorService
 
     private val repository = EventRepository()
-
     private var lastDetectedText: String = ""
 
     private val CAMERA_PERMISSION_CODE = 2001
@@ -187,7 +186,13 @@ class ScannerActivity : AppCompatActivity() {
                     resultsRecyclerView.adapter = null
                 } else {
                     resultsRecyclerView.adapter = EventAdapter(results) { event ->
-                        (this@ScannerActivity).finish()
+                        val intent = Intent(this@ScannerActivity, MainActivity::class.java).apply {
+                            putExtra("open_event_id", event.id)
+                            flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+                        }
+
+                        startActivity(intent)
+                        finish()
                     }
                 }
 
@@ -202,11 +207,25 @@ class ScannerActivity : AppCompatActivity() {
     }
 
     private fun cleanOcrText(text: String): String {
+        val stopWords = setOf(
+            "roma", "evento", "eventi", "presso", "dalle", "della",
+            "dello", "delle", "alla", "alle", "con", "per", "dal",
+            "del", "via", "ore", "ingresso", "gratuito"
+        )
+
         return text
+            .lowercase()
             .replace("\n", " ")
+            .replace(Regex("[^a-zà-ù0-9\\s]"), " ")
             .replace(Regex("\\s+"), " ")
             .trim()
-            .take(120)
+            .split(" ")
+            .filter { word ->
+                word.length >= 4 && word !in stopWords
+            }
+            .distinct()
+            .take(8)
+            .joinToString(" ")
     }
 
     override fun onDestroy() {

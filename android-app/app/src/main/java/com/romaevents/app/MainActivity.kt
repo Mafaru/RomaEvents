@@ -16,10 +16,6 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavigation = findViewById(R.id.bottomNavigation)
 
-        if (savedInstanceState == null) {
-            showFragment(EventsFragment())
-        }
-
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_events -> {
@@ -34,15 +30,41 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.nav_scanner -> {
                     startActivity(Intent(this, ScannerActivity::class.java))
-                    true
+                    false
                 }
 
                 else -> false
             }
         }
+
+        val handled = handleIntent(intent)
+
+        if (!handled && savedInstanceState == null) {
+            bottomNavigation.selectedItemId = R.id.nav_events
+            showFragment(EventsFragment())
+        }
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        handleIntent(intent)
+    }
+
+    private fun handleIntent(intent: Intent): Boolean {
+        val eventId = intent.getLongExtra("open_event_id", -1L)
+
+        return if (eventId != -1L) {
+            openEventDetail(eventId)
+            intent.removeExtra("open_event_id")
+            true
+        } else {
+            false
+        }
     }
 
     fun openEventDetail(eventId: Long) {
+        bottomNavigation.menu.findItem(R.id.nav_events).isChecked = true
         showFragment(EventDetailFragment.newInstance(eventId))
     }
 

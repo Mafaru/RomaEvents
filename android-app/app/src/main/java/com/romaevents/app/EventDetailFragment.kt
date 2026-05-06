@@ -113,6 +113,27 @@ class EventDetailFragment : Fragment() {
                 })
 
                 box.addView(TextView(requireContext()).apply {
+                    text = when (detail.status) {
+                        "IN_CORSO" -> "● Evento in corso"
+                        "PROSSIMO" -> "● Evento prossimo"
+                        "PASSATO" -> "● Evento passato"
+                        else -> "● Stato non disponibile"
+                    }
+
+                    setTextColor(
+                        when (detail.status) {
+                            "IN_CORSO" -> 0xFF2E7D32.toInt()
+                            "PROSSIMO" -> 0xFF1565C0.toInt()
+                            else -> 0xFF757575.toInt()
+                        }
+                    )
+
+                    textSize = 14f
+                    typeface = android.graphics.Typeface.DEFAULT_BOLD
+                    setPadding(0, 0, 0, 60)
+                })
+
+                box.addView(TextView(requireContext()).apply {
                     text = detail.description ?: "Descrizione non disponibile"
                     textSize = 16f
                     setTextColor(0xFF333333.toInt())
@@ -167,26 +188,7 @@ class EventDetailFragment : Fragment() {
 
 
 
-                box.addView(TextView(requireContext()).apply {
-                    text = when (detail.status) {
-                        "IN_CORSO" -> "● Evento in corso"
-                        "PROSSIMO" -> "● Evento prossimo"
-                        "PASSATO" -> "● Evento passato"
-                        else -> "● Stato non disponibile"
-                    }
 
-                    setTextColor(
-                        when (detail.status) {
-                            "IN_CORSO" -> 0xFF2E7D32.toInt()
-                            "PROSSIMO" -> 0xFF1565C0.toInt()
-                            else -> 0xFF757575.toInt()
-                        }
-                    )
-
-                    textSize = 14f
-                    typeface = android.graphics.Typeface.DEFAULT_BOLD
-                    setPadding(0, 0, 0, 18)
-                })
 
                 card.addView(box)
 
