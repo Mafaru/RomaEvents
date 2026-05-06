@@ -3,7 +3,9 @@ package com.romaevents.app
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Typeface
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.*
@@ -14,6 +16,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.card.MaterialCardView
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -43,26 +46,8 @@ class ScannerActivity : AppCompatActivity() {
             setBackgroundColor(0xFFF7F7F7.toInt())
         }
 
+        // 🔹 CAMERA PREVIEW
         previewView = PreviewView(this)
-
-        resultText = TextView(this).apply {
-            text = "Punta la camera su una locandina..."
-            textSize = 15f
-            setTextColor(0xFF1B1B1B.toInt())
-            setPadding(24, 20, 24, 20)
-            maxLines = 4
-        }
-
-        searchButton = Button(this).apply {
-            text = "Cerca evento"
-            setOnClickListener {
-                searchEventFromOcr()
-            }
-        }
-
-        resultsRecyclerView = RecyclerView(this).apply {
-            layoutManager = LinearLayoutManager(this@ScannerActivity)
-        }
 
         root.addView(
             previewView,
@@ -73,7 +58,44 @@ class ScannerActivity : AppCompatActivity() {
             )
         )
 
-        root.addView(resultText)
+        // 🔹 CARD OCR TEXT
+        val ocrCard = MaterialCardView(this).apply {
+            radius = 22f
+            cardElevation = 3f
+            setCardBackgroundColor(0xFFFFFFFF.toInt())
+            setContentPadding(24, 20, 24, 20)
+        }
+
+        resultText = TextView(this).apply {
+            text = "Punta la camera su una locandina..."
+            textSize = 15f
+            setTextColor(0xFF1B1B1B.toInt())
+            maxLines = 4
+        }
+
+        ocrCard.addView(resultText)
+
+        root.addView(
+            ocrCard,
+            LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                setMargins(24, 20, 24, 12)
+            }
+        )
+
+        // 🔹 BUTTON
+        searchButton = Button(this).apply {
+            text = "🔍 Cerca evento"
+            textSize = 16f
+            setBackgroundColor(0xFF1565C0.toInt())
+            setTextColor(0xFFFFFFFF.toInt())
+            setPadding(20, 14, 20, 14)
+            setOnClickListener {
+                searchEventFromOcr()
+            }
+        }
 
         root.addView(
             searchButton,
@@ -84,6 +106,22 @@ class ScannerActivity : AppCompatActivity() {
                 setMargins(24, 0, 24, 12)
             }
         )
+
+        // 🔹 RISULTATI HEADER
+        val resultsTitle = TextView(this).apply {
+            text = "Risultati"
+            textSize = 18f
+            setTextColor(0xFF1B1B1B.toInt())
+            typeface = Typeface.DEFAULT_BOLD
+            setPadding(24, 10, 24, 6)
+        }
+
+        root.addView(resultsTitle)
+
+        // 🔹 LISTA RISULTATI
+        resultsRecyclerView = RecyclerView(this).apply {
+            layoutManager = LinearLayoutManager(this@ScannerActivity)
+        }
 
         root.addView(
             resultsRecyclerView,
@@ -162,13 +200,11 @@ class ScannerActivity : AppCompatActivity() {
         if (query.length < 3) {
             Toast.makeText(
                 this,
-                "Testo OCR non sufficiente per cercare",
+                "Testo OCR non sufficiente",
                 Toast.LENGTH_SHORT
             ).show()
             return
         }
-
-        resultText.text = "Cerco eventi collegati a:\n$query"
 
         lifecycleScope.launch {
             try {
@@ -199,7 +235,7 @@ class ScannerActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 Toast.makeText(
                     this@ScannerActivity,
-                    "Errore ricerca: ${e.message}",
+                    "Errore: ${e.message}",
                     Toast.LENGTH_LONG
                 ).show()
             }
@@ -207,25 +243,12 @@ class ScannerActivity : AppCompatActivity() {
     }
 
     private fun cleanOcrText(text: String): String {
-        val stopWords = setOf(
-            "roma", "evento", "eventi", "presso", "dalle", "della",
-            "dello", "delle", "alla", "alle", "con", "per", "dal",
-            "del", "via", "ore", "ingresso", "gratuito"
-        )
-
         return text
             .lowercase()
             .replace("\n", " ")
-            .replace(Regex("[^a-zà-ù0-9\\s]"), " ")
             .replace(Regex("\\s+"), " ")
             .trim()
-            .split(" ")
-            .filter { word ->
-                word.length >= 4 && word !in stopWords
-            }
-            .distinct()
-            .take(8)
-            .joinToString(" ")
+            .take(120)
     }
 
     override fun onDestroy() {

@@ -109,12 +109,8 @@ class MapFragment : Fragment() {
         bottomSheet = createBottomSheet()
         root.addView(bottomSheet)
 
-        if (focusEventId != null) {
-            loadSingleEventOnMap(focusEventId!!)
-        } else {
-            loadEventsOnMap(fallbackRomaLat, fallbackRomaLon)
-            hasLoadedEvents = true
-        }
+        loadEventsOnMap(fallbackRomaLat, fallbackRomaLon)
+        hasLoadedEvents = true
 
         return root
     }
@@ -379,8 +375,12 @@ class MapFragment : Fragment() {
 
     private fun addEventMarkers(events: List<EventMapItem>) {
         events.forEach { event ->
-            val markerColor = when (event.status) {
-                "ACTIVE_NOW", "IN_CORSO" -> 0xFF2E7D32.toInt()
+
+            val isFocused = focusEventId == event.id
+
+            val markerColor = when {
+                isFocused -> 0xFFFF9800.toInt()
+                event.status == "ACTIVE_NOW" || event.status == "IN_CORSO" -> 0xFF2E7D32.toInt()
                 else -> 0xFFE53935.toInt()
             }
 
@@ -392,17 +392,37 @@ class MapFragment : Fragment() {
                 setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
 
                 setOnMarkerClickListener { _, _ ->
-                    mapView.controller.animateTo(GeoPoint(event.latitude, event.longitude))
+                    val point = GeoPoint(event.latitude, event.longitude)
+
+                    mapView.controller.animateTo(point)
+
+                    if (mapView.zoomLevelDouble < 16.0) {
+                        mapView.controller.setZoom(16.0)
+                    }
+
                     showBottomSheet(
                         eventId = event.id,
                         title = event.title,
                         address = event.address
                     )
+
                     true
                 }
             }
 
             mapView.overlays.add(marker)
+
+            if (isFocused) {
+                val point = GeoPoint(event.latitude, event.longitude)
+                mapView.controller.setZoom(16.5)
+                mapView.controller.animateTo(point)
+
+                showBottomSheet(
+                    eventId = event.id,
+                    title = event.title,
+                    address = event.address
+                )
+            }
         }
 
         mapView.invalidate()

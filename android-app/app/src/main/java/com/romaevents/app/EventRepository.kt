@@ -21,4 +21,8 @@ class EventRepository {
     ): List<EventMapItem> {
         return ApiService.getMapEvents(lat, lon, radiusKm)
     }
+
+    suspend fun getWeather(lat: Double, lon: Double): WeatherResponse {
+        return ApiService.getWeather(lat, lon)
+    }
 }

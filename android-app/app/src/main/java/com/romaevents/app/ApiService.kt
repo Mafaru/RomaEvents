@@ -46,4 +46,11 @@ object ApiService {
             parameter("radiusKm", radiusKm)
         }.body()
     }
+
+    suspend fun getWeather(lat: Double, lon: Double): WeatherResponse {
+        return client.get("$BASE_URL/weather") {
+            parameter("lat", lat)
+            parameter("lon", lon)
+        }.body()
+    }
 }
