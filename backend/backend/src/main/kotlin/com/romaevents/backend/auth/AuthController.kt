@@ -9,12 +9,16 @@ class AuthController(
 ) {
 
     @PostMapping("/register")
-    fun register(@RequestBody request: RegisterRequest): AuthResponse {
+    fun register(
+        @RequestBody request: RegisterRequest
+    ): AuthResponse {
         return authService.register(request)
     }
 
     @PostMapping("/login")
-    fun login(@RequestBody request: LoginRequest): AuthResponse {
+    fun login(
+        @RequestBody request: LoginRequest
+    ): AuthResponse {
         return authService.login(request)
     }
 }

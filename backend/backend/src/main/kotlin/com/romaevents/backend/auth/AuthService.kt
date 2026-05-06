@@ -5,7 +5,8 @@ import java.util.Base64
 
 @Service
 class AuthService(
-    private val userRepository: UserRepository
+    private val userRepository: UserRepository,
+    private val jwtService: JwtService
 ) {
 
     fun register(request: RegisterRequest): AuthResponse {
@@ -45,7 +46,7 @@ class AuthService(
             userId = user.id,
             username = user.username,
             email = user.email,
-            token = generateToken(user)
+            token = jwtService.generateToken(user)
         )
     }
 
@@ -64,7 +65,7 @@ class AuthService(
             userId = user.id,
             username = user.username,
             email = user.email,
-            token = generateToken(user)
+            token = jwtService.generateToken(user)
         )
     }
 
@@ -72,8 +73,5 @@ class AuthService(
         return Base64.getEncoder().encodeToString(password.toByteArray())
     }
 
-    private fun generateToken(user: User): String {
-        val raw = "${user.id}:${user.email}:${System.currentTimeMillis()}"
-        return Base64.getEncoder().encodeToString(raw.toByteArray())
-    }
+    
 }
