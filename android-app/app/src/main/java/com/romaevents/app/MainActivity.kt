@@ -12,6 +12,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val session = SessionManager(this)
+
+        if (!session.isLoggedIn()) {
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+            return
+        }
+
         setContentView(R.layout.activity_main)
 
         bottomNavigation = findViewById(R.id.bottomNavigation)
@@ -31,6 +40,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_scanner -> {
                     startActivity(Intent(this, ScannerActivity::class.java))
                     false
+                }
+
+                R.id.nav_profile -> {
+                    showFragment(ProfileFragment())
+                    true
                 }
 
                 else -> false
@@ -82,5 +96,14 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.contentContainer, fragment)
             .commit()
+    }
+
+    fun openProfile() {
+        bottomNavigation.menu.findItem(R.id.nav_profile).isChecked = true
+        showFragment(ProfileFragment())
+    }
+
+    fun refreshProfileIfVisible() {
+        // lasciata vuota per ora
     }
 }

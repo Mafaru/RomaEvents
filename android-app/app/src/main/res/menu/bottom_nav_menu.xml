@@ -16,4 +16,9 @@
         android:icon="@android:drawable/ic_menu_camera"
         android:title="Scanner" />
 
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Profilo" />
+
 </menu>

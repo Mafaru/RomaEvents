@@ -36,6 +36,9 @@
             android:name=".ScannerActivity"
             android:exported="false" />
 
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+
     </application>
 
 </manifest>

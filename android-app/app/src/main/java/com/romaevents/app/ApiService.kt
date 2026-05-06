@@ -8,6 +8,13 @@ import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
+import io.ktor.client.request.setBody
+import io.ktor.client.request.post
+import io.ktor.http.ContentType
+import io.ktor.http.contentType
+import io.ktor.client.request.accept
+import io.ktor.client.statement.bodyAsText
+import io.ktor.http.isSuccess
 
 object ApiService {
 
@@ -17,6 +24,7 @@ object ApiService {
         install(ContentNegotiation) {
             json(Json {
                 ignoreUnknownKeys = true
+                isLenient = true
             })
         }
     }
@@ -53,4 +61,34 @@ object ApiService {
             parameter("lon", lon)
         }.body()
     }
+
+    suspend fun login(email: String, password: String): AuthResponse {
+        val response = client.post("$BASE_URL/auth/login") {
+            contentType(ContentType.Application.Json)
+            accept(ContentType.Application.Json)
+            setBody(LoginRequest(email, password))
+        }
+
+        if (!response.status.isSuccess()) {
+            throw RuntimeException(response.bodyAsText())
+        }
+
+        return response.body()
+    }
+
+    suspend fun register(username: String, email: String, password: String): AuthResponse {
+        val response = client.post("$BASE_URL/auth/register") {
+            contentType(ContentType.Application.Json)
+            accept(ContentType.Application.Json)
+            setBody(RegisterRequest(username, email, password))
+        }
+
+        if (!response.status.isSuccess()) {
+            throw RuntimeException(response.bodyAsText())
+        }
+
+        return response.body()
+    }
+
+
 }
