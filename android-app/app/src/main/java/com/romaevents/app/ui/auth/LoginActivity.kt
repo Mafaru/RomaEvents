@@ -1,4 +1,4 @@
-package com.romaevents.app
+package com.romaevents.app.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,11 +8,15 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.card.MaterialCardView
+import com.romaevents.app.R
+import com.romaevents.app.data.api.ApiService
+import com.romaevents.app.data.session.SessionManager
+import com.romaevents.app.ui.main.MainActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class RegisterActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     private lateinit var sessionManager: SessionManager
 
@@ -22,13 +26,13 @@ class RegisterActivity : AppCompatActivity() {
         sessionManager = SessionManager(this)
 
         val root = ScrollView(this).apply {
-            setBackgroundColor(0xFFF8F3EF.toInt())
+            setBackgroundColor(0xFFF7FAFF.toInt())
         }
 
         val content = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             gravity = Gravity.CENTER_HORIZONTAL
-            setPadding(42, 48, 42, 42)
+            setPadding(42, 54, 42, 42)
         }
 
         val logo = ImageView(this).apply {
@@ -43,21 +47,21 @@ class RegisterActivity : AppCompatActivity() {
             }
         )
 
-        val title = TextView(this).apply {
-            text = "Crea account"
+        content.addView(TextView(this).apply {
+            text = "Benvenuto"
             textSize = 30f
-            setTextColor(0xFF8B3A22.toInt())
+            setTextColor(0xFF1565C0.toInt())
             typeface = android.graphics.Typeface.DEFAULT_BOLD
             gravity = Gravity.CENTER
-        }
+        })
 
-        val subtitle = TextView(this).apply {
-            text = "Registrati per accedere a Roma Events"
+        content.addView(TextView(this).apply {
+            text = "Accedi per scoprire gli eventi di Roma"
             textSize = 15f
-            setTextColor(0xFF6F5A50.toInt())
+            setTextColor(0xFF666666.toInt())
             gravity = Gravity.CENTER
-            setPadding(0, 8, 0, 30)
-        }
+            setPadding(0, 8, 0, 28)
+        })
 
         val card = MaterialCardView(this).apply {
             radius = 30f
@@ -69,10 +73,6 @@ class RegisterActivity : AppCompatActivity() {
         val form = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
         }
-
-        val usernameInput = EditText(this).apply {
-            hint = "Username"
-            setSingleLine(true)        }
 
         val emailInput = EditText(this).apply {
             hint = "Email"
@@ -86,30 +86,27 @@ class RegisterActivity : AppCompatActivity() {
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
         }
 
-        val registerButton = Button(this).apply {
-            text = "Registrati"
+        val loginButton = Button(this).apply {
+            text = "Accedi"
             setTextColor(0xFFFFFFFF.toInt())
-            setBackgroundColor(0xFF8B3A22.toInt())
+            setBackgroundColor(0xFF1565C0.toInt())
         }
 
-        val loginText = TextView(this).apply {
-            text = "Hai già un account? Accedi"
+        val registerText = TextView(this).apply {
+            text = "Non hai un account? Registrati"
             textSize = 15f
-            setTextColor(0xFF8B3A22.toInt())
+            setTextColor(0xFF1565C0.toInt())
             gravity = Gravity.CENTER
             setPadding(0, 28, 0, 0)
         }
 
-        form.addView(usernameInput)
         form.addView(emailInput)
         form.addView(passwordInput)
-        form.addView(registerButton)
-        form.addView(loginText)
+        form.addView(loginButton)
+        form.addView(registerText)
 
         card.addView(form)
 
-        content.addView(title)
-        content.addView(subtitle)
         content.addView(
             card,
             LinearLayout.LayoutParams(
@@ -121,34 +118,33 @@ class RegisterActivity : AppCompatActivity() {
         root.addView(content)
         setContentView(root)
 
-        registerButton.setOnClickListener {
-            val username = usernameInput.text.toString().trim()
+        loginButton.setOnClickListener {
             val email = emailInput.text.toString().trim()
             val password = passwordInput.text.toString()
 
             lifecycleScope.launch {
                 try {
                     val auth = withContext(Dispatchers.IO) {
-                        ApiService.register(username, email, password)
+                        ApiService.login(email, password)
                     }
 
                     sessionManager.saveUser(auth)
 
-                    startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
+                    startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                     finish()
 
                 } catch (e: Exception) {
                     Toast.makeText(
-                        this@RegisterActivity,
-                        "Registrazione fallita: ${e.message}",
+                        this@LoginActivity,
+                        "Login fallito: ${e.message}",
                         Toast.LENGTH_LONG
                     ).show()
                 }
             }
         }
 
-        loginText.setOnClickListener {
-            finish()
+        registerText.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
 }

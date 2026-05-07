@@ -1,14 +1,18 @@
-package com.romaevents.app
+package com.romaevents.app.ui.scanner
 
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Typeface
 import android.os.Bundle
-import android.view.Gravity
-import android.widget.*
+import android.widget.Button
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.camera.core.*
+import androidx.camera.core.CameraSelector
+import androidx.camera.core.ImageAnalysis
+import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.app.ActivityCompat
@@ -17,6 +21,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
+import com.romaevents.app.ui.scanner.TextAnalyzer
+import com.romaevents.app.data.repository.EventRepository
+import com.romaevents.app.ui.events.EventAdapter
+import com.romaevents.app.ui.main.MainActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -224,7 +232,8 @@ class ScannerActivity : AppCompatActivity() {
                     resultsRecyclerView.adapter = EventAdapter(results) { event ->
                         val intent = Intent(this@ScannerActivity, MainActivity::class.java).apply {
                             putExtra("open_event_id", event.id)
-                            flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+                            flags =
+                                Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
                         }
 
                         startActivity(intent)

@@ -1,4 +1,4 @@
-package com.romaevents.app
+package com.romaevents.app.ui.scanner
 
 import androidx.camera.core.ExperimentalGetImage
 import androidx.camera.core.ImageAnalysis

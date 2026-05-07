@@ -1,20 +1,27 @@
-package com.romaevents.app
+package com.romaevents.app.data.api
 
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.engine.android.*
-import io.ktor.client.plugins.contentnegotiation.*
-import io.ktor.client.request.*
-import io.ktor.http.*
-import io.ktor.serialization.kotlinx.json.*
-import kotlinx.serialization.json.Json
-import io.ktor.client.request.setBody
+import com.romaevents.app.model.AuthResponse
+import com.romaevents.app.model.Event
+import com.romaevents.app.model.EventDetail
+import com.romaevents.app.model.EventMapItem
+import com.romaevents.app.model.LoginRequest
+import com.romaevents.app.model.RegisterRequest
+import com.romaevents.app.model.WeatherResponse
+import io.ktor.client.HttpClient
+import io.ktor.client.call.body
+import io.ktor.client.engine.android.Android
+import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.client.request.accept
+import io.ktor.client.request.get
+import io.ktor.client.request.parameter
 import io.ktor.client.request.post
+import io.ktor.client.request.setBody
+import io.ktor.client.statement.bodyAsText
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
-import io.ktor.client.request.accept
-import io.ktor.client.statement.bodyAsText
 import io.ktor.http.isSuccess
+import io.ktor.serialization.kotlinx.json.json
+import kotlinx.serialization.json.Json
 
 object ApiService {
 
@@ -22,10 +29,12 @@ object ApiService {
 
     private val client = HttpClient(Android) {
         install(ContentNegotiation) {
-            json(Json {
-                ignoreUnknownKeys = true
-                isLenient = true
-            })
+            json(
+                Json {
+                    ignoreUnknownKeys = true
+                    isLenient = true
+                }
+            )
         }
     }
 
@@ -76,7 +85,7 @@ object ApiService {
         return response.body()
     }
 
-    suspend fun register(username: String, email: String, password: String): AuthResponse {
+    suspend fun register(username: String, password: String, email: String): AuthResponse {
         val response = client.post("$BASE_URL/auth/register") {
             contentType(ContentType.Application.Json)
             accept(ContentType.Application.Json)
@@ -89,6 +98,4 @@ object ApiService {
 
         return response.body()
     }
-
-
 }

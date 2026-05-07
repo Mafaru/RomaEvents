@@ -1,4 +1,4 @@
-package com.romaevents.app
+package com.romaevents.app.model
 
 import kotlinx.serialization.Serializable
 

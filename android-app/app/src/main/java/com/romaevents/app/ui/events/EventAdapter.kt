@@ -1,10 +1,13 @@
-package com.romaevents.app
+package com.romaevents.app.ui.events
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.romaevents.app.R
+import com.romaevents.app.model.Event
+import com.romaevents.app.utils.DateUtils
 
 class EventAdapter(
     private val events: List<Event>,

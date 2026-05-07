@@ -1,6 +1,7 @@
-package com.romaevents.app
+package com.romaevents.app.data.session
 
 import android.content.Context
+import com.romaevents.app.model.AuthResponse
 
 class SessionManager(context: Context) {
 

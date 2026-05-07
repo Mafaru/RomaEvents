@@ -1,4 +1,10 @@
-package com.romaevents.app
+package com.romaevents.app.data.repository
+
+import com.romaevents.app.model.Event
+import com.romaevents.app.model.EventDetail
+import com.romaevents.app.model.EventMapItem
+import com.romaevents.app.model.WeatherResponse
+import com.romaevents.app.data.api.ApiService
 
 class EventRepository {
 

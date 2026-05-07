@@ -1,6 +1,8 @@
 package com.romaevents.backend.auth
 
+import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
+import org.springframework.web.server.ResponseStatusException
 import java.util.Base64
 
 @Service
@@ -15,23 +17,23 @@ class AuthService(
         val password = request.password
 
         if (username.length < 3) {
-            throw RuntimeException("Username troppo corto")
+            throw ResponseStatusException(HttpStatus.BAD_REQUEST, "Username troppo corto")
         }
 
         if (!email.contains("@")) {
-            throw RuntimeException("Email non valida")
+            throw ResponseStatusException(HttpStatus.BAD_REQUEST, "Email non valida")
         }
 
         if (password.length < 6) {
-            throw RuntimeException("Password troppo corta")
+            throw ResponseStatusException(HttpStatus.BAD_REQUEST, "Password troppo corta")
         }
 
         if (userRepository.existsByEmail(email)) {
-            throw RuntimeException("Email già registrata")
+            throw ResponseStatusException(HttpStatus.CONFLICT, "Email già registrata")
         }
 
         if (userRepository.existsByUsername(username)) {
-            throw RuntimeException("Username già utilizzato")
+            throw ResponseStatusException(HttpStatus.CONFLICT, "Username già utilizzato")
         }
 
         val user = userRepository.save(
@@ -55,10 +57,10 @@ class AuthService(
         val password = request.password
 
         val user = userRepository.findByEmail(email)
-            ?: throw RuntimeException("Credenziali non valide")
+            ?: throw ResponseStatusException(HttpStatus.UNAUTHORIZED, "Credenziali non valide")
 
         if (user.passwordHash != hashPassword(password)) {
-            throw RuntimeException("Credenziali non valide")
+            throw ResponseStatusException(HttpStatus.UNAUTHORIZED, "Credenziali non valide")
         }
 
         return AuthResponse(
@@ -72,6 +74,4 @@ class AuthService(
     private fun hashPassword(password: String): String {
         return Base64.getEncoder().encodeToString(password.toByteArray())
     }
-
-    
 }

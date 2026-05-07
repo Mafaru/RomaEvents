@@ -1,17 +1,27 @@
-package com.romaevents.app
+package com.romaevents.app.ui.events
 
+import android.R
+import android.content.Intent
+import android.graphics.Typeface
+import android.net.Uri
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
-import android.widget.*
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.ScrollView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.card.MaterialCardView
+import com.romaevents.app.data.repository.EventRepository
+import com.romaevents.app.ui.main.MainActivity
+import com.romaevents.app.utils.DateUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import android.content.Intent
-import android.net.Uri
-import com.google.android.material.button.MaterialButton
 
 class EventDetailFragment : Fragment() {
 
@@ -36,8 +46,8 @@ class EventDetailFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: android.view.LayoutInflater,
-        container: android.view.ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         val scrollView = ScrollView(requireContext()).apply {
@@ -86,7 +96,7 @@ class EventDetailFragment : Fragment() {
                     text = detail.title
                     textSize = 25f
                     setTextColor(0xFF1B1B1B.toInt())
-                    typeface = android.graphics.Typeface.DEFAULT_BOLD
+                    typeface = Typeface.DEFAULT_BOLD
                     setPadding(0, 0, 0, 20)
                 })
 
@@ -94,7 +104,7 @@ class EventDetailFragment : Fragment() {
                     text = detail.category ?: "Categoria non disponibile"
                     textSize = 14f
                     setTextColor(0xFF1A73E8.toInt())
-                    typeface = android.graphics.Typeface.DEFAULT_BOLD
+                    typeface = Typeface.DEFAULT_BOLD
                     setPadding(0, 0, 0, 18)
                 })
 
@@ -129,7 +139,7 @@ class EventDetailFragment : Fragment() {
                     )
 
                     textSize = 14f
-                    typeface = android.graphics.Typeface.DEFAULT_BOLD
+                    typeface = Typeface.DEFAULT_BOLD
                     setPadding(0, 0, 0, 60)
                 })
 
@@ -163,7 +173,7 @@ class EventDetailFragment : Fragment() {
                         text = "Meteo vicino all'evento"
                         textSize = 17f
                         setTextColor(0xFF1B1B1B.toInt())
-                        typeface = android.graphics.Typeface.DEFAULT_BOLD
+                        typeface = Typeface.DEFAULT_BOLD
                         setPadding(0, 0, 0, 10)
                     })
 
@@ -195,7 +205,7 @@ class EventDetailFragment : Fragment() {
 
                 box.addView(MaterialButton(requireContext()).apply {
                     text = "Vedi sulla mappa"
-                    setIconResource(android.R.drawable.ic_dialog_map)
+                    setIconResource(R.drawable.ic_dialog_map)
 
                     setOnClickListener {
                         (activity as? MainActivity)?.openMapForEvent(eventId)
@@ -204,7 +214,7 @@ class EventDetailFragment : Fragment() {
 
                 box.addView(MaterialButton(requireContext()).apply {
                     text = "Apri indicazioni"
-                    setIconResource(android.R.drawable.ic_menu_directions)
+                    setIconResource(R.drawable.ic_menu_directions)
 
                     setOnClickListener {
                         val lat = detail.latitude
@@ -231,7 +241,7 @@ class EventDetailFragment : Fragment() {
 
                 box.addView(MaterialButton(requireContext()).apply {
                     text = "Torna agli eventi"
-                    setIconResource(android.R.drawable.ic_media_previous)
+                    setIconResource(R.drawable.ic_media_previous)
 
                     setOnClickListener {
                         (activity as? MainActivity)?.goBackToEvents()

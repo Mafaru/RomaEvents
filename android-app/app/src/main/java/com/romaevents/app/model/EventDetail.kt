@@ -1,15 +1,16 @@
-package com.romaevents.app
+package com.romaevents.app.model
 
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class EventMapItem(
+data class EventDetail(
     val id: Long,
     val title: String,
+    val description: String? = null,
+    val category: String? = null,
     val address: String? = null,
-    val latitude: Double,
-    val longitude: Double,
-    val distanceKm: Double? = null,
+    val latitude: Double? = null,
+    val longitude: Double? = null,
     val nextOccurrenceStart: String? = null,
     val nextOccurrenceEnd: String? = null,
     val status: String? = null

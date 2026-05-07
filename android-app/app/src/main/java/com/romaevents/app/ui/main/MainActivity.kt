@@ -1,10 +1,18 @@
-package com.romaevents.app
+package com.romaevents.app.ui.main
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.romaevents.app.ui.events.EventDetailFragment
+import com.romaevents.app.ui.events.EventsFragment
+import com.romaevents.app.ui.auth.LoginActivity
+import com.romaevents.app.ui.map.MapFragment
+import com.romaevents.app.ui.profile.ProfileFragment
+import com.romaevents.app.R
+import com.romaevents.app.ui.scanner.ScannerActivity
+import com.romaevents.app.data.session.SessionManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -79,12 +87,12 @@ class MainActivity : AppCompatActivity() {
 
     fun openEventDetail(eventId: Long) {
         bottomNavigation.menu.findItem(R.id.nav_events).isChecked = true
-        showFragment(EventDetailFragment.newInstance(eventId))
+        showFragment(EventDetailFragment.Companion.newInstance(eventId))
     }
 
     fun openMapForEvent(eventId: Long) {
         bottomNavigation.menu.findItem(R.id.nav_map).isChecked = true
-        showFragment(MapFragment.newInstance(eventId))
+        showFragment(MapFragment.Companion.newInstance(eventId))
     }
 
     fun goBackToEvents() {

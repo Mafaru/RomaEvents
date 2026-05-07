@@ -1,14 +1,20 @@
-package com.romaevents.app
+package com.romaevents.app.ui.events
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
 import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.View
-import android.widget.*
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.romaevents.app.data.repository.EventRepository
+import com.romaevents.app.ui.main.MainActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -18,8 +24,8 @@ class EventsFragment : Fragment() {
     private val repository = EventRepository()
 
     override fun onCreateView(
-        inflater: android.view.LayoutInflater,
-        container: android.view.ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         val root = LinearLayout(requireContext()).apply {
@@ -32,7 +38,7 @@ class EventsFragment : Fragment() {
             textSize = 26f
             setTextColor(0xFF1B1B1B.toInt())
             setPadding(28, 28, 28, 12)
-            typeface = android.graphics.Typeface.DEFAULT_BOLD
+            typeface = Typeface.DEFAULT_BOLD
         }
 
         val subtitle = TextView(requireContext()).apply {
