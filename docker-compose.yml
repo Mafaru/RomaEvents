@@ -1,4 +1,20 @@
 services:
+  backend:
+    build:
+      context: ./backend/backend
+      dockerfile: Dockerfile
+    container_name: roma_events_backend
+    restart: always
+    depends_on:
+      - postgres
+    ports:
+      - "8081:8081"
+    command:
+      - "--spring.datasource.url=jdbc:postgresql://postgres:5432/roma_events"
+      - "--spring.datasource.username=postgres"
+      - "--spring.datasource.password=postgres"
+      - "--server.port=8081"
+
   postgres:
     image: postgres:15
     container_name: roma_events_db

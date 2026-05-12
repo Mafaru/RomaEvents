@@ -1,5 +1,277 @@
 [
   {
+    "title": "Angeli, le sublimi creature dall'Antico al Contemporaneo",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/angeli-mostra-musei-capitolini-2026.page",
+    "theme_text": "Mostre",
+    "raw_date_text": "13 maggio - 1 novembre \"Angeli -",
+    "description": "Messaggeri, custodi e viandanti, le sublimi creature dall'Antico al Contemporaneo\": è il titolo della mostra alle Sale Terrene dei Musei Capitolini , visitabile dal 13 maggio al 1 novembre 2026. Ideata in concomitanza con l’anno giubilare e curata da Massimo Rossi Ruben e Viviana Vannucci , in collaborazione con Sua Em.za Angelo Comastri e con la collaborazione delle Ferrovie dello Stato, la mostra è dedicata alla figura degli Angeli nella Storia dell’arte . Il percorso interesserà un insieme di opere provenienti da differenti raccolte italiane ed europee, in grado di dare una sintesi suggestiva del tema degli angeli nel suo sviluppo cronologico e concettuale. Promossa da Roma Capitale, Assessorato alla Cultura, Sovrintendenza Capitolina ai Beni Culturali e organizzata da Centro Europeo per il Turismo Cultura e Spettacolo, la mostra è visitabile tutti i giorni dalle 9.30 alle 19.30. Ulteriori informazioni alla pagina dedicata dei Musei Capitolini .",
+    "location_text": "Piazza del Campidoglio",
+    "popup_event_text": "Angeli, le sublimi creature dall'Antico al Contemporaneo",
+    "coordinates": {
+      "latitude": 41.8933192,
+      "longitude": 12.4829345
+    },
+    "normalized_dates": {
+      "raw_date_text": "13 maggio - 1 novembre \"Angeli -",
+      "occurrences": [
+        {
+          "start_date": "2026-05-13",
+          "end_date": null,
+          "type": "single"
+        },
+        {
+          "start_date": "2026-11-01",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "multiple_full_dates"
+    }
+  },
+  {
+    "title": "Super Lieux, é il tema scelto per l'IPER Festival Periferie 2026",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/super-lieux-liper-festival-periferie-2026.page",
+    "theme_text": "Eventi ad ingresso libero - Cultura - Musica - Cinema",
+    "raw_date_text": "8 - 31 maggio",
+    "description": "Dall’8 al 31 maggio 2026 torna a Roma l’appuntamento con IPER – Festival delle periferie , giunto alla sua quinta edizione. Organizzato e prodotto dal Museo delle Periferie (sotto l’egida dell’Azienda Speciale Palaexpo) con la direzione artistica di Giorgio de Finis , il festival prosegue il suo ciclo di apparizioni in città in una modalità diffusa, aspettando che terminino i lavori della sua sede definitiva in via dell’Archeologia. Ideato e diretto da Giorgio de Finis, IPER non nasce per raccontare le periferie, ma nasce direttamente dalle periferie. Nasce per immaginare uno spazio senza perimetri, né confini sociali, e affida alla creatività, al confronto e al pensiero costruttivo la missione. IPER conosce il territorio, conosce la gente, conosce i luoghi. È uno strumento collettivo capace di mettere in circolo saperi e pratiche, arte contemporanea e urbanistica, formazione, musica, cinema e cittadinanza attiva. Il tema scelto per il 2026 è SUPER LIEUX [Super luoghi] Periferie . Storie e geografie : il titolo riprende la definizione di “super luogo” coniata da Marc Augé per il MAAM Museo dell’Altro e dell’Altrove di Metropoliz_città meticcia, estendendola ad altri territori della Capitale interessati da importanti processi di rigenerazione: il MAAM Museo dell’Altro e dell’Altrove / il Corviale / il Museo condominiale di Tor Marancia / l’Ex Snia e Piazza Tevere – un ricco programma che include una rassegna cinematografica alla Casa del Cinema dedicata al tema delle periferie e una giornata di convegno, organizzata in collaborazione con le Facoltà di Architettura di Roma Tre e di Sapienza Università di Roma al Teatro Argentina. Tra le attività proposte dal festival i concerti di Piotta , Assalti Frontali e ‘A67 , laboratori, installazioni e performance con le artiste Gio Pistone , Karin Andersen , Maria Teresa Antignani , Marina Sagona , Daniela De Paulis , Paola Romoli Venturi , Guendalina Salini , progetti relazionali (Il Pranzo della Domenica con DonPasta), dj set, visite guidate, incontri e dibattiti. IPER Festival è un progetto promosso da Assessorato alla Cultura di Roma Capitale e Azienda Speciale Palaexpo, a cura di Museo delle periferie – Azienda Speciale Palaexpo. Gli eventi in programma sono a ingresso libero. Ulteriori informazioni sul sito IPER Festival periferie 2026. Opuscolo informativo con programma dettagliato.",
+    "location_text": "Largo Marcello Mastroianni e altri indirizzi",
+    "popup_event_text": "IPER Festival delle Periferie 2026",
+    "coordinates": {
+      "latitude": 41.9110064,
+      "longitude": 12.4880336
+    },
+    "normalized_dates": {
+      "raw_date_text": "8 - 31 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-08",
+          "end_date": "2026-05-31",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "same_month_range"
+    }
+  },
+  {
+    "title": "Informagiovani, webinar \"Lavorare in un'agenzia di comunicazione\"",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/informagiovani-webinar-lavorare-agenzia-comunicazione.page",
+    "theme_text": "Giovani - Formazione e Lavoro",
+    "raw_date_text": "14 maggio",
+    "description": "Giovedì 14 maggio dalle 16.00 Informagiovani Roma Capitale – con la partecipazione di Dunp Comunicazione, agenzia di comunicazione romana – organizza il webinar \"Lavorare in un’agenzia di comunicazione\" . Il webinar illustrerà il lavoro all'interno di un'agenzia di comunicazione, fornendo indicazioni sui diversi ruoli professionali , tra cui ad esempio il social media manager, il project manager, l’addetto ufficio stampa, evidenziando le competenze richieste in ciascuna posizione, il modo in cui le figure collaborano per sviluppare progetti di comunicazione integrata e come questi elementi rispondono all'ingresso dell' Intelligenza Artificiale . Un appuntamento ricco di spunti e di esempi concreti, utili ai giovani interessati a conoscere - e in futuro ad operare - nell'affascinante mondo della comunicazione e del digitale. Come partecipare La partecipazione ai seminari online è libera. È necessario collegarsi sulla piattaforma Zoom giovedì 14 maggio dalle ore 16.00 e seguire le istruzioni. Tutte le informazioni su www.informagiovaniroma.it",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "14 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-14",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "'Hotel Champagne' al Teatro Argentina",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/teatro-argentina-hotel-champagne-18-maggio-2026.page",
+    "theme_text": "Eventi - Sociale - Iniziative",
+    "raw_date_text": "18 maggio",
+    "description": "©ph di Manuela Giusto Torna al Teatro Argentina la tribuna di dibattito civile 'Le Verità Sospese' , con l’appuntamento conclusivo di lunedì 18 maggio 'Hotel Champagne' , dedicato al Caso Palamara . Dopo l'indagine sui casi Mori , Moroni e Marta Russo , si chiude così il ciclo ideato dal Direttore artistico del Teatro di Roma Luca De Fusco : quattro serate di approfondimento sui grandi nodi irrisolti del nostro Paese . Obiettivo, offrire alle nuove generazioni e alla cittadinanza strumenti di analisi e un'occasione di riflessione , per andare oltre la superficie della cronaca e dei pregiudizi mediatici . Il dibattito, animato dalle firme di Alessandro Barbano e Goffredo Buccini , avrà il contributo narrativo dell’attrice Anna Ammirati . Con Le Verità Sospese, il Teatro di Roma ha riaffermato la sua vocazione di spazio critico , registrando una straordinaria partecipazione di pubblico . Appuntamento al Teatro Argentina Lunedì 18 maggio 2026 ore 20:00 Per ulteriori informazioni e prenotazioni: Le Verità Sospese - Fondazione Teatro di Roma Teatro Argentina, Largo di Torre Argentina, 52 - 00186 Roma Tel. +39 06 44230693",
+    "location_text": "Largo di Torre Argentina, 52 ROMA",
+    "popup_event_text": "Hotel Champagne al Teatro Argentina",
+    "coordinates": {
+      "latitude": 41.8961444,
+      "longitude": 12.4762742
+    },
+    "normalized_dates": {
+      "raw_date_text": "18 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-18",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Tancredi di Rossini torna dopo 22 anni al Teatro dell'Opera",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/tancredi-di-rossini-torna-dopo-22-anni-al-teatro-opera-2026.page",
+    "theme_text": "Musica",
+    "raw_date_text": "19 - 29 maggio",
+    "description": "Tancredi, Figurini di Emma Dante e Chicca Ruocco Tancredi di Gioachino Rossini torna dopo ventidue anni al Teatro dell’Opera di Roma. Il melodramma eroico in due atti su libretto di Gaetano Rossi , tratto da Voltaire , è in scena dal 19 al 29 maggio 2026 al Costanzi. L'opera è proposta nella sua versione tragica, in un nuovo allestimento firmato da Emma Dante . La regista palermitana, Leone d’Oro alla carriera 2026 della Biennale di Venezia, rilegge il mito di Tancredi immaginandolo in un'opera di pupi siciliani . Alla guida dell'Orchestra del Teatro dell'Opera di Roma Michele Mariotti , che affronta per la prima volta il titolo e sceglie di affidare il ruolo del protagonista al controtenore Carlo Vistoli . Amenaide è il soprano in grande ascesa Martina Russomanno , al debutto al Costanzi. Carmine Maringola firma le scene, Emma Dante e Chicca Ruocco i costumi, Luigi Biondi le luci, Manuela Lo Sicco i movimenti coreografici. Il Coro del Teatro dell’Opera di Roma è diretto da Ciro Visco . Veste i panni di Argirio Enea Scala che torna all’Opera di Roma dopo aver cantato Gennaro in Lucrezia Borgia nel 2025. Luca Tittoto veste i panni di Orbazzano, già interprete per l’Opera di Roma nel 2022 in Alceste di Gluck. Completano il cast Ekaterine Buachidze (Isaura) e Maria Elena Pepi (Roggiero) giovani artiste del progetto \"Fabbrica\" Young Artist Program del Teatro dell'Opera di Roma. Composta da Rossini nel 1813, a soli 21 anni, l’opera racconta il conflitto tra virtù e sentimento, in cui trova spazio la vicenda dell’eroe esiliato Tancredi — ruolo originariamente affidato a un contralto en travesti — che torna in patria a Siracusa per difendere la città dagli invasori e riconquistare l’amata Amenaide, ingiustamente accusata di tradimento. Eros e Thanatos, lirismo e tensione drammatica, attraversano la scrittura rossiniana incontrando la forza visiva di Emma Dante in uno scontro fra umano e simbolico. Ulteriori informazioni e prenotazioni sul sito del Teatro dell'Opera.",
+    "location_text": "Piazza Beniamino Gigli",
+    "popup_event_text": "Tancredi di Gioacchino Rossini",
+    "coordinates": {
+      "latitude": 41.9006803,
+      "longitude": 12.4959803
+    },
+    "normalized_dates": {
+      "raw_date_text": "19 - 29 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-19",
+          "end_date": "2026-05-29",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "same_month_range"
+    }
+  },
+  {
+    "title": "Il Mausoleo Ossario Garibaldino e Goffredo Mameli",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/mausoleo-ossario-garibaldino-e-goffredo-mameli.page",
+    "theme_text": "Archivio Storico Capitolino - altri archivi e centri di documentazione - Eventi ad ingresso libero",
+    "raw_date_text": "11 maggio",
+    "description": "Lunedì 11 maggio 2026, alle ore 17, presso l’Archivio Storico Capitolino (Piazza dell’Orologio 4) si terrà l’ultimo appuntamento della rassegna Risorgimento a Roma con la conferenza del Prof. Miguel Gotor (Università degli Studi di Roma Tor Vergata) dal titolo \"Il Mausoleo Ossario Garibaldino e Goffredo Mameli” . L’incontro sarà incentrato sulla figura dell’autore dell’Inno d’Italia, morto nel 1849 mentre difendeva la Repubblica Romana, con una panoramica sull’Ossario garibaldino, dove è stato seppellito. La rassegna – con ingresso libero e prenotazione consigliata - è organizzata dalla Sovrintendenza Capitolina ai Beni Culturali , in occasione degli eventi commemorativi dedicati alla costituzione della Repubblica Romana e nell’ambito di un più vasto progetto di studi e di riletture interpretative sullo sviluppo del Risorgimento nella città di Roma. Miguel Gotor , storico, docente universitario e politico, insegna Storia moderna presso l’Università di Roma Tor Vergata. Si occupa di storia della vita religiosa fra Cinque e Seicento, in particolare di santi, eretici e inquisitori, e di storia italiana degli anni Settanta del Novecento. Ulteriori informazioni e prenotazioni sul sito dell' Archivio Storico Capitolino .",
+    "location_text": "Piazza dell'Orologio 4",
+    "popup_event_text": "Risorgimento a Roma, Ossario Garibaldino e Goffredo Mameli",
+    "coordinates": {
+      "latitude": 41.8956333,
+      "longitude": 12.4791998
+    },
+    "normalized_dates": {
+      "raw_date_text": "11 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-11",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Eventi al cimitero monumentale del Verano",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/eventi-cimitero-verano-primavera-2026.page",
+    "theme_text": "Memoria - Monumenti - Cultura - Visite guidate",
+    "raw_date_text": "9 maggio - 2 giugno",
+    "description": "Prenderà il via sabato 9 maggio il programma primavera 2026 del Cimitero monumentale del Verano . Previste 43 visite guidate gratuite, articolate in 9 giornate, alcune arricchite con l'ascolto in cuffia di brani musicali, testi recitati o le voci dei personaggi ricordati. All’interno del programma rientra anche la partecipazione di AMA alla Settimana per la scoperta dei cimiteri europei , iniziativa che promuove il valore educativo e culturale dei luoghi di sepoltura, in linea con l’Obiettivo 4 (“Quality Education”) dell’Agenda 2030 delle Nazioni Unite per lo sviluppo sostenibile. Alla settimana aderisce anche il Dipartimento Tutela Ambientale , con l'ufficio antica scuola giardinieri e visite guidate, che organizza tre eventi su \" Natura, storia e paesaggio al Verano \": - sabato 9 maggio, ore 09.30 - 11.30; - domenica 10 maggio, ore 09.30 - 11.30; - domenica 31 maggio, ore 09.30 - 11.30. La partecipazione è gratuita con prenotazione obbligatoria fino ad esaurimento posti. Tutte le informazioni cimitericapitolini.it",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "9 maggio - 2 giugno",
+      "occurrences": [
+        {
+          "start_date": "2026-05-09",
+          "end_date": "2026-06-02",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "\"Reverse the red\": una giornata speciale al Bioparco",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/reverse-the-red-una-giornata-speciale-bioparco.page",
+    "theme_text": "Iniziative ed Eventi",
+    "raw_date_text": "10 maggio",
+    "description": "Leone asiatico © Massimiliano Di Giovanni, Archivio Bioparco Domenica 10 maggio il Bioparco di Roma , insieme ad altre strutture dell’ UIZA ( Unione Italiana Zoo e Acquari ), aderisce al movimento mondiale “Reverse the red” (Invertire il rosso) nato con l’obiettivo di contrastare l’estinzione delle specie animali e vegetali del Pianeta invertendo il declino di quelle inserite nella Lista Rossa dell’Unione Mondiale per la Conservazione della Natura (IUCN). Durante la giornata saranno proposte al pubblico attività studiate per evidenziare l’impegno delle strutture zoologiche per la salvaguardia delle specie maggiormente minacciate di estinzione. Dalle 11.00 alle 17.00 ci sarà una postazione animata dal titolo “Avventure in foresta” , in cui si svolgerà un gioco simile al gioco dell’oca. I giocatori, divisi in squadre, avranno l’obiettivo di aiutare le tigri, ormai sull’orlo dell’estinzione, ad attraversare una foresta piena di pericoli come i bracconieri e i tagliatori di legna (deforestazione). In una seconda postazione un operatore didattico-attore si cimenterà in letture animate con un tema comune: le vicende a lieto fine di animali ad un passo dall’estinzione, come tartarughe marine, bisonti europei, orici dalle corna a sciabola. Nella sala degli elefanti, alle ore 12.00, 14.30 e 16.30 , sarà messo in scena un divertente spettacolo teatrale dal titolo “10 storie di successo” , in cui animali come il tritone, la testuggine e il grifone saranno i protagonisti di storie ricche di spunti e informazioni. I racconti faranno immergere gli spettatori nel mondo dei giardini zoologici per scoprire la provenienza degli animali, le regole per la riproduzione e l’importanza della collaborazione fra le strutture. Lo spettacolo, tratto dal volume omonimo realizzato nel 2022 dagli educatori ambientali della UIZA, ha una durata di circa un’ora. Dalle ore 11.00 alle 16.30 si terranno le visite guidate dal titolo ‘Invertiamo il rosso’, in compagnia di un naturalista. Si osserveranno rinoceronti bianchi, elefanti asiatici, leoni asiatici e tigri di Sumatra per conoscerne le caratteristiche e capire perché rischiano l’estinzione. Le attività descritte sono comprese nel costo del biglietto di ingresso . Ulteriori informazioni e prenotazioni sul sito del Bioparco.",
+    "location_text": "Piazzale del Giardino",
+    "popup_event_text": "Reverse the red, attività al Bioparco",
+    "coordinates": {
+      "latitude": 41.9167531,
+      "longitude": 12.4878584
+    },
+    "normalized_dates": {
+      "raw_date_text": "10 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-10",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Planetario di Roma, proseguono gli spettacoli astronomici",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/planetario-spettacoli-astronomici-8-14-maggio-2026.page",
+    "theme_text": "Cultura - Eventi",
+    "raw_date_text": "8 - 14 maggio 2026",
+    "description": "Tra le iniziative in calendario dall’ 8 al 14 maggio , promosse da Roma Capitale , Assessorato alla Cultura e Sovrintendenza Capitolina ai Beni Culturali , è sempre protagonista anche il Planetario di Roma . Nella nuova settimana culturale, che offre un programma eterogeneo, con aperture straordinarie, itinerari e incontri, proseguono anche gli spettacoli astronomici per grandi e piccoli appassionati . Ecco gli eventi in calendario per il pubblico adulto : Ritorno alle Stelle (venerdì 8 maggio alle 16.00 e alle 18.00; sabato 9 maggio alle 11.00 e alle 17.00; domenica 10 maggio alle 11.00; martedì 12 maggio alle 16.00; mercoledì 13 e giovedì 14 maggio alle 17.00); From Earth to the Universe (in inglese – venerdì 8 maggio alle 17.00; martedì 12 maggio alle 18.00; mercoledì 13 maggio alle 16.00); Interstellari – il viaggio delle sonde Voyager (sabato 9 maggio alle 10.00; martedì 12 maggio alle 17.00; mercoledì 13 maggio alle 18.00; giovedì 14 maggio alle 16.00); Crociera nel cosmo (sabato 9 maggio alle 16.00); La notte stellata (sabato 9 maggio alle 18.00); Space Opera (domenica 10 maggio alle 10.00; giovedì 14 maggio alle 18.00); Ecologia cosmica: figli delle stelle, custodi della Terra (domenica 10 maggio alle 16.00); La magia dell’aurora boreale (domenica 10 maggio alle 17.00); Quando cadono le stelle (domenica 10 maggio alle 18.00). Per i più piccoli , invece, sabato 9 maggio alle 12:00 Gabriele Catanzaro , nei panni dello stravagante Dottor Stellarium , condurrà lo spettacolo Accade tra le stelle , mentre domenica 10 maggio alle 12:00 torna Girotondo tra i Pianeti , lo spettacolo giocoso e interattivo. Biglietti online su www.planetarioroma.it Aggiornamenti su tutti gli eventi, informazioni e prenotazioni allo 060608 (attivo tutti i giorni , ore 9.00-19.00 ). Modalità di accesso e tariffe su www.museiincomuneroma.it ; www.sovraintendenzaroma.it",
+    "location_text": "Piazza Giovanni Agnelli, 10 Roma",
+    "popup_event_text": "Planetario di Roma",
+    "coordinates": {
+      "latitude": 41.83102106155008,
+      "longitude": 12.477348809993272
+    },
+    "normalized_dates": {
+      "raw_date_text": "8 - 14 maggio 2026",
+      "occurrences": [],
+      "matched_pattern": "unparsed"
+    }
+  },
+  {
+    "title": "World Press Photo 2026, al via la 69^ edizione",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/world-press-photo-2026-al-via-la-69-edizione.page",
+    "theme_text": "Fotografia - Mostre",
+    "raw_date_text": "7 maggio - 29 giugno",
+    "description": "Separati dall'ICE, © Carol Guzy Dal 7 maggio al 29 giugno 2026, Palazzo Esposizioni Roma ospita, come ogni anno, la mostra del World Press Photo , il prestigioso contest di fotogiornalismo giunto quest'anno alla 69^ edizione. Dal 1955, il concorso premia ogni anno i migliori fotografi professionisti, contribuendo a costruire la storia del giornalismo visivo contemporaneo. La Photo of the Year 2026 è Separati dall’ICE di Carol Guzy (ZUMA Press, iWitness per il Miami Herald). L’immagine, scattata all’interno del Jacob K. Javits Federal Building di New York, documenta il momento in cui un uomo viene fermato dagli agenti dell’immigrazione dopo un’udienza, separandolo dalla sua famiglia. La fotografia è stata premiata per la sua capacità di rendere visibile, in modo diretto e umano, l’ impatto delle politiche migratorie: non un caso isolato, ma una condizione sistemica che colpisce persone che si presentano alle istituzioni in buona fede. Accanto alla vincitrice, sono stati selezionati due finalisti . Emergenza umanitaria a Gaza di Saber Nuraldin (EPA Images) mostra civili palestinesi che si arrampicano su un camion di aiuti nel tentativo di procurarsi cibo. La fotografia è stata scelta per la sua forza compositiva e per la capacità di restituire l’urgenza della carestia, trasformando una scena di caos in una prova visiva della crisi umanitaria e delle sue implicazioni globali. Il secondo finalista è I processi delle donne Achi di Victor J. Blue (The New York Times Magazine), un ritratto collettivo di donne indigene Maya Achi sopravvissute a violenze durante la guerra civile guatemalteca. L’immagine, realizzata all’esterno di un tribunale, è stata premiata per il suo approccio misurato e per la capacità di restituire dignità e autorevolezza alle protagoniste, documentando un momento storico di giustizia dopo decenni di impunità. Le immagini premiate nel concorso 2026 rappresentano una selezione tra oltre 57.000 fotografie inviate da fotografi provenienti da 141 Paesi , offrendo uno sguardo complesso e stratificato sul presente. La mostra, come ogni anno, si configura non solo come esposizione, ma come dispositivo critico capace di interrogare il ruolo dell’immagine nella costruzione della memoria collettiva e nella comprensione delle tensioni contemporanee. La mostra è promossa dall'Assessorato alla Cultura di Roma Capitale e dall'Azienda Speciale Palaexpo, ideata da World Press Photo Foundation e organizzata con la collaborazione di 10b Photography. Ulteriori informazioni e prenotazioni sul sito di Palazzo Esposizioni Roma. Emergenza umanitaria a Gaza © Saber Nuraldin",
+    "location_text": "Via Nazionale 194",
+    "popup_event_text": "World Press Photo 2026",
+    "coordinates": {
+      "latitude": 41.8995261,
+      "longitude": 12.4901928
+    },
+    "normalized_dates": {
+      "raw_date_text": "7 maggio - 29 giugno",
+      "occurrences": [
+        {
+          "start_date": "2026-05-07",
+          "end_date": "2026-06-29",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "Morte di un commesso viaggiatore, al Teatro Argentina",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/morte-di-un-commesso-viaggiatore-teatro-argentina.page",
+    "theme_text": "Teatro",
+    "raw_date_text": "13 - 24 maggio @ foto",
+    "description": "Rosellina Garbo Morte di un commesso viaggiatore , la celebre opera di Arthur Miller è in scena, dal 13 al 24 maggio al Teatro Argentina , con la regia di Carlo Sciaccaluga. Quando, nel 1949, lo spettacolo debuttò a Broadwa y, l’America era immersa in quel paradossale slancio ottimistico del dopoguerra, tra ricostruzione materiale, boom economico, fiducia cieca nella promessa di un’ascesa sociale illimitata, ma Arthur Miller seppe cogliere fin da subito il volto oscuro di quel mito: la brutalità nascosta sotto la superficie del successo, la solitudine di chi misura il proprio valore sul metro della competizione, la disperazione di chi non può permettersi il fallimento. Oggi, in un mondo in cui il capitalismo è diventato non soltanto un sistema economico, ma una forma di vita interiore, Morte di un commesso viaggiatore non parla più soltanto dell’America, ma dell’intera umanità globalizzata. La regia di Carlo Sciaccaluga è uno scavo doloroso nel nostro presente. Il Willy Loman, interpretato da Luca Lazzareschi , non è un relitto, è il nostro contemporaneo. È l’uomo che cerca ancora, ostinatamente, di esistere in un mondo che non conosce più il valore dell’errore, della lentezza, della fragilità. Il grido d’allarme lanciato da Miller più di settant’anni fa è rimasto inascoltato, e ciò che nel 1949 sembrava già intollerabile oggi si è fatto regola, sistema, normalità. Eppure, anche in questo paesaggio di fratture, resta la traccia, inconfondibile, di un legame, di un amore che resiste, di una voce che chiama, di uno sguardo che, pur nel fallimento, cerca l’altro. A rendere quest’opera rivoluzionaria fu anche la sua struttura formale. Miller spezza la linearità del tempo, abolisce ogni netta separazione tra realtà e memoria, presente e passato, sogno e coscienza. Le scene si fondono, si sovrappongono, si contraddicono. Con una scena votata alla crudezza dei sentimenti più che alla ricostruzione naturalistica, e una recitazione che punta al cuore nudo dei personaggi, lo spettacolo propone un viaggio dentro la disgregazione degli affetti familiari, la perdita della dignità personale, la tragedia quotidiana di chi, pur avendo dato tutto, si trova a mani vuote. È una scrittura scenica che affonda nella mente del protagonista, seguendo i suoi scarti, i suoi vuoti, i suoi deliri. In un’epoca come la nostra, in cui il concetto stesso di realtà si fa sempre più sfumato — e resta da interrogarsi se sia un bene o un male — Morte di un commesso viaggiatore si impone come una delle opere fondanti di quel lungo attraversamento della coscienza che è gran parte della letteratura occidentale del secondo Novecento. Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro di Roma.",
+    "location_text": "Largo di Torre Argentina",
+    "popup_event_text": "Morte di un commesso viaggiatore",
+    "coordinates": {
+      "latitude": 41.8961444,
+      "longitude": 12.4762742
+    },
+    "normalized_dates": {
+      "raw_date_text": "13 - 24 maggio @ foto",
+      "occurrences": [],
+      "matched_pattern": "unparsed"
+    }
+  },
+  {
+    "title": "La Banda va in città, concerti gratuiti nei municipi",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/eve-banda-va-in-citta-concerti-gratuiti-nei-municipi.page",
+    "theme_text": "Eventi ad ingresso libero - Musei Fino al",
+    "raw_date_text": "15 giugno",
+    "description": "La Banda musicale del Corpo della Polizia Locale di Roma Capitale incontra la città con una serie di concerti gratuiti nei quartieri , portando la musica nelle piazze, nei parchi e negli spazi pubblici della capitale. L’iniziativa nasce con l’obiettivo di avvicinare la musica ai cittadini e valorizzare uno dei complessi musicali storici dell’Amministrazione capitolina, offrendo momenti di incontro e partecipazione culturale diffusa. Durante gli appuntamenti la Banda proporrà un repertorio ampio e coinvolgente, che spazia dai grandi classici alle musiche pop, dalle colonne sonore alla tradizione bandistica, con arrangiamenti pensati per un pubblico di tutte le età. Fondata nella seconda metà dell’Ottocento, la Banda del Corpo della Polizia Locale di Roma Capitale rappresenta una delle più antiche istituzioni musicali della città e accompagna da oltre un secolo la vita culturale e istituzionale di Roma. Nel corso della sua storia ha eseguito un vasto repertorio musicale, contribuendo alla diffusione della cultura musicale e mantenendo un rapporto diretto con la cittadinanza attraverso concerti e manifestazioni pubbliche. Oggi la compagine, composta da oltre settanta musicisti e diretta dal Maestro Alberto Di Gianfelice , continua questa tradizione proponendo concerti che uniscono qualità artistica e spirito di condivisione con il pubblico. Con “La Banda va in città” la musica torna quindi a vivere nei luoghi della quotidianità urbana, trasformando piazze e spazi pubblici in occasioni di incontro, ascolto e partecipazione. Gli appuntamenti in programma .",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "15 giugno",
+      "occurrences": [
+        {
+          "start_date": "2026-06-15",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
     "title": "\"Per Atena!\", al Teatro India uno spettacolo di Ciro Burzo",
     "detail_url": "https://www.comune.roma.it/web/it/evento/per-atena-al-teatro-india-2026.page",
     "theme_text": "Teatro",
@@ -50,37 +322,6 @@
         },
         {
           "start_date": "2026-05-10",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "multiple_days_same_month"
-    }
-  },
-  {
-    "title": "La Banda va in città, concerti gratuiti nei municipi",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/eve-banda-va-in-citta-concerti-gratuiti-nei-municipi.page",
-    "theme_text": "Eventi ad ingresso libero - Musei",
-    "raw_date_text": "8, 9 e 19 maggio",
-    "description": "La Banda musicale del Corpo della Polizia Locale di Roma Capitale incontra la città con una serie di concerti gratuiti nei quartieri , portando la musica nelle piazze, nei parchi e negli spazi pubblici della capitale. L’iniziativa nasce con l’obiettivo di avvicinare la musica ai cittadini e valorizzare uno dei complessi musicali storici dell’Amministrazione capitolina, offrendo momenti di incontro e partecipazione culturale diffusa. Durante gli appuntamenti la Banda proporrà un repertorio ampio e coinvolgente, che spazia dai grandi classici alle musiche pop, dalle colonne sonore alla tradizione bandistica, con arrangiamenti pensati per un pubblico di tutte le età. Fondata nella seconda metà dell’Ottocento, la Banda del Corpo della Polizia Locale di Roma Capitale rappresenta una delle più antiche istituzioni musicali della città e accompagna da oltre un secolo la vita culturale e istituzionale di Roma. Nel corso della sua storia ha eseguito un vasto repertorio musicale, contribuendo alla diffusione della cultura musicale e mantenendo un rapporto diretto con la cittadinanza attraverso concerti e manifestazioni pubbliche. Oggi la compagine, composta da oltre settanta musicisti e diretta dal Maestro Alberto Di Gianfelice , continua questa tradizione proponendo concerti che uniscono qualità artistica e spirito di condivisione con il pubblico. Con “La Banda va in città” la musica torna quindi a vivere nei luoghi della quotidianità urbana, trasformando piazze e spazi pubblici in occasioni di incontro, ascolto e partecipazione. Di seguito i primi appuntamenti in programma : 8 maggio ore 19:00 Municipio XI – Piazza Gaetano Mosca 9 maggio ore 19:00 Municipio XIII – via Apricale/via Zignago (Collinetta Boccea) 19 maggio ore 12:00 Municipio X – pontile di Ostia",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
-    "normalized_dates": {
-      "raw_date_text": "8, 9 e 19 maggio",
-      "occurrences": [
-        {
-          "start_date": "2026-05-08",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-05-09",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-05-19",
           "end_date": null,
           "type": "single"
         }
@@ -234,6 +475,27 @@
     }
   },
   {
+    "title": "Banda della Polizia Locale, i concerti di maggio",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/banda-polizia-locale-concerti-maggio-2026.page",
+    "theme_text": "Musica Fino al",
+    "raw_date_text": "20 maggio",
+    "description": "Anche nel mese di maggio la Banda Musicale del Corpo di Polizia Locale di Roma Capitale torna protagonista con un calendario di appuntamenti istituzionali e cerimoniali che accompagneranno alcuni eventi della città. Di seguito il calendario degli eventi in programma : Domenica 3 maggio ore 11.00 - Parco Archeologico dell'Appia Antica c/o Antiquarium di Lucrezia Romana - Concerto Note al Museo II Lunedì 4 maggio ore 10.00 - Ambasciata di Spagna in Piazza Navona - Inaugurazione nuova sede della Cancelleria dell'Ambasciata Martedì 5 maggio ore 10.30 - Sala Consiliare Luigi Petroselli Municipio XI Via M. Mazzacurati 73/75 - Seminario \"In viaggio sul Mississippi. Lezione concerto alla scoperta del Jazz.\" Giovedì 7 maggio ore 11.00 - Circo Massimo - Race for the Cure Komen Italia Domenica 17 maggio ore 11.00 - Piazza Cola di Rienzo - IX Edizione di Autoantiqua Mercoledì 20 maggio ore 17.00 - I.C. Mar dei Caraibi plesso Caterina del Segurana - Via C. Segurana 2/3 - Festa di Primavera. Giovedì 21 maggio ore 10.00 - Piazzale Simon Bolivar - Valle Giulia - Anniversario della Battaglia di Pichincha - Deposizione di una corona d'alloro a cura dell' Ambasciata della Repubblica dell' Ecuador in Italia. Sabato 23 maggio ore 20.00 - Piazza del Campidoglio - Musei Capitolini - Notte dei Musei 2026. Lunedì 25 maggio ore 19.00 - Teatro Argentina - Largo di Torre Argentina, 52 - Cerimonia di premiazione dell'Italia Green Film Festival. Domenica 31 maggio (ora e luogo da definire) - Tappa finale del Giro d’Italia 2026 a Roma. Il programma potrebbe subire variazioni.",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "20 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-20",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
     "title": "City Lights: Tokyo, a maggio alla Casa del Cinema",
     "detail_url": "https://www.comune.roma.it/web/it/evento/city-lights-tokyo-maggio-2026.page",
     "theme_text": "Cinema",
@@ -274,27 +536,6 @@
       "occurrences": [
         {
           "start_date": "2026-05-05",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Banda della Polizia Locale, i concerti di maggio",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/banda-polizia-locale-concerti-maggio-2026.page",
-    "theme_text": "Musica Fino al",
-    "raw_date_text": "20 maggio",
-    "description": "Anche nel mese di maggio la Banda Musicale del Corpo di Polizia Locale di Roma Capitale torna protagonista con un calendario di appuntamenti istituzionali e cerimoniali che accompagneranno alcuni eventi della città. Di seguito il calendario degli eventi in programma : Domenica 3 maggio ore 11.00 - Parco Archeologico dell'Appia Antica c/o Antiquarium di Lucrezia Romana - Concerto Note al Museo II Lunedì 4 maggio ore 10.00 - Ambasciata di Spagna in Piazza Navona - Inaugurazione nuova sede della Cancelleria dell'Ambasciata Martedì 5 maggio ore 10.30 - Sala Consiliare Luigi Petroselli Municipio XI Via M. Mazzacurati 73/75 - Seminario \"In viaggio sul Mississippi. Lezione concerto alla scoperta del Jazz.\" Giovedì 7 maggio ore 11.00 - Circo Massimo - Race for the Cure Komen Italia Domenica 17 maggio ore 11.00 - Piazza Cola di Rienzo - IX Edizione di Autoantiqua Mercoledì 20 maggio ore 17.00 - I.C. Mar dei Caraibi plesso Caterina del Segurana - Via C. Segurana 2/3 - Festa di Primavera Il programma potrebbe subire variazioni.",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
-    "normalized_dates": {
-      "raw_date_text": "20 maggio",
-      "occurrences": [
-        {
-          "start_date": "2026-05-20",
           "end_date": null,
           "type": "single"
         }
@@ -2153,246 +2394,6 @@
         }
       ],
       "matched_pattern": "cross_month_range"
-    }
-  },
-  {
-    "title": "\"Nel solco dei tempi\", a San Salvatore in Lauro",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/nel-solco-dei-tempi-musei-san-salvatore-in-lauro.page",
-    "theme_text": "Eventi ad ingresso libero - Mostre",
-    "raw_date_text": "5 marzo - 2 aprile",
-    "description": "Dal 5 marzo al 2 aprile 2026 i Musei di San Salvatore in Lauro accolgono una mostra che è insieme racconto, confronto e dichiarazione di poetica. “Nel solco dei tempi” riunisce tre artisti – Vito Bongiorno , Angelo Colagrossi , Mauro Magni – legati da un’amicizia autentica e da una comune urgenza: interrogare il presente senza retorica, incidere nella materia il segno del nostro tempo. L’esposizione, a cura di Paola Di Giammaria ed organizzata da “Il Cigno GG Edizioni” propone un dialogo tra tre percorsi differenti ma attraversati da un medesimo sguardo sul tempo contemporaneo. Il progetto espositivo, con circa 20 opere esposte per ogni artista , si colloca in un momento storico segnato da trasformazioni radicali – ambientali, sociali, tecnologiche – e si interroga sulla possibilità di una narrazione condivisa nel presente. Nel lavoro di Vito Bongiorno , la materia è fisica, quasi tattile: carbone, cenere, foglia d’oro, lana d’acciaio. Le superfici sono dense, corrose, attraversate da combustioni reali e simboliche. Il carbone e la cenere diventano materia simbolica di una riflessione sul Pianeta, sulla combustione e sulla possibilità di rinascita. Il nero non è solo negazione, ma spazio di trasformazione, in un continuo dialogo con l’oro e con il blu. La pittura di Angelo Colagrossi è verticale, scarna, essenziale. Acrilici, smalti spray, fusaggine: materiali che colano, si stratificano, si addensano. Traduce l’instabilità contemporanea in sagome, numeri, piogge di segni, scenari sempre più essenziali. Le sue figure si stenografano, si dissolvono, suggerendo precarietà e mutamento, in un equilibrio instabile che riflette il nostro tempo. Colagrossi riduce, sottrae, asciuga. Le sue sagome non hanno volto, ma hanno presenza. I suoi numeri non spiegano: inquietano. È una pittura che racconta l’instabilità del presente con essenzialità quasi ascetica. Mauro Magni affida alla montagna, alla torre e al fuoco una potente metafora della storia umana. Le sue “Babele” contemporanee evocano tensione verticale, aspirazione spirituale e insieme confusione delle lingue e delle culture, fino alla scultura conclusiva che richiama esplicitamente la necessità di pace. Con Mauro Magni la scena si fa visionaria. Tecnica mista su tavola, carta applicata, inserti materici: le sue superfici sono campi di tensione tra pittura e scrittura. Magni costruisce torri che sono metafore della storia, isole che sono spazi di meditazione, fiamme che diventano tensione verso l’alto. La sua pittura è racconto simbolico, mai didascalico. “Nel solco dei tempi” è un percorso immersivo. Il visitatore attraversa superfici nere e incandescenti, piogge di numeri, torri che si slanciano verso il cielo. Le opere dialogano tra loro come capitoli di una stessa narrazione: la crisi ambientale, la tecnologia, la perdita di orientamento, ma anche la possibilità di rinascita e di pace. Non è una mostra che si limita a esporre opere: è un invito a fermarsi, guardare, interrogarsi. Un cammino che intreccia memoria e attualità, etica ed estetica, individualità e dimensione collettiva, riaffermando la vitalità della pittura e della scultura come strumenti di pensiero critico sul presente. La mostra è visitabile dal martedì al sabato, dalle ore 10.30 alle 13.00 e dalle 15.30 alle 19.00. Ingresso gratuito.",
-    "location_text": "Piazza San Salvatore in Lauro 15",
-    "popup_event_text": "Nel solco dei tempi",
-    "coordinates": {
-      "latitude": 41.900951326069766,
-      "longitude": 12.469211407483751
-    },
-    "normalized_dates": {
-      "raw_date_text": "5 marzo - 2 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-03-05",
-          "end_date": "2026-04-02",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "cross_month_range"
-    }
-  },
-  {
-    "title": "Between the acts, di Virginia Wolf",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/between-the-acts-virginia-wolf-parole-scrittrici.page",
-    "theme_text": "Eventi ad ingresso libero - Letteratura",
-    "raw_date_text": "12 marzo",
-    "description": "La letteratura al femminile è protagonista della rassegna Le parole delle scrittrici, che giovedì 12 marzo alle 17.30 torna al Museo di Roma in Trastevere con un appuntamento dedicato a Virginia Woolf . L’incontro, guidato da Iolanda Plescia (Sapienza Università di Roma), esplorerà l’ultimo romanzo della scrittrice londinese, Between the Acts , un testo singolare che intreccia teatro e narrazione, storia collettiva e vicende individuali A partire da una nuova esperienza di traduzione, la conferenza permetterà di addentrarsi in questo scritto, pubblicato postumo, che rappresenta al tempo stesso un addio e una consegna intellettuale. L'ingresso è libero nella sola Sala Multimediale, sede dell’incontro . Prenotazione consigliata allo 060608. Ulteriori informazioni alla pagina dedicata del Museo di Roma in Trastevere.",
-    "location_text": "Piazza di S. Egidio",
-    "popup_event_text": "Between the acts di Virginia Wold",
-    "coordinates": {
-      "latitude": 41.890385164915465,
-      "longitude": 12.46933594011522
-    },
-    "normalized_dates": {
-      "raw_date_text": "12 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-12",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Cartier e il mito, ultimi giorni ai Musei Capitolini",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/cartier-e-il-mito-ultimi-giorni-ai-capitolini.page",
-    "theme_text": "Mostre - Musei Civici Fino al",
-    "raw_date_text": "15 marzo",
-    "description": "Spilla Stomacher, Cartier Parigi, eseguita su ordinazione, 1907 Mancano ancora pochi giorni alla chiusura della mostra “Cartier e il Mito ai Musei Capitolini\" , che dal giorno della sua inaugurazione, il 14 novembre 2025 è stata visitata da oltre 170mila visitatori. Romani e turisti avranno occasione ancora fino a domenica 15 marzo di visitare l’esposizione, in cui le creazioni della Maison Cartier, per lo più provenienti dall’heritage Cartier Collection , sono poste in dialogo con le sculture in marmo della collezione del cardinale Alessandro Albani – nucleo originario della collezione museale di Palazzo Nuovo – e con alcuni preziosi reperti antichi provenienti dalla Sovrintendenza Capitolina, da prestigiose istituzioni italiane e internazionali e da collezioni private. Il progetto espositivo, ospitato a Palazzo Nuovo - per la prima volta sede di una mostra temporanea, ha saputo affascinare gli spettatori fin dai primi giorni di apertura con tale preziosa e inedita selezione di creazioni e opere. La mostra, curata dalla storica del gioiello Bianca Cappello , dall’archeologo Stéphane Verger e dal Sovrintendente Capitolino Claudio Parisi Presicce, è promossa da Roma Capitale, Assessorato alla Cultura e al coordinamento delle iniziative riconducibili alla Giornata della Memoria, Sovrintendenza Capitolina ai Beni Culturali, in collaborazione con la Maison Cartier e con il supporto di Zètema Progetto Cultura. Il progetto di allestimento è a cura di Sylvain Roca, con uno straordinario contributo creativo del Maestro Dante Ferretti. LA MOSTRA Dalla metà del XIX secolo ad oggi, Cartier ha studiato, tratto ispirazione e reinterpretato il repertorio estetico e simbolico dell’antica Grecia e di Roma, trasformando motivi millenari in gioielli dal carattere unico e moderno. “ Cartier e il mito ai Musei Capitolini” è un viaggio affascinante alla scoperta dell’universo estetico e formale della Maison Cartier, in continuo dialogo con l’eccezionale collezione di sculture antiche dei Musei Capitolini. La mostra esplora il modo in cui l’antichità classica ha mutevolmente ispirato le sue creazioni più iconiche ricostruendo atmosfere intellettuali e culturali, ed evocando l’evoluzione dell’immaginario legato alla Grecia e a Roma nel corso dell’Ottocento e del Novecento. Particolare attenzione è posta sul profondo legame tra Cartier e l’Italia, specialmente Roma. Le collezioni permanenti del Palazzo Nuovo in Campidoglio – l’originario Museo Capitolino istituito nel dicembre del 1733 da Clemente XII Corsini – si compongono in modo quasi esclusivo di sculture in marmo, in gran parte acquisite dalla collezione del cardinale Alessandro Albani. Molte di queste sculture antiche hanno costituito modelli imprescindibili per la formazione del linguaggio artistico europeo. La mostra offre una prospettiva originale su un aspetto particolare e importante di questo tema: dell'uso del repertorio antico in gioielleria, dai “pastiches” dei grandi collezionisti e orafi del XIX secolo, come i Castellani a Roma, stile Neoclassico Garland, fino alle opere successive ispirate a J ean Cocteau nel secondo dopoguerra, arrivando infine alle creazioni odierne e a un nuovo approccio all’Antichità. L’esposizione mette in luce l’uso del repertorio classico greco-romano nelle creazioni Cartier e le trasformazioni della prima metà del Novecento, quando maturò una nuova concezione dell’antichità classica. Una sezione è dedicata alle tecniche e ai processi di lavorazione dei gioielli, con riferimenti all’età romana. La mostra esplora inoltre le ispirazioni mitologiche che hanno nutrito l’immaginario Cartier dall’inizio del XX secolo, confrontando le creazioni della Maison con le antiche divinità di Palazzo Nuovo – Afrodite e Dioniso, Apollo ed Eracle, Zeus e Demetra – e invitando i visitatori a riscoprire all’interno della collezione permanente i modelli antichi che le hanno ispirate. Ulteriori informazioni e prenotazioni alla pagina dedicata dei Musei Capitolini.",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
-    "normalized_dates": {
-      "raw_date_text": "15 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-15",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Un dettaglio minore, in scena al Teatro India",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/un-dettaglio-minore-teatro-india-2026.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "11 - 15 marzo",
-    "description": "Dalal Suleiman, Un dettaglio minore - ©Pino Miraglia La tragedia di Gaza e del popolo palestinese approda in scena dall’11 al 15 marzo al Teatro India con lo spettacolo Un dettaglio minore , tratto dal romanzo di Adania Shibli e diretto da Massimo Luconi . Protagonista è Dalal Suleiman , attrice italo-palestinese di grande forza e sensibilità narrativa, che diviene strumento, corpo e voce per raccontare il nostro presente. Con una narrazione tagliente, fatta di parole calibrate e sentimenti trattenuti, lo spettacolo va al cuore di un’esistenza segnata dall’annullamento e dalla privazione di sé, com’è la vita nella Palestina occupata, rivelando quanto sia ancora difficile riunire i frammenti di una storia rimasta troppo a lungo nascosta. La storia ruota intorno a un’indagine ossessiva della protagonista su un crimine efferato avvenuto nel deserto del Negev nel 1949 proprio il giorno del suo compleanno. L’indagine diventa così qualcosa di personale che spinge la ragazza oltre l’ostacolo affrontando con coraggio un contesto difficile. Un dettaglio minore è una narrazione fatta di sentimenti estremi, ma trattenuti in cui traspare forte e chiara un’emozione e una tensione che ci avvince e che esplica qualcosa che si conosce poco e forse anche male. Una narrazione che rivela che al mondo c’è chi non può spostarsi e muoversi liberamente tra due zone di una stessa città. Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro di Roma.",
-    "location_text": "Lungotevere Vittorio Gassman",
-    "popup_event_text": "Un dettaglio minore",
-    "coordinates": {
-      "latitude": 41.868813182319116,
-      "longitude": 12.472339842583033
-    },
-    "normalized_dates": {
-      "raw_date_text": "11 - 15 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-11",
-          "end_date": "2026-03-15",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Giuseppe Mazzini e la Terza Roma, all'Archivio Storico Capitolino",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/giuseppe-mazzini-e-la-terza-roma-2026.page",
-    "theme_text": "Archivio Storico Capitolino - altri archivi e centri di documentazione - Iniziative ed Eventi",
-    "raw_date_text": "9 marzo",
-    "description": "Nuovo appuntamento per Risorgimento a Roma , il ciclo di conferenze curato dal prof. Miguel Gotor (Università degli Studi di Roma Tor Vergata) che intende valorizzare il periodo storico in confronto alle epoche successive. Lunedì 9 marzo , alle ore 17:00, presso l’ Archivio Storico Capitolino (Piazza dell’Orologio 4) il dott. Mario Di Napoli (Domus mazziniana di Pisa) sarà protagonista dell’incontro dal titolo \"Giuseppe Mazzini e la Terza Roma\" . La rassegna – con ingresso libero e prenotazione consigliata - è organizzata dalla Sovrintendenza Capitolina ai Beni Culturali, in occasione degli eventi commemorativi dedicati alla costituzione della Repubblica Romana e nell’ambito di un più vasto progetto di studi e di riletture interpretative sullo sviluppo del Risorgimento nella città di Roma. Mario di Napoli, allievo della Scuola Normale Superiore di Pisa, dirige il Servizio rapporti internazionali della Camera dei deputati, dopo essere stato Capo del Cerimoniale e Segretario della Commissione Esteri. Ha insegnato Storia contemporanea presso la Facoltà di Sociologia della \"Sapienza\" - Università di Roma ed è stato Presidente nazionale dell'Associazione Mazziniana Italiana. È attualmente Vicepresidente della Domus Mazziniana di Pisa e della Commissione internazionale per la storia delle istituzioni parlamentari e rappresentative. È autore di diversi saggi di storia risorgimentale e costituzionale ed ha curato antologie degli scritti di Mazzini e dei fratelli Rosselli. Il Risorgimento coincide con la nascita della nazione italiana e la fondazione dello Stato unitario e costituisce un momento di fondamentale rilievo storico che è importante sia il più possibile conosciuto soprattutto dai più giovani. Nell’ambito del Risorgimento un progetto politico, civile e culturale, quello della Repubblica romana sorta il 9 febbraio 1849, purtroppo destinato ad avere breve durata, ha rappresentato un modello ideale di lotta per le successive generazioni. Con essa, infatti, venivano introdotti in Italia il suffragio universale maschile, la divisione dei poteri, la libertà dei cittadini e l’abolizione della pena di morte, dei ghetti e della tortura, dando vita alla realizzazione di un vero e proprio sogno democratico. Questo il programma delle prossime conferenze: Lunedì 13 aprile , ore 17:00 - Archivio Storico Capitolino (Piazza dell’Orologio 4) \"L’uso politico di Garibaldi sotto il fascismo\" Relatrice: Prof.ssa Paola Salvatori (Scuola Normale Superiore di Pisa). Lunedì 11 maggio , ore 17:00 - Archivio Storico Capitolino (Piazza dell’Orologio 4) \"Il Mausoleo Ossario Garibaldino e Goffredo Mameli” Relatore: Prof. Miguel Gotor (Università degli Studi di Roma Tor Vergata). Ulteriori informazioni alla pagina dedicata dell' Archivio Storico Capitolino. Scarica l'invito del 9 marzo.",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
-    "normalized_dates": {
-      "raw_date_text": "9 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-09",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Primavera per le Nuove Generazioni ai Teatri India e Torlonia",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/primavera-per-le-nuove-generazioni.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "7-8 e 21-22 marzo",
-    "description": "Link, ph. Margherita Masè Fiorisce la primavera teatrale per le nuove generazioni con tanti appuntamenti nel mese di marzo sui palcoscenici del Teatro India e del Teatro Torlonia , che si animeranno con proposte pensate per sorprendere, colorare e stimolare la curiosità dei piccoli spettatori e delle loro famiglie. Al Teatro India il 7 e l’8 marzo due spettacoli che fondono teatro, danza e musica: Link (alle ore 16) ed Écoute pour voir (alle ore 17). Link e` uno spettacolo di teatro-danza di Serena Marossi e Alessandro Nosotti che indaga la distanza dall’altro, l’abbraccio, il contatto come bisogno, il restare chiusi – come a creare una bolla – per poi uscire e scoprire cosa c'e` fuori, ritrovare se´ stessi diventati “nuovi”. Protagonisti sono due personaggi che partono da uno stato “embrionale” in cui non esiste spazio di divisione: sono uguali, quasi due gemelli che si muovono come un unico corpo. Poi si giunge inevitabilmente a un grande distacco e a un vuoto da colmare per affrontare il mondo. La storia di una crescita inevitabile con i suoi cambiamenti che fanno diventare ogni giorno diversi, grandi, grandissimi ed improvvisamente ancora piccoli.¿ Écoute pour voir, Teatro India Écoute pour voir , invece, è un’idea originale di Emmanuel Jouthe, un’esperienza artistica che unisce pubblico e performer attraverso la condivisione di una canzone. Connessi tramite il movimento, interpreti e pubblico danno vita a incontri singolari, dove ogni breve scambio si trasforma in un dialogo intenso, un’interazione al tempo stesso unica e intima. Il 21 e il 22 marzo al Teatro Torlonia un appuntamento speciale unisce due diversi momenti in un’unica, intensa esperienza teatrale, fondendo sogno, riflessione e viaggio nella galassia delle emozioni: con un unico biglietto il pubblico, infatti, potrà assistere a entrambi gli spettacoli L’albero dei bottoni (in doppia replica alle ore 17 e ore 18) e Once upon a time-museo della fiaba (alle ore 17:30 e ore 18:30). L’albero dei bottoni è uno spettacolo ideato, scritto e diretto da Daniel Gol che insegna che esistono amori inaspettati e incondizionati che oltrepassano gli anni, il tempo e la distanza. Si fondono immagini, suoni e pensieri a intessere un viaggio nel nostro mondo emotivo, in un racconto simbolico, dove ciascuno può trovare uno stralcio della propria storia, un angolo della propria esperienza. Una pioggia di bottoni come anni di vita trascorsa, perché il legame tra una nonna e sua nipote può scavalcare la nostalgia e mettere le radici nei giochi e nei ricordi dei momenti vissuti insieme. Il mondo delle fiabe è, invece, protagonista di Once upon a time-museo della fiaba , un’installazione-spettacolo di Emanuela Dall’aglio con la complicità di Veronica Pastorino . Un vero e proprio museo in cui la professoressa Gallina Cicova accompagna il pubblico con brevi racconti e inediti esperimenti e lo conduce in questo viaggio nel quale le fiabe prendono forma attraverso la grande potenza evocativa degli oggetti ritrovati e catalogati. Domenica 22 marzo , inoltre, è prevista un’apertura straordinaria: dalle ore 10:00 alle ore 13:00, il Museo della fiaba sarà aperto al pubblico con ingresso gratuito e accessibile ai bambini a partire dai 4 anni, offrendo anche ai più piccoli la possibilità di scoprire i tesori della professoressa Cicova (l’ingresso è consentito a 40 persone alla volta per 20 minuti).",
-    "location_text": "Lungotevere Vittorio Gassman",
-    "popup_event_text": "Link (7 marzo), Ecoute pour voir (8 marzo)",
-    "coordinates": {
-      "latitude": 41.86900492991765,
-      "longitude": 12.472211096552607
-    },
-    "normalized_dates": {
-      "raw_date_text": "7-8 e 21-22 marzo",
-      "occurrences": [],
-      "matched_pattern": "unparsed"
-    }
-  },
-  {
-    "title": "Good Boy di Jan Komasa, alla Casa del Cinema",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/good-boy-jan-komasa-marzo-2026.page",
-    "theme_text": "Cinema",
-    "raw_date_text": "6 - 30 marzo",
-    "description": "Good Boy, Casa del Cinema Nel mese di marzo, la Casa del Cinema ospiterà quattro proiezioni di Good Boy di Jan Komasa , autore di culto del nuovo cinema polacco. In bilico tra fiaba nera e thriller psicologico, Good Boy esplora i temi del controllo, della redenzione forzata e del prezzo dell’autonomia individuale, e combina tensione claustrofobica e inquietudine morale in un racconto che lascia il segno. Il titolo è stato uno dei più applauditi della scorsa Festa del Cinema, dove il giovane protagonista, il venticinquenne Anson Boon, si è aggiudicato il premio per la migliore interpretazione maschile. Quattro le proiezioni in programma: 6 marzo (ore 20.30), 12 marzo (ore 18.00); 19 marzo (ore 20) e 30 marzo (ore 20). Ulteriori informazioni e prenotazioni sul sito della Casa del Cinema.",
-    "location_text": "Largo Marcello Mastroianni",
-    "popup_event_text": "Good Boy di Jan Komasa",
-    "coordinates": {
-      "latitude": 41.91110153488606,
-      "longitude": 12.487588392852649
-    },
-    "normalized_dates": {
-      "raw_date_text": "6 - 30 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-06",
-          "end_date": "2026-03-30",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Alla Corte dei re di Francia. Musiche per Versailles",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/alla-corte-dei-re-di-francia-barocco-2026.page",
-    "theme_text": "Musica",
-    "raw_date_text": "5 marzo L’atmosfera di",
-    "description": "Versailles rivive al Teatro dell’Opera di Roma attraverso la musica, in occasione del primo concerto della stagione 2025/26, giovedì 5 marzo alle 20. Protagonista l’ Orchestra Nazionale Barocca dei Conservatori che, dopo la recente data a Palermo, si esibisce al Costanzi nel programma dal titolo Alla corte dei re di Francia . Musiche per Versailles . La serata segna un doppio debutto: dell’artista franco-italiano classe 1988 Emmanuel Resche-Caserta , nel duplice ruolo di direttore e primo violino, e del soprano francese Marie Perbost , entrambi al primo impegno con la Fondazione capitolina. Il programma si snoda tra tragédie lyrique e comédie ballet , accostando composizioni di Lully, Charpentier, Marais e Rameau . Con queste figure, centrali nella vita musicale francese tra Seicento e Settecento, per il pubblico si aprono le porte di Versailles ai tempi del Re Sole. Sulla musica che risuonava giorno e notte nella maestosa reggia è costruito il programma del concerto. Di Jean-Baptiste Lully (1632 – 1687), il cantore ufficiale della gloria del regno di Luigi XIV, oltre alla ‘Passacaille’ da Armide (1686), viene eseguita una suite da Les Bourgeois gentilhomme (1670), briosa comédie-ballet su libretto di Molière in cui recitava Lully stesso. Tra le quasi ottocento composizioni di Marc-Antoine Charpentier (1634/36 – 1704), emerso al di fuori dalle tendenze ufficiali e apprezzato dalla corte dopo la morte di Lully, sono state scelte il trionfale ‘Prélude’ dal Te Deum (1692), popolare incipit musicale impiegato in apertura e chiusura dei programmi radiotelevisivi in Eurovisione, e la sua Marche de Triomphe (1961), che unisce lo stile italiano e stile francese dell’epoca. Seguace di Lully, Marin Marais (1656 – 1728) fu il violinista preferito del Re Sole. La tempête , esempio della sua visione innovativa della sinfonia, è uno dei brani scelti per la suite dalla sua Alcyone (1705), l’ultima grande tragédie lyrique del regno di Luigi XIV. Il viaggio musicale si completa con Jean-Philippe Rameau (1683 –1764), riconosciuto genio del Settecento francese. Le sue opere, ancora oggi in gran parte ignorate, all’epoca furono prima discusse, poi ammirate e infine dimenticate. Si è affermato, ormai cinquantenne, con Hippolite et Arcie (1733). Oltre agli estratti da questa tragédie lyrique , in programma nel concerto anche pagine da Les Indes Galantes (1735), Castor et Pollux (1737), Les Fêtes d’Hébé (1739), Dardanus (1739), Platée (1745) e l’ Entrée de Polymnie da Les Boréades , quest’ultima mai rappresentata perché trovata sul tavolo del compositore al momento della morte. Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro dell'Opera.",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
-    "normalized_dates": {
-      "raw_date_text": "5 marzo L’atmosfera di",
-      "occurrences": [],
-      "matched_pattern": "unparsed"
-    }
-  },
-  {
-    "title": "Banda della Polizia Locale, i concerti di marzo",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/concerti-banda-polizia-locale-marzo-2026.page",
-    "theme_text": "Musica Fino al",
-    "raw_date_text": "24 marzo",
-    "description": "Anche per il mese di marzo, l a Banda Musicale della Polizia Locale di Roma Capitale è protagonista di una serie di appuntamenti: Domenica 1° ore 9.00 - Palalottomatica Eur - Roma Ostia Half Marathon Lunedì 9 ore 10.00 - I.C. Pio La Torre plesso Ilaria Alpi - Via di Torrevecchia - Lezione Jazz Giovedì 12 ore 10.00 - Asilo Nido Flora Via Flora, 10 Pietralata - Esibizione Musicale Domenica 15 ore 12.00 - Festa di Santa Francesca Romana ai Fori C/o Area Parco del Colosseo - Benedizione degli Automobilisti Martedì 17 ore 10.30 - Piazza Colonna - Giornata dell' Unità Nazionale, della Costituzione, dell'Inno e della Bandiera - 165° Anniversario dell'Unità d'Italia - esibizione Banda Polizia Locale Roma con le altre bande musicali delle Forze Armate e delle altre Forze di Polizia. Domenica 22 ore 8.30 - via dei Fori Imperiali - Run Rome The Marathon Martedì 24 ore 15.00 - Piazza del Campidoglio - Anniversario dell'eccidio delle Fosse Ardeatine organizzato da assessorato alla Cultura e al coordinamento delle iniziative riconducibili alla Giornata della Memoria",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
-    "normalized_dates": {
-      "raw_date_text": "24 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-24",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Gertrude: regina, sposa, madre, al Teatro Torlonia",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/gertrude-regina-sposa-madre-teatro-torlonia.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "5 - 15 marzo",
-    "description": "Gertrude, dal sito del Teatro di Roma Al Teatro Torlonia, dal 5 al 15 marzo, l’appuntamento è con il teatro shakespeariano: in scena Gertrude di Annalisa De Simone , la regia di Mario Scandale , con Mascia Musy e con Jonathan Lazzini , Domenico Pincerno e Arianna Pozzi. Personaggio chiave dell’ Amleto di Shakespeare , Gertrude è regina, madre, vedova, nuova sposa, connivente di un terribile delitto o forse no, di certo coinvolta in un attrito sempre più duro con suo figlio. Al centro, il racconto di una donna che prova a restare viva mentre il mondo pretende purezza e sacrificio. Attorno, una costellazione di sguardi maschili, di accuse, pretese e gelosie. Amleto è dietro le quinte, ma non scompare: è una presenza magnetica e persecutoria, come lo sono i figli nella vita di una madre, come lo è il desiderio, o il senso di colpa, la memoria e l’ossessione, il nodo edipico che non smette di stringere. Lo spazio del racconto è una piscina vuota: un luogo che ha conosciuto l’acqua, il gioco, la felicità, e ora ne conserva soltanto la forma. L’acqua non c’è, ma pesa: è liquido amniotico, è origine e perdita. È la vita che ha riempito questo spazio e lo ha poi abbandonato, lasciando una cavità in cui ogni parola e ogni gesto risuonano più forte. Gli attori abitano questo vuoto senza difese. I loro corpi cercano un equilibrio impossibile, come se l’acqua potesse tornare da un momento all’altro. Ma non torna. Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro di Roma.",
-    "location_text": "Via Lazzaro Spallanzani",
-    "popup_event_text": "Gertude, regina sposa madre",
-    "coordinates": {
-      "latitude": 41.91342062999842,
-      "longitude": 12.51127885296302
-    },
-    "normalized_dates": {
-      "raw_date_text": "5 - 15 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-05",
-          "end_date": "2026-03-15",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Luchino Visconti, retrospettiva alla Casa del Cinema",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/luchino-visconti-retrospettiva-alla-casa-del-cinema.page",
-    "theme_text": "Cinema",
-    "raw_date_text": "2 - 12 marzo",
-    "description": "Ossessione, foto dal sito Casa del Cinema A cinquant’anni dalla scomparsa di Luchino Visconti, la Fondazione Cinema per Roma propone per il programma di marzo sei capolavori firmati dal grande cineasta milanese: i titoli – che vanno dal suo esordio nel 1943 con Ossessione a Le notti bianche del 1957 – costituiscono la prima parte della retrospettiva completa dell’opera di Visconti che si concluderà a maggio. Il programma sarà inaugurato, lunedì 2 marzo alle ore 20, da Ossessione , esordio alla regia di Visconti, che nel 1943 apre il neorealismo ispirandosi a un noir all’americana, il romanzo “Il postino suona sempre due volte” di James M. Cain. Un film anticipatore, scomodo, disilluso: il regime di Salò ordinò la distruzione, ma il regista riuscì a nascondere un negativo. Giovedì 5 alle ore 17 sarà proiettato La terra trema , strepitoso affresco sulla lotta di classe ambientato tra i pescatori di Aci Trezza e interpretato da attori non professionisti. Il film è uno dei testi-chiave del neorealismo: per il critico André Bazin rappresentava una “sintesi paradossale di realismo ed estetismo”. Sabato 7 marzo alle ore 18, il pubblico potrà assistere a Bellissima , che mostra – a partire da un soggetto di Cesare Zavattini e grazie all’interpretazione di Anna Magnani – i due volti di Cinecittà: da una parte la sua facciata e i suoi celebri studi, dall’altra il cinismo imperante che la attraversa e il sottobosco truffaldino del mondo del cinema. Domenica 8 marzo alle ore 18 sarà la volta di Siamo donne , film a episodi in cui alcune grandi attrici sono chiamate a interpretare una versione romanzata di loro stesse. Su tutti si staglia l’episodio diretto da Visconti con Anna Magnani, un piccolo gioiello capace di svelare come al cinema la realtà e il mito vadano di pari passo. Mercoledì 11 marzo alle ore 20 si terrà Senso , film di passioni, illusioni e sconfitte, sorretto dallo straordinario equilibrio storico e romantico di Visconti: lussureggiante la fotografia a colori di Aldo e Robert Krasker , perfetti i costumi di Tosi ed Escoffier. Il programma si chiuderà giovedì 12 marzo alle ore 20 con Le notti bianche , basato sull’omonimo racconto di Fëdor Dostoevskij . Il film – che consente a Visconti di liberarsi, nel 1957, del neorealismo che aveva inaugurato con Ossessione – riceve il Leone d’argento a Venezia, anche grazie alle straordinarie interpretazioni di Marcello Mastroianni e Maria Schell . Ulteriori informazioni e prenotazioni sul sito della Casa del Cinema.",
-    "location_text": "Largo Marcello Mastroianni",
-    "popup_event_text": "Luchino Visconti retrospettiva",
-    "coordinates": {
-      "latitude": 41.911197345189734,
-      "longitude": 12.48767958669661
-    },
-    "normalized_dates": {
-      "raw_date_text": "2 - 12 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-02",
-          "end_date": "2026-03-12",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
     }
   }
 ]
