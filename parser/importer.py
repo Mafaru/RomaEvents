@@ -5,11 +5,11 @@ from psycopg2.extras import RealDictCursor
 
 
 DB_CONFIG = {
-    "host": "localhost",
+    "host": "dpg-d81lmm03kofs73a5u4u0-a.frankfurt-postgres.render.com",
     "port": 5432,
     "dbname": "roma_events",
-    "user": "postgres",
-    "password": "postgres",
+    "user": "roma_events_user",
+    "password": "waYpvyz9ZVkX8qoT8Z8hDw3luT5dqtYo",
 }
 
 

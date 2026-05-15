@@ -22,10 +22,12 @@ import io.ktor.http.contentType
 import io.ktor.http.isSuccess
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
+import com.romaevents.app.model.ApiError
+
 
 object ApiService {
 
-    private const val BASE_URL = "http://172.20.10.3:8081"
+    private const val BASE_URL = "https://roma-events-backend.onrender.com"
 
     private val client = HttpClient(Android) {
         install(ContentNegotiation) {
@@ -79,13 +81,13 @@ object ApiService {
         }
 
         if (!response.status.isSuccess()) {
-            throw RuntimeException(response.bodyAsText())
+            throw RuntimeException(extractErrorMessage(response.bodyAsText()))
         }
 
         return response.body()
     }
 
-    suspend fun register(username: String, password: String, email: String): AuthResponse {
+    suspend fun register(username: String, email: String, password: String): AuthResponse {
         val response = client.post("$BASE_URL/auth/register") {
             contentType(ContentType.Application.Json)
             accept(ContentType.Application.Json)
@@ -93,9 +95,21 @@ object ApiService {
         }
 
         if (!response.status.isSuccess()) {
-            throw RuntimeException(response.bodyAsText())
+            throw RuntimeException(extractErrorMessage(response.bodyAsText()))
         }
 
         return response.body()
     }
+
+    private fun extractErrorMessage(body: String): String {
+        return try {
+            Json {
+                ignoreUnknownKeys = true
+            }.decodeFromString<ApiError>(body).message
+        } catch (e: Exception) {
+            body
+        }
+    }
+
+
 }

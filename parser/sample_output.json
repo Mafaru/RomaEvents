@@ -1,18 +1,63 @@
 [
   {
-    "title": "Angeli, le sublimi creature dall'Antico al Contemporaneo",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/angeli-mostra-musei-capitolini-2026.page",
-    "theme_text": "Mostre",
-    "raw_date_text": "13 maggio - 1 novembre \"Angeli -",
-    "description": "Messaggeri, custodi e viandanti, le sublimi creature dall'Antico al Contemporaneo\": è il titolo della mostra alle Sale Terrene dei Musei Capitolini , visitabile dal 13 maggio al 1 novembre 2026. Ideata in concomitanza con l’anno giubilare e curata da Massimo Rossi Ruben e Viviana Vannucci , in collaborazione con Sua Em.za Angelo Comastri e con la collaborazione delle Ferrovie dello Stato, la mostra è dedicata alla figura degli Angeli nella Storia dell’arte . Il percorso interesserà un insieme di opere provenienti da differenti raccolte italiane ed europee, in grado di dare una sintesi suggestiva del tema degli angeli nel suo sviluppo cronologico e concettuale. Promossa da Roma Capitale, Assessorato alla Cultura, Sovrintendenza Capitolina ai Beni Culturali e organizzata da Centro Europeo per il Turismo Cultura e Spettacolo, la mostra è visitabile tutti i giorni dalle 9.30 alle 19.30. Ulteriori informazioni alla pagina dedicata dei Musei Capitolini .",
-    "location_text": "Piazza del Campidoglio",
-    "popup_event_text": "Angeli, le sublimi creature dall'Antico al Contemporaneo",
+    "title": "\"Bruci la città\", spettacolo al Teatro India",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/bruci-la-citta-spettacolo-teatro-india.page",
+    "theme_text": "Eventi ad ingresso libero - Teatro",
+    "raw_date_text": "19 maggio",
+    "description": "©Teatro di Roma Il palcoscenico del Teatro India il 19 maggio (ore 20) si anima con Bruci la città , esito finale del laboratorio I ragazzi selvaggi condotto da Niccolò Fettarappa e Lorenzo Guerrieri con gli attori e le attrici del corso di perfezionamento del Teatro di Roma. Lo spettacolo racconta le contraddizioni delle pulsioni alla fuga e il rapporto conflittuale che si instaura più o meno consapevolmente verso lo spazio pubblico che ci circonda, che abitiamo e che soprattutto subiamo. In scena Angelica Accarino , Chiara Bono , Pietro Bovi, Diego Parlanti, Davide Papasidero , Alessandro Pocek , Emanuela Saccardi , Matteo Santinelli , Matteo Sbandi , Camilla Ventura , Sara Verteramo , Chiara Vinci nelle vesti di maldestri avventurieri, terroristi giocherelloni, sciamani metropolitani, principesse che amano il fango, hippie delusi, maniaci del turismo. Tutti con le valigie pronte, pronti a scappare lontano, a far esplodere tutto o, addirittura, a un pic-nic. “Condannati a nascere e morire in città frettolose e inospitali, ci siamo abituati a rinchiuderci in uffici, strade trafficate, postazioni da smartworking e a sentirci a casa. Ci piace dimenticare il corpo dietro i ritmi urbani, scavalcare il prossimo e non guardarlo in faccia. Ci siamo affezionati allo smog, allo stress, alla vita depressa e seduta. Finché qualcosa si fracassa e sentiamo il bisogno disperato di fuggire - dichiarano Niccolò Fettarappa e Lorenzo Guerrieri. L'utopia bussa e noi siamo presi dall'ansia\" . L'ingresso è libero con prenotazione obbligatoria a scuola@teatrodiroma.net Ulteriori informazioni alla pagina dedicata del Teatro di Roma.",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "19 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-19",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Il 23 maggio è la Notte dei Musei",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/23-maggio-2026-notte-dei-musei-roma.page",
+    "theme_text": "Eventi ad ingresso libero - Musei Civici",
+    "raw_date_text": "23 maggio",
+    "description": "Sabato 23 maggio torna la Notte dei Musei , l'evento, giunto alla sedicesima edizione, che unisce arte , cultura e spettacolo . In concomitanza con la Nuit Européenne Des Musées , anche a Roma tanti concerti, spettacoli, proiezioni, mostre e attività. Dalle 20 di sabato alle 02.00 della domenica, i Musei Civici di Roma Capitale e i tanti altri spazi della cultura cittadina accolgono le visitatrici e i visitatori per una serata all’insegna dell’arte e dell’intrattenimento. Tra i Musei Civici coinvolti: Musei Capitolini , Musei Capitolini Centrale Montemartini, Museo dell’Ara Pacis Mercati di Traiano – Museo dei Fori Imperiali , Museo di Roma, Museo Napoleonico , Museo di Roma in Trastevere, Museo Pietro Canonica a Villa Borghese , Musei di Villa Torlonia (Casina delle Civette, Casino Nobile, Serra Moresca), Museo Carlo Bilotti – Aranciera di Villa Borghese , Museo di Scultura Antica Giovanni Barracco, Museo Civico di Zoologia , Museo della Repubblica Romana e della memoria garibaldina, Galleria d’Arte Moderna , Museo di Casal de’ Pazzi, Parco Archeologico del Celio . L'iniziativa è promossa dall'Assessorato alla Cultura e al Coordinamento delle iniziative riconducibili alla Giornata della Memoria, Sovrintendenza Capitolina ai Beni Culturali con l’organizzazione di Zètema Progetto Cultura. Il programma sarà preso disponibile sulla pagina del sito Musei in Comune Roma .",
+    "location_text": "piazza del campidoglio",
+    "popup_event_text": "Notte dei Musei",
     "coordinates": {
-      "latitude": 41.8933192,
+      "latitude": 41.8933191,
       "longitude": 12.4829345
     },
     "normalized_dates": {
-      "raw_date_text": "13 maggio - 1 novembre \"Angeli -",
+      "raw_date_text": "23 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-23",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Tre volte Repubblica. La mostra all'Archivio di Stato",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/tre-volte-repubblica-archivio-di-stato-2026.page",
+    "theme_text": "Eventi ad ingresso libero - Mostre",
+    "raw_date_text": "13 maggio - 3 giugno “Tre volte",
+    "description": "Repubblica. Roma 1798 – 1849 – 1946” : è il titolo della mostra in corso presso l' Archivio di Stato di Roma per celebrare gli 80 anni della Repubblica Italiana. L'esposizione documentaria (aperta al pubblico dal 13 maggio al 3 giugno) ripercorre tre diverse idee di Repubblica in oltre un secolo di storia: dalla Repubblica romana del 1798-1799 alla proclamazione della Repubblica Italiana del 2 giugno 1946. Accanto ai documenti conservati presso l’Archivio di Stato di Roma, sono esposti materiali dell’Archivio Centrale dello Stato relativi al referendum istituzionale del 2 giugno 1946 e alla proclamazione della Repubblica, nei quali riaffora il richiamo all’esperienza della Repubblica Romana del 1849 e della sua eredità democratica. Tante le esperienze racchiuse in questo secolo di storia: dalla difesa della Prima Repubblica Romana contro l’intervento francese all’esperienza politica della Seconda Repubblica Romana, che anticipa alcuni principi fondamentali della Costituzione italiana del 1948, come la sovranità popolare, il progresso sociale, le autonomie locali e la libertà di culto. Un racconto fatto di testimonianze materiali e immagini, in cui oggetti come mappe e uniformi si alternano a documenti, materiali a stampa e opere grafiche conservati all’Archivio di Stato di Roma e all’Archivio Centrale dello Stato. Il percorso si conclude con una sezione dedicata alla satira politica e alla memoria della Repubblica romana tra Otto e Novecento: uno spaccato sulla società e sui costumi coevi attraverso vignette, opuscoli e verbali di polizia. La mostra è visitabile, con ingresso libero, presso la Sala Alessandrina dell’Archivio di Stato di Roma (Corso del Rinascimento 40) da mercoledì 13 maggio a mercoledì 3 giugno 2026. Ulteriori informazioni sul sito dell' Archivio di Stato di Roma.",
+    "location_text": "Corso Rinascimento 40",
+    "popup_event_text": "Tre volte Repubblica",
+    "coordinates": {
+      "latitude": 41.8981461,
+      "longitude": 12.4740637
+    },
+    "normalized_dates": {
+      "raw_date_text": "13 maggio - 3 giugno “Tre volte",
       "occurrences": [
         {
           "start_date": "2026-05-13",
@@ -20,12 +65,78 @@
           "type": "single"
         },
         {
-          "start_date": "2026-11-01",
+          "start_date": "2026-06-03",
           "end_date": null,
           "type": "single"
         }
       ],
       "matched_pattern": "multiple_full_dates"
+    }
+  },
+  {
+    "title": "Concerto gratuito in Campidoglio il 19 maggio",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/concerto-gratuito-in-campidoglio-19-maggio.page",
+    "theme_text": "Eventi ad ingresso libero - Musica",
+    "raw_date_text": "19 maggio",
+    "description": "Martedì 19 maggio alle ore 19 nella Sala della Protomoteca in Campidoglio si terrà il secondo concerto gratuito della stagione concertistica 2026 della Fondazione Nicola Bulgari con il sostegno di Roma Capitale. L'evento, che fa seguito al concerto del 22 aprile , vedrà la partecipazione degli artisti Nikoloz Kokilashvili (pianoforte), Julian Kainrath (violino), Jaren Ziegler (viola), Ruslan Talas (violino), Mark Prihodko (violoncello), Luigi Carroccia (pianoforte). In programma musiche di Chopin, Franck e Prokoviev. L’ingresso è gratuito su prenotazione a info@fondazionenb.com fino ad esaurimento posti.",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "19 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-19",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Roma Gallery Weekend - Contemporanea, quarta edizione",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/roma-gallery-weekend-contemporanea-2026.page",
+    "theme_text": "Iniziative ed Eventi - Mostre",
+    "raw_date_text": "14 - 17 maggio",
+    "description": "Richard Saltoun Installation view da Barbarigo Beyond the Figure Dal 15 al 17 maggio 2026 torna Roma Gallery Weekend - Contemporanea , alla sua quarta edizione. La Capitale diventa un grande spazio espositivo a cielo aperto grazie alle 32 gallerie di arte contemporanea partecipanti all’iniziativa, che aprono le loro porte al pubblico con un programma di mostre, eventi inediti e momenti di incontro. Giovedì 14 maggio, dalle 18 alle 20, è la Gallery Night , una serata di inaugurazioni, eventi, progetti speciali e opening delle nuove mostre. Le gallerie sono aperte con orario straordinario durante il fine settimana: dalle 10 alle 20 venerdì 15 e sabato 16 e dalle 10 alle 18 la domenica 17. Roma Gallery Weekend - Contemporanea è un’iniziativa ideata e organizzata dall’associazione che riunisce un gruppo di gallerie romane d’arte contemporanea, immaginata come un momento per rafforzare la relazione tra Roma e il suo volto più contemporaneo . Tante le mostre e gli eventi diffusi in tutta la città, rivolti sia al pubblico locale che a quello internazionale. Il progetto prende il nome dalla mostra curata nel 1973 da Achille Bonito Oliva nel parcheggio di Villa Borghese; a distanza di cinquant’anni, le gallerie d’arte di Roma hanno ripreso quel filo narrativo, per sottolineare il valore di Roma nel tessuto culturale internazionale. CURATORI E ARTISTI Roma Gallery Weekend - Contemporanea invita Gaia Bobò , Matteo Binci , Ilaira Gianni ed Eleonora Milani curatrici e curatori di base in città ma con esperienze internazionali, a immaginare dei percorsi che raccontano le gallerie, che il pubblico può scegliere e seguire in autonomia. L'evento presenta un programma diversificato e dinamico con artisti e artiste come Francesca Woodman (Gagosian), Friedrich Kunath (Tim Van Laere Gallery), Diego Gualandris (ADA), Benoît Maire (Federica Schiavo Gallery), Carlos Garaicoa (Galleria Continua), Elisa Montessori (Monitor) e Tracey Emin (Galleria Lorcan O’Neill). LE GALLERIE Le nuove gallerie che si uniscono quest’anno riflettono a pieno la vitalità del sistema cittadino tra respiro internazionale, ricerca e storia: Amanita , galleria newyorkese che nel 2025 ha inaugurato una nuova sede a Roma all’interno di Palazzo Crivelli; Cantadora , galleria fondata nel 2025 che si concentra su artiste e artisti alla loro prima mostra in una galleria e che ha sede nel quartiere di San Giovanni; e Antonacci Lapiccirella Fine Art , che dal 2012 rappresenta un punto di riferimento per gli appassionati di arte tra la fine del XVIII e la prima metà del XX secolo e che in occasione del Gallery Weekend, per dialogare con il contemporaneo, propone un progetto speciale di Marshall Vernet. Tra le gallerie che inaugurano giovedì 14 maggio figurano Andrea Festa Fine Art con due esposizioni di Salvatore Pione & Min Woo Nam e di Gianna Dispenza; EDDart Rome con Questione di equilibrio, personale di Mauro di Silvestre; Francesca Antonini con una collettiva che vede protagonisti Alessia Armeni, Anne Buckwalter, Dario Carratta, Ruoxi Jin, Luca Rubegni, Galleria Continua con la personale di Carlos Garaicoa; La Nuova Pesa con la personale di Francesca Cornacchini; Monitor con 50 x 35, personale di Elisa Montessori; Matèria con un progetto speciale di José Angelino, Fabio Barile e Stefano Canto; Monti8 inaugura Echo, personale di Imogen Allen. Roma Gallery weekend - Contemporanea è patrocinato da Roma Capitale, Assessorato alla Cultura e al Coordinamento delle iniziative riconducibili alla Giornata della Memoria. Ulteriori informazioni e tutte le gallerie che partecipano sul sito Roma Gallery Weekend - Contemporanea .",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "14 - 17 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-14",
+          "end_date": "2026-05-17",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "same_month_range"
+    }
+  },
+  {
+    "title": "Angeli, le sublimi creature dall'Antico al Contemporaneo",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/angeli-mostra-musei-capitolini-2026.page",
+    "theme_text": "Mostre",
+    "raw_date_text": "13 maggio - 1 novembre",
+    "description": "Giovanni Antonio Galli detto lo Spadarino, Santa Francesca Romana e l'angelo, © BNL BNP PARIBAS A un anno dalla scomparsa di Papa Francesco , i Musei Capitolini celebrano la memoria del \"Vescovo degli ultimi\" con il percorso espositivo “ ANGELI. Messaggeri, custodi e viandanti. Le sublimi creature dall'Antico al Contemporaneo” , in programma dal 13 maggio al 1° novembre 2026 nelle sale terrene di Palazzo dei Conservatori. Grazie alla sua accezione commemorativa, la mostra si configura come un evento di rilievo non solo artistico, ma anche spirituale. Il ‘concept’ del progetto Nel corso dei secoli, gli angeli hanno stimolato l’immaginario collettivo tanto da diventare un topos imprescindibile dell'arte nelle sue varie forme di espressione. Attraverso una selezione di opere – dipinti, sculture e materiali su pergamena – provenienti da collezioni museali e raccolte private, la mostra presenta un percorso tematico dedicato al ruolo che le figure angeliche hanno nella tradizione artistica occidentale. Il progetto vuole ripercorrere la loro evoluzione iconografica nella duplice natura di ponte tra l’umano e il divino, offrendo al contempo al pubblico uno spunto di riflessione sul rapporto tra il visibile e l’invisibile. Particolare attenzione è riservata alla progressiva trasformazione dell’immagine angelica, che nel corso dell’età moderna assume una dimensione più vicina all’uomo, fino alle riletture simboliche e metaforiche dell’arte tra Otto e Novecento. Il progetto espositivo vanta un corpus di opere di straordinario rilievo, frutto della sinergia con prestigiosi enti prestatori. Grazie al loro prezioso contributo, la mostra offre al pubblico l'opportunità unica di ammirare capolavori provenienti dal Museo Real Bosco Capodimonte, Museo di Roma, Galleria dell’Accademia di Firenze e Musei del Bargello, Galleria degli Uffizi, Collezione Intesa Sanpaolo , Collezione BNL BNP Paris Bas, Gallerie Nazionali di Arte Antica di Roma, Musei Nazionali di Perugia, Direzione Regionale Musei Nazionali dell’Umbria, Pinacoteca Capitolina, Museo Barracco e Fondo Edifici di Culto riuniti per la prima volta in questa occasione. Il percorso espositivo Spaziando dall’archeologia agli artefatti del XXI secolo il percorso riflette i temi di custodia, guida e annuncio , cardini spirituali del pontificato di Papa Bergoglio. Tre le sezioni tematiche ideate dai curatori per stimolare il visitatore alla contemplazione: 1. I Messaggeri . Dall’annuncio biblico alle espressioni rinascimentali, la figura che porta la speranza e la Parola. 2. I Custodi. L’angelo che veglia e protegge, simbolo della premura e amorevolezza divina, sempre presente nella vita e nel cammino dell'uomo. 3. I Viandanti. Figura di prossimità e condivisione, l’angelo viandante incarna la presenza celeste che guida, accompagna e orienta il cammino dell’Uomo nelle sfide del suo tempo. Dall’Antico al Contemporaneo La sequenza espositiva si sviluppa lungo un ampio arco cronologico, dal Medioevo all’età contemporanea , con richiami alla tradizione paleocristiana, e si articola in sezioni tematiche dedicate alle principali declinazioni iconografiche: dai putti alle Annunciazioni, dagli arcangeli guerrieri agli angeli custodi, fino alle figure viandanti e agli angeli musici. I curatori Massimo Rossi Ruben e Viviana Vannucci hanno voluto dedicare questa mostra a Papa Francesco perché “proprio come gli angeli protagonisti della rassegna, egli ha inteso interpretare la propria vocazione per il prossimo come un ponte tra cielo e terra”. L’esposizione, curata da Massimo Rossi Ruben e Viviana Vannucci è promossa da Roma Capitale, Assessorato alla Cultura e al Coordinamento delle iniziative riconducibili alla Giornata della Memoria, Sovrintendenza Capitolina ai Beni Culturali ed è organizzata dal Centro Europeo per il Turismo e la Cultura, presieduto da Giuseppe Lepore, con i servizi museali di Zètema Progetto Cultura. Il catalogo è edito da Gangemi Editore. Ulteriori informazioni alla pagina dedicata dei Musei Capitolini . Guercino, San Matteo e l'Angelo, olio su tela © Pinacoteca Capitolina",
+    "location_text": "Piazza del Campidoglio",
+    "popup_event_text": "Angeli, le sublimi creature dall'Antico al Contemporaneo",
+    "coordinates": {
+      "latitude": 41.8933192,
+      "longitude": 12.4829345
+    },
+    "normalized_dates": {
+      "raw_date_text": "13 maggio - 1 novembre",
+      "occurrences": [
+        {
+          "start_date": "2026-05-13",
+          "end_date": "2026-11-01",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
     }
   },
   {
@@ -53,6 +164,30 @@
     }
   },
   {
+    "title": "'Hotel Champagne' al Teatro Argentina",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/teatro-argentina-hotel-champagne-18-maggio-2026.page",
+    "theme_text": "Eventi - Sociale - Iniziative",
+    "raw_date_text": "18 maggio",
+    "description": "©ph di Manuela Giusto Torna al Teatro Argentina la tribuna di dibattito civile 'Le Verità Sospese' , con l’appuntamento conclusivo di lunedì 18 maggio 'Hotel Champagne' , dedicato al Caso Palamara . Dopo l'indagine sui casi Mori , Moroni e Marta Russo , si chiude così il ciclo ideato dal Direttore artistico del Teatro di Roma Luca De Fusco : quattro serate di approfondimento sui grandi nodi irrisolti del nostro Paese . Obiettivo, offrire alle nuove generazioni e alla cittadinanza strumenti di analisi e un'occasione di riflessione , per andare oltre la superficie della cronaca e dei pregiudizi mediatici . Il dibattito, animato dalle firme di Alessandro Barbano e Goffredo Buccini , avrà il contributo narrativo dell’attrice Anna Ammirati . Con Le Verità Sospese, il Teatro di Roma ha riaffermato la sua vocazione di spazio critico , registrando una straordinaria partecipazione di pubblico . Appuntamento al Teatro Argentina Lunedì 18 maggio 2026 ore 19:00 Per ulteriori informazioni e prenotazioni: Le Verità Sospese - Fondazione Teatro di Roma Teatro Argentina, Largo di Torre Argentina, 52 - 00186 Roma Tel. +39 06 44230693",
+    "location_text": "Largo di Torre Argentina, 52 ROMA",
+    "popup_event_text": "Hotel Champagne al Teatro Argentina",
+    "coordinates": {
+      "latitude": 41.8961444,
+      "longitude": 12.4762742
+    },
+    "normalized_dates": {
+      "raw_date_text": "18 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-18",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "single_date"
+    }
+  },
+  {
     "title": "Informagiovani, webinar \"Lavorare in un'agenzia di comunicazione\"",
     "detail_url": "https://www.comune.roma.it/web/it/evento/informagiovani-webinar-lavorare-agenzia-comunicazione.page",
     "theme_text": "Giovani - Formazione e Lavoro",
@@ -66,30 +201,6 @@
       "occurrences": [
         {
           "start_date": "2026-05-14",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "'Hotel Champagne' al Teatro Argentina",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/teatro-argentina-hotel-champagne-18-maggio-2026.page",
-    "theme_text": "Eventi - Sociale - Iniziative",
-    "raw_date_text": "18 maggio",
-    "description": "©ph di Manuela Giusto Torna al Teatro Argentina la tribuna di dibattito civile 'Le Verità Sospese' , con l’appuntamento conclusivo di lunedì 18 maggio 'Hotel Champagne' , dedicato al Caso Palamara . Dopo l'indagine sui casi Mori , Moroni e Marta Russo , si chiude così il ciclo ideato dal Direttore artistico del Teatro di Roma Luca De Fusco : quattro serate di approfondimento sui grandi nodi irrisolti del nostro Paese . Obiettivo, offrire alle nuove generazioni e alla cittadinanza strumenti di analisi e un'occasione di riflessione , per andare oltre la superficie della cronaca e dei pregiudizi mediatici . Il dibattito, animato dalle firme di Alessandro Barbano e Goffredo Buccini , avrà il contributo narrativo dell’attrice Anna Ammirati . Con Le Verità Sospese, il Teatro di Roma ha riaffermato la sua vocazione di spazio critico , registrando una straordinaria partecipazione di pubblico . Appuntamento al Teatro Argentina Lunedì 18 maggio 2026 ore 20:00 Per ulteriori informazioni e prenotazioni: Le Verità Sospese - Fondazione Teatro di Roma Teatro Argentina, Largo di Torre Argentina, 52 - 00186 Roma Tel. +39 06 44230693",
-    "location_text": "Largo di Torre Argentina, 52 ROMA",
-    "popup_event_text": "Hotel Champagne al Teatro Argentina",
-    "coordinates": {
-      "latitude": 41.8961444,
-      "longitude": 12.4762742
-    },
-    "normalized_dates": {
-      "raw_date_text": "18 maggio",
-      "occurrences": [
-        {
-          "start_date": "2026-05-18",
           "end_date": null,
           "type": "single"
         }
@@ -2277,123 +2388,6 @@
         }
       ],
       "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Tornano a Roma le Idi di Marzo",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/tornano-a-roma-le-idi-di-marzo-2026.page",
-    "theme_text": "Iniziative ed Eventi",
-    "raw_date_text": "15 marzo",
-    "description": "Il 15 marzo a Largo Argentina, nel luogo stesso in cui la storia colloca uno degli eventi più drammatici della Roma antica, l’ assassinio di Gaio Giulio Cesare , torna la rievocazione delle Idi di Marzo , giunta alla XXIII edizione e organizzata dal Gruppo Storico Romano. L’appuntamento è per domenica 15 marzo alle ore 16:00 presso l’Area Sacra di Largo di Torre Argentina, dove nel 44 a.C., nella Curia di Pompeo, Cesare venne colpito a morte dai congiurati guidati da Marco Giunio Bruto e Gaio Cassio Longino, in uno degli episodi più celebri della storia universale. Ogni anno questa rievocazione richiama appassionati di storia, cittadini e visitatori da tutto il mondo, restituendo alla città il racconto vivo di un momento che segnò profondamente il destino di Roma e il passaggio dalla Repubblica all’Impero. La manifestazione sarà introdotta da saluti e interventi istituzionali, che si svolgeranno presso Largo di Torre Argentina. Programma Ore 16:00 Rievocazione storica della congiura e dell’assassinio di Giulio Cesare. Ore 16:40 circa Partenza del corteo funebre che da Largo di Torre Argentina raggiungerà la statua di Giulio Cesare in Via dei Fori Imperiali. Nel corso della commemorazione verranno pronunciate le celebri orazioni di Bruto, Marco Antonio e Calpurnia , rievocando uno dei momenti più drammatici e simbolici della storia di Roma. Organizzazione L’evento è a cura del Gruppo Storico Romano , con la collaborazione della Legio XXX Vlpia Victrix dell’@Associazione Culturale \"Decima Legio\". La manifestazione è patrocinata da Roma Capitale e si svolge con gli auspici del Presidente della Commissione Cultura della Camera dei Deputati. Scarica la locandina.",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
-    "normalized_dates": {
-      "raw_date_text": "15 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-15",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Furore, con Massimo Popolizio al Teatro Argentina",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/furore-massimo-popolizio-teatro-argentina-2026.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "17 - 29 marzo",
-    "description": "Dal 17 al 29 marzo al Teatro Argentina Massimo Popolizio incarna con vibrante intensità i personaggi di Furore, di John Steinbeck. Il potente capolavoro della narrativa americana, scritto nel 1939 e subito divenuto un best-seller premiato con il Pulitzer nel 1940, rivive ancora una volta nell’adattamento per la scena di Emanuele Trevi, emozionando e scuotendo il pubblico con la sua cruda attualità. Lo spettacolo continua ad affascinare per la sua capacità di raccontare la dignità umana di fronte alle avversità, la lotta per la sopravvivenza e il bisogno di giustizia sociale, attraverso l’arte sapiente di Massimo Popolizio, cuore pulsante dell’opera, che dà voce alle sofferenze e alle speranze della famiglia Joad, restituendone una lettura che risuona oggi con una urgenza sconcertante. Steinbeck, infatti, è stato tra i primi a narrare gli effetti devastanti di quello che chiamiamo cambiamento climatico: la siccità e le tempeste di sabbia che spinsero migliaia di persone verso una California che, anziché accoglierle, le travolse con alluvioni e cinismo. Una parabola che richiama a sua volta la spirale di violenza, diffidenza e cattiveria che attraversa tuttora la nostra società contemporanea, evocando in modo inquietante le tensioni che stanno lacerando gli Stati Uniti. In questa coproduzione Teatro di Roma e Compagnia Umberto Orsini, Massimo Popolizio lascia riscoprire un classico che, parlando del passato, ci costringe a guardare in faccia il nostro presente, attraverso un one-man show epico e lirico che condurrà il pubblico all’interno della dolorosa crisi agricola, economica e sociale che colpì gli Stati Uniti tra il 1929 e l’attacco a Pearl Harbor. Il romanzo, consacrato anche dal cinema con il film di John Ford interpretato da Henry Fonda , nasce da un’inchiesta giornalistica che Steinbeck condusse nell’estate del 1936, quando il San Francisco News gli chiese di indagare sulle condizioni di vita dei braccianti sospinti in California dalle regioni centrali degli Stati Uniti, soprattutto dall’Oklahoma e dall’Arkansas, a causa delle tempeste di sabbia e dalla conseguente siccità che avevano reso sterili quelle terre coltivate a cotone. Il risultato di quell’indagine fu una serie di articoli da cui l’autore americano generò, tre anni dopo, il romanzo Furore , trasformando quella decisiva esperienza giornalistica, umana e politica in grande letteratura. Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro di Roma.",
-    "location_text": "Largo di Torre Argentina",
-    "popup_event_text": "Furore con Massimo Popolizio",
-    "coordinates": {
-      "latitude": 41.89571840792446,
-      "longitude": 12.476163079359443
-    },
-    "normalized_dates": {
-      "raw_date_text": "17 - 29 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-17",
-          "end_date": "2026-03-29",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Libri al Museo 2026, presentazioni editoriali dedicate al mondo dell’arte",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/libri-al-museo-2026.page",
-    "theme_text": "Eventi ad ingresso libero - Iniziative ed Eventi",
-    "raw_date_text": "13 marzo",
-    "description": "Riprendono gli appuntamenti di \"Libri al Museo 2026\" , il ciclo di presentazioni di volumi a tema storico-artistico in diversi Musei Civici della Capitale. Il prossimo appuntamento sarà venerdì 13 marzo alle 17 , al Museo di Roma a Palazzo Braschi, dove Simonetta Prosperi Valenti Rodinò e Benedetta Ciuffa presentano il volume Maratti invenit et pinxit. Carlo Maratti e l’incisione . L’opera illustra l’attività` del pittore barocco nel campo della grafica, analizzandone la duplice veste di peintre-graveur e di inventor di numerose composizioni poi tradotte dai più noti incisori del tempo: un fenomeno che si protrasse a lungo e che lo stesso Maratti promosse con determinazione per diffondere le proprie opere. Insieme alle autrici intervengono Ilaria Miarelli Marian i Sovrintendenza Capitolina, Giorgio Marini Università degli Studi Roma Tre e Stefano Papetti Collezioni Comunali di Ascoli Piceno. L’ingresso è libero nella sola Sala Tenerani, sede dell’incontro. Per ulteriori INFO e DETTAGLI.",
-    "location_text": "Piazza di S. Pantaleo, 10",
-    "popup_event_text": "Libri al Museo",
-    "coordinates": {
-      "latitude": 41.8974783756063,
-      "longitude": 12.472878125392048
-    },
-    "normalized_dates": {
-      "raw_date_text": "13 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-13",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Harding dirige Brahms e Dvorák, alla Sala Santa Cecilia",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/harding-dirige-brahms-e-dvork-sala-santa-cecilia.page",
-    "theme_text": "Musica",
-    "raw_date_text": "12 - 14 marzo",
-    "description": "Daniil Trifonov, ©DarioAcosta Il mese di marzo vedrà il Direttore Musicale di Santa Cecilia Daniel Harding alle prese con Brahms e Dvořák, all’interno di un programma che porterà anche in tournée in Europa. A seguirlo in questo progetto, accanto all’ Orchestra di Santa Cecilia , anche un volto noto al pubblico ceciliano: Daniil Trifonov . Il pubblico potrà assistere alla interpretazione che il pluripremiato pianista russo offrirà dell’imponente e brillante Concerto n. 2 di Brahms nel quale l’autore esplora le molteplici possibilità del pianoforte in un’opera di dimensioni monumentali. Nella seconda parte della serata verrà eseguita la Sinfonia n. 7 di Antonín Dvořák , cesellatore di composizioni ispirate ai colori e ai ritmi della musica popolare ceca e, soprattutto, grande ammiratore e amico di Brahms. Gli appuntamenti romani si terranno in Sala Santa Cecilia , il 12 e 13 marzo alle ore 20 e il 14 marzo alle ore 18 . Venerdì 13 marzo alle ore 18.30 è inoltre previsto un incontro con Diana Re , all’interno del ciclo Spirito Classico , per approfondire i brani in programma. Un’occasione per avvicinarsi alla musica con un gusto nuovo e per scoprire la storia e il contesto in cui i grandi capolavori hanno visto la luce. La conferenza si svolgerà in Spazio Risonanze , preceduta da un aperitivo. Il programma non si concluderà con l'ultima replica romana. L’Orchestra di Santa Cecilia, insieme ai due solisti, ha infatti in programma una tournée europea: dal 16 al 21 marzo, il fascino di Brahms e Dvořák toccherà le storiche sale di Budapest, Vienna, Monaco e Amburgo, portando l'eccellenza ceciliana nei centri nevralgici della musica internazionale. Ulteriori informazioni e prenotazioni sul sito dell' Accademia di Santa Cecilia .",
-    "location_text": "Via Pietro de Coubertin 30",
-    "popup_event_text": "Harding dirige Brahms e Dvorák",
-    "coordinates": {
-      "latitude": 41.92960185493652,
-      "longitude": 12.475059748748475
-    },
-    "normalized_dates": {
-      "raw_date_text": "12 - 14 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-12",
-          "end_date": "2026-03-14",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Goldmine, di Alice Pasquini per \"Libri Come\"",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/goldmine-alice-pasquini-libri-come-2026.page",
-    "theme_text": "Arte",
-    "raw_date_text": "20 marzo - 6 aprile",
-    "description": "Ogni anno Libri Come , la Festa del Libro e della Lettura giunta quest'anno alla sua XVII edizione che si svolgerà dal 20 al 22 marzo all'Auditorium Parco della Musica Ennio Morricone, allestisce una mostra che mette in relazione il lavoro di un artista con la parola chiave che caratterizza ogni edizione. Quest’anno, per la prima volta, viene presentata un’opera pensata appositamente per Libri Come, non solo rispetto al tema ma anche allo spazio. La street artist Alice Pasquini ha elaborato il significato di quest'anno dedicato al tema della Democrazia - mai così fragile, così strattonata - traducendolo in un’installazione e in un murales che dialogheranno con il pubblico e con gli incontri del festival. Goldmine nasce da una riflessione che intreccia il lavoro di Pasquini alla parola scelta per questa edizione di Libri Come. Un ammasso di oggetti dismessi – frigoriferi, televisori, biciclette, carrelli della spesa – a rappresentare lo scarto contemporaneo, ciò che resta dopo il consumo, ma introducendo la possibilità che, anche nello scarto, si possa ritrovare un valore nascosto, nuovo e collettivo. Il contrasto tra forme e colori, tra questi scarti e l’oro, sottolinea la fragilità del vivere quotidiano e dell’essere comunità, illuminando i nodi delle disuguaglianze, del rapporto con lo spazio e col prossimo, costringendo l’osservatore a domandarsi in quale relazione viene a trovarsi rispetto alla dimensione pubblica del privato. L’opera, che rimarrà esposta dal 20 marzo al 6 aprile , diventa così una piazza – una agorà – di simboli e di volti; uno specchio offerto allo spettatore che ci interroga sul valore che diamo alle cose nel nostro pensarci individuo e non collettività. “Con Goldmine - afferma Alice Pasquini - ho voluto creare un cortocircuito visivo: un ammasso di rifiuti ricoperto d’oro che diventa improvvisamente seducente. È un gesto semplice ma destabilizzante, perché mostra quanto il valore sia una costruzione collettiva e quanto facilmente possiamo essere attratti dalla superficie.” Orari Durante il festival Libri Come 20 marzo dalle ore 18.00 fino al termine degli incontri 21 marzo dalle ore 11.00 fino al termine degli incontri 22 marzo dalle ore 11.00 fino al termine degli incontri Dal 23 marzo al 6 aprile Dal lunedì al venerdì: dalle ore 16.00 alle ore 20.00 Sabato, domenica e festivi: dalle ore 11.00 alle ore 20.00 Ulteriori informazioni sl sito dell' Auditorium Parco della Musica.",
-    "location_text": "Via Pietro de Coubertin 30",
-    "popup_event_text": "Goldmine di Alice Pasquini",
-    "coordinates": {
-      "latitude": 41.9295540377107,
-      "longitude": 12.475081223865159
-    },
-    "normalized_dates": {
-      "raw_date_text": "20 marzo - 6 aprile",
-      "occurrences": [
-        {
-          "start_date": "2026-03-20",
-          "end_date": "2026-04-06",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "cross_month_range"
     }
   }
 ]
