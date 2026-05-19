@@ -22,21 +22,22 @@ import io.ktor.http.contentType
 import io.ktor.http.isSuccess
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
-import com.romaevents.app.model.ApiError
-
+import kotlinx.serialization.json.jsonObject
+import kotlinx.serialization.json.jsonPrimitive
+import kotlinx.serialization.json.contentOrNull
 
 object ApiService {
 
     private const val BASE_URL = "https://roma-events-backend.onrender.com"
 
+    private val jsonConfig = Json {
+        ignoreUnknownKeys = true
+        isLenient = true
+    }
+
     private val client = HttpClient(Android) {
         install(ContentNegotiation) {
-            json(
-                Json {
-                    ignoreUnknownKeys = true
-                    isLenient = true
-                }
-            )
+            json(jsonConfig)
         }
     }
 
@@ -103,13 +104,15 @@ object ApiService {
 
     private fun extractErrorMessage(body: String): String {
         return try {
-            Json {
-                ignoreUnknownKeys = true
-            }.decodeFromString<ApiError>(body).message
+            val jsonElement = Json { ignoreUnknownKeys = true }.parseToJsonElement(body)
+
+            val obj = jsonElement.jsonObject
+
+            obj["message"]?.jsonPrimitive?.contentOrNull
+                ?: obj["error"]?.jsonPrimitive?.contentOrNull
+                ?: "Errore sconosciuto"
         } catch (e: Exception) {
-            body
+            "Errore di comunicazione con il server"
         }
     }
-
-
 }

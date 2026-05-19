@@ -105,13 +105,4 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.contentContainer, fragment)
             .commit()
     }
-
-    fun openProfile() {
-        bottomNavigation.menu.findItem(R.id.nav_profile).isChecked = true
-        showFragment(ProfileFragment())
-    }
-
-    fun refreshProfileIfVisible() {
-        // lasciata vuota per ora
-    }
 }

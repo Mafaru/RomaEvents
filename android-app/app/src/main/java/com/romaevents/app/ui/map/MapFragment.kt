@@ -1,6 +1,7 @@
 package com.romaevents.app.ui.map
 
 import android.Manifest
+import android.content.Context
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -10,6 +11,10 @@ import android.graphics.Path
 import android.graphics.Typeface
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.GradientDrawable
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
 import android.os.Bundle
 import android.os.Looper
 import android.view.Gravity
@@ -38,7 +43,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.osmdroid.config.Configuration
-import org.osmdroid.tileprovider.tilesource.TileSourceFactory
+import org.osmdroid.tileprovider.tilesource.XYTileSource
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
@@ -55,13 +60,30 @@ class MapFragment : Fragment() {
     private lateinit var bottomAddress: TextView
     private lateinit var bottomDetailButton: Button
 
+    private lateinit var sensorManager: SensorManager
+    private var rotationSensor: Sensor? = null
+
     private var userMarker: Marker? = null
     private var hasLoadedEvents = false
     private var focusEventId: Long? = null
     private var selectedEventId: Long? = null
+    private var userBearing: Float = 0f
 
     private val fallbackRomaLat = 41.9028
     private val fallbackRomaLon = 12.4964
+
+    private val cartoPositronTileSource = XYTileSource(
+        "CartoDB Positron",
+        0,
+        20,
+        256,
+        ".png",
+        arrayOf(
+            "https://a.basemaps.cartocdn.com/light_all/",
+            "https://b.basemaps.cartocdn.com/light_all/",
+            "https://c.basemaps.cartocdn.com/light_all/"
+        )
+    )
 
     companion object {
         private const val ARG_EVENT_ID = "event_id"
@@ -74,6 +96,28 @@ class MapFragment : Fragment() {
                 }
             }
         }
+    }
+
+    private val sensorListener = object : SensorEventListener {
+        override fun onSensorChanged(event: SensorEvent) {
+            if (event.sensor.type != Sensor.TYPE_ROTATION_VECTOR) return
+
+            val rotationMatrix = FloatArray(9)
+            val orientationAngles = FloatArray(3)
+
+            SensorManager.getRotationMatrixFromVector(rotationMatrix, event.values)
+            SensorManager.getOrientation(rotationMatrix, orientationAngles)
+
+            val azimuthRadians = orientationAngles[0]
+            val azimuthDegrees = Math.toDegrees(azimuthRadians.toDouble()).toFloat()
+
+            userBearing = (azimuthDegrees + 360f) % 360f
+
+            userMarker?.icon = createUserLocationIcon(userBearing)
+            mapView.invalidate()
+        }
+
+        override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) = Unit
     }
 
     private val locationCallback = object : LocationCallback() {
@@ -94,6 +138,10 @@ class MapFragment : Fragment() {
 
         Configuration.getInstance().userAgentValue = requireContext().packageName
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
+
+        sensorManager = requireContext().getSystemService(Context.SENSOR_SERVICE) as SensorManager
+        rotationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR)
+
         focusEventId = arguments?.getLong(ARG_EVENT_ID)?.takeIf { it > 0 }
     }
 
@@ -103,8 +151,10 @@ class MapFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         mapView = MapView(requireContext()).apply {
-            setTileSource(TileSourceFactory.MAPNIK)
+            setTileSource(cartoPositronTileSource)
             setMultiTouchControls(true)
+            isTilesScaledToDpi = true
+            setUseDataConnection(true)
             controller.setZoom(13.5)
             controller.setCenter(GeoPoint(fallbackRomaLat, fallbackRomaLon))
         }
@@ -134,12 +184,21 @@ class MapFragment : Fragment() {
         super.onResume()
         mapView.onResume()
         checkLocationPermission()
+
+        rotationSensor?.let { sensor ->
+            sensorManager.registerListener(
+                sensorListener,
+                sensor,
+                SensorManager.SENSOR_DELAY_UI
+            )
+        }
     }
 
     override fun onPause() {
         super.onPause()
         mapView.onPause()
         stopLocationUpdates()
+        sensorManager.unregisterListener(sensorListener)
     }
 
     private fun createTopInfoBox(): View {
@@ -297,15 +356,19 @@ class MapFragment : Fragment() {
 
         if (userMarker == null) {
             userMarker = Marker(mapView).apply {
-                title = "Tu sei qui"
                 position = point
-                icon = createUserLocationIcon()
+                icon = createUserLocationIcon(userBearing)
                 setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_CENTER)
+
+                setOnMarkerClickListener { _, _ ->
+                    true
+                }
             }
 
             mapView.overlays.add(userMarker)
         } else {
             userMarker?.position = point
+            userMarker?.icon = createUserLocationIcon(userBearing)
         }
 
         mapView.invalidate()
@@ -330,67 +393,8 @@ class MapFragment : Fragment() {
         }
     }
 
-    private fun loadSingleEventOnMap(eventId: Long) {
-        viewLifecycleOwner.lifecycleScope.launch {
-            try {
-                val detail = withContext(Dispatchers.IO) {
-                    repository.getEventDetail(eventId)
-                }
-
-                val lat = detail.latitude
-                val lon = detail.longitude
-
-                if (lat == null || lon == null) {
-                    Toast.makeText(
-                        requireContext(),
-                        "Coordinate evento non disponibili",
-                        Toast.LENGTH_LONG
-                    ).show()
-                    return@launch
-                }
-
-                val point = GeoPoint(lat, lon)
-
-                val marker = Marker(mapView).apply {
-                    position = point
-                    title = detail.title
-                    snippet = detail.address ?: "Indirizzo non disponibile"
-                    icon = createEventMarkerIcon(0xFFFF9800.toInt())
-                    setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
-
-                    setOnMarkerClickListener { _, _ ->
-                        showBottomSheet(
-                            eventId = detail.id,
-                            title = detail.title,
-                            address = detail.address
-                        )
-                        true
-                    }
-                }
-
-                mapView.overlays.add(marker)
-                mapView.controller.setZoom(17.0)
-                mapView.controller.animateTo(point)
-                showBottomSheet(
-                    eventId = detail.id,
-                    title = detail.title,
-                    address = detail.address
-                )
-                mapView.invalidate()
-
-            } catch (e: Exception) {
-                Toast.makeText(
-                    requireContext(),
-                    "Errore apertura evento sulla mappa: ${e.message}",
-                    Toast.LENGTH_LONG
-                ).show()
-            }
-        }
-    }
-
     private fun addEventMarkers(events: List<EventMapItem>) {
         events.forEach { event ->
-
             val isFocused = focusEventId == event.id
 
             val markerColor = when {
@@ -488,10 +492,29 @@ class MapFragment : Fragment() {
         return BitmapDrawable(resources, bitmap)
     }
 
-    private fun createUserLocationIcon(): BitmapDrawable {
-        val size = 72
+    private fun createUserLocationIcon(rotationDegrees: Float = 0f): BitmapDrawable {
+        val size = 86
         val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
         val canvas = Canvas(bitmap)
+
+        canvas.rotate(rotationDegrees, size / 2f, size / 2f)
+
+        val conePaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            color = 0xFF1565C0.toInt()
+            style = Paint.Style.FILL
+        }
+
+        val conePath = Path().apply {
+            moveTo(size / 2f, 8f)
+            lineTo(size / 2f - 16f, size / 2f + 12f)
+            lineTo(size / 2f, size / 2f + 4f)
+            lineTo(size / 2f + 16f, size / 2f + 12f)
+            close()
+        }
+
+        canvas.drawPath(conePath, conePaint)
+
+        canvas.rotate(-rotationDegrees, size / 2f, size / 2f)
 
         val outerPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
             color = 0x331565C0

@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.romaevents.app.data.repository.EventRepository
 import com.romaevents.app.ui.main.MainActivity
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -106,6 +107,10 @@ class EventsFragment : Fragment() {
                     repository.getEvents()
                 }
 
+                if (!isAdded) {
+                    return@launch
+                }
+
                 root.removeView(loadingBox)
 
                 val recyclerView = RecyclerView(requireContext()).apply {
@@ -127,7 +132,15 @@ class EventsFragment : Fragment() {
                 )
 
             } catch (e: Exception) {
+                if (e is CancellationException) {
+                    throw e
+                }
+
                 Log.e("EVENTS", "Errore caricamento eventi", e)
+
+                if (!isAdded) {
+                    return@launch
+                }
 
                 root.removeView(loadingBox)
 

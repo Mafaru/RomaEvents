@@ -14,25 +14,6 @@ class EventAdapter(
     private val onClick: (Event) -> Unit
 ) : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
 
-    private fun formatDate(value: String?): String {
-        if (value.isNullOrBlank()) return "Data non disponibile"
-
-        return try {
-            val datePart = value.substringBefore("T")
-            val parts = datePart.split("-")
-
-            if (parts.size != 3) return value
-
-            val year = parts[0]
-            val month = parts[1]
-            val day = parts[2]
-
-            "$day/$month/$year"
-        } catch (e: Exception) {
-            value
-        }
-    }
-
     class EventViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titleText: TextView = view.findViewById(R.id.titleText)
         val categoryText: TextView = view.findViewById(R.id.categoryText)

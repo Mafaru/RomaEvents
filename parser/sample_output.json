@@ -1,13 +1,95 @@
 [
   {
+    "title": "\"Spagna e Italia: 50 anni da incorniciare\"",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/spagna-italia-50-anni-mostra-fotografica.page",
+    "theme_text": "Cultura - Mostre",
+    "raw_date_text": "5 maggio - 15 settembre È visitabile fino al 15 settembre , presso la nuova sede dell’Ambasciata di",
+    "description": "Spagna in Italia , la mostra fotografica “Spagna e Italia: 50 anni da incorniciare. Un percorso fotografico degli ultimi cinque decenni di rapporto bilaterale” : uno sguardo sulla storia recente di due Nazioni che, nel corso dei decenni, hanno intrecciato un dialogo sempre più intenso. Presentata dall’ Ambasciata di Spagna in Italia e dall’ Agencia EFE , l’esposizione mette in evidenza come, dagli anni della transizione democratica spagnola, italiani e spagnoli abbiano iniziato a riconoscersi in un rapporto più vicino e quotidiano, in particolare attraverso la collaborazione culturale , politica e sociale , terreno comune di crescita. Con le selezionate 40 immagini dell’archivio EFE si ripercorrono momenti storici , incontri , scambi e gesti simbolici , rapporti istituzionali , raccontando anche l’ evoluzione dei linguaggi mediatici e la forza degli eventi sportivi vissuti da entrambe le sponde del Mediterraneo. E si evidenzia il contributo di artisti , scrittori , cineasti , docenti e professionisti , tra cui numerose personalità italiane insignite del Premio Principe e Principessa delle Asturie , come riconoscimento internazionale del loro ruolo nel dialogo culturale tra i due Paesi. La mostra restituisce la naturalezza con cui, in cinquant’anni di storia, Spagna e Italia hanno imparato a comprendersi e a riconoscersi in un orizzonte europeo comune , celebrando la continuità e la vitalità di un rapporto che continua a rinnovarsi . L’esposizione è aperta al pubblico dal lunedì al venerdì , dalle 9:00 alle 14:00 , presso l’ Ambasciata di Spagna , Piazza Navona n. 109 . Ingresso gratuito .",
+    "location_text": "Piazza Navona n. 109 Roma",
+    "popup_event_text": "Spagna e Italia: 50 anni da incorniciare",
+    "coordinates": {
+      "latitude": 41.8982559,
+      "longitude": 12.4729251
+    },
+    "normalized_dates": {
+      "raw_date_text": "5 maggio - 15 settembre È visitabile fino al 15 settembre , presso la nuova sede dell’Ambasciata di",
+      "occurrences": [
+        {
+          "start_date": "2026-05-05",
+          "end_date": null,
+          "type": "single"
+        },
+        {
+          "start_date": "2026-09-15",
+          "end_date": null,
+          "type": "single"
+        },
+        {
+          "start_date": "2026-09-15",
+          "end_date": null,
+          "type": "single"
+        }
+      ],
+      "matched_pattern": "multiple_full_dates"
+    }
+  },
+  {
+    "title": "Roma Summer Fest 2026 tra grandi ritorni e nuove sorprese",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/roma-summer-fest-2026-tra-grandi-ritorni-e-nuove-sorprese.page",
+    "theme_text": "Musica",
+    "raw_date_text": "13 giugno - 15 settembre",
+    "description": "Anche quest'anno Roma potrà vivere una stagione di grande musica nella cavea dell’Auditorium Parco della Musica Ennio Morricone con il Roma Summer Fest 2026 , la rassegna estiva della Fondazione Musica per Roma. Dal 13 maggio al 15 settembre il Festival porterà nella Capitale alcuni tra i più importanti artisti della scena musicale internazionale e italiana. Un cartellone prestigioso e trasversale, capace di attraversare generi, linguaggi e generazioni, confermando il Roma Summer Fest come uno degli appuntamenti culturali più attesi dell’estate romana. Tra i nomi presentati: Serena Brancale, Niccolò Fabi, Genesis - One night with the Orchestra on Tour with Martin Levac and Nick D'Virgilio, Kneecap, Ludovico Einaudi, Marco Castello, Laura Esquivel & Brenda Asnicar, Mac DeMarco, Ben Harper & The Innocent Criminals, Mari Froes, Stefano Bollani All Stars, Devendra Banhart, Danny Elfman's Music from the Films of Tim Burton, Gigi D'Agostino, John Legend, Ambrogio Sparagna \"Ballo!\", Pat Metheny Side Eye III +, Anastacia, Europe, Goran Bregović, Bresh, Dogstar, Subsonica, Marilyn Manson, Diana Krall, Johnny Marr, Jacob Collier, Frah Quintale, Two Door Cinema club, Serena Rossi, Pink Floyd Legend, Marcus Miller, Suzanne Vega, Kool & The Gang, Gregory Porter, Alice (unica data italiana), Patrick Watson, Noa, La Niña, Fantastic Negrito, Capo Plaza, Sal Da Vinci, Elio e Le Storie Tese, Djo, Tony Pitony, Wilco, Hermanos Gutierrez, Fiorella Mannoia, Village People, Levante, Nicola Piovani, BINI, Judas Priest, I Cani, Il Tre, Tony Boy, Dissonanze, Marisa Monte, insieme a Pablo Trincia, protagonista di uno speciale appuntamento tra musica e narrazione. Un’edizione caratterizzata da grandi ritorni e nuove sorprese, nel segno della qualità artistica che contraddistingue la programmazione della Fondazione Musica per Roma confermando Il Roma Summer Fest 2026 come importante punto di riferimento nel panorama dei festival estivi italiani ed europei. Ulteriori informazioni e calendario degli eventi sul sito dell' Auditorium Parco della Musica.",
+    "location_text": null,
+    "popup_event_text": null,
+    "coordinates": null,
+    "normalized_dates": {
+      "raw_date_text": "13 giugno - 15 settembre",
+      "occurrences": [
+        {
+          "start_date": "2026-06-13",
+          "end_date": "2026-09-15",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "cross_month_range"
+    }
+  },
+  {
+    "title": "ARF, il Festival del Fumetto 2026 torna in forma diffusa",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/arf-festival-del-fumetto-2026.page",
+    "theme_text": "Eventi ad ingresso libero - Cultura",
+    "raw_date_text": "14 - 31 maggio",
+    "description": "Giunto al suo dodicesimo anno di attività, ARF! Festival del Fumetto di Roma cambia forma e diventa un festival diffuso nel tempo e negli spazi: tre weekend tra Parione, Testaccio e Garbatella, per un’edizione che, dal 14 al 31 maggio , attraversa la città mettendo in relazione luoghi, pubblici e linguaggi diversi attraverso «Storie, Segni & Disegni» . Dal 14 maggio alla Sala Dalí dell’Instituto Cervantes è visitabile la mostra Mafalda & La Pimpa; il percorso prosegue poi il 22, 23 e 24 maggio al Campo Boario con il weekend di Testaccio e con Caparezza grande protagonista tra la mostra Orbit Orbit , il talk show in quattro atti e un nuovo incontro al Villaggio Globale. Attraverso i contenuti di qualità che da sempre lo contraddistinguono, ARF! propone anche quest’anno un programma dedicato alla promozione e alla valorizzazione culturale del linguaggio del Fumetto , tra mostre, incontri, editoria indipendente, attività per bambine e bambini, orientamento professionale e formazione dal 29 al 31 maggio nei luoghi di Casetta Rossa, Villetta Social Lab e Hub Culturale Moby Dick. Dall’ARF! Kids alla SELF®, da JOB ARF! ai talk con autrici, autori e protagonisti della scena contemporanea, il festival costruisce un percorso pensato per abitare tre vivaci quartieri romani e raccontare il fumetto nelle sue molteplici forme. L’iniziativa è promossa e sostenuta da Roma Capitale – Assessorato alla Cultura e al Coordinamento delle iniziative riconducibili alla Giornata della Memoria – Dipartimento Attività Culturali in collaborazione con Zètema Progetto Cultura, con il sostegno del Municipio Roma I e del Municipio Roma VIII ed è organizzata e realizzata dall’Associazione Culturale ARF! Ulteriori informazioni e calendario dettagliato degli eventi sul sito ARF.it.",
+    "location_text": "Piazza Navona 91 e altri indirizzi",
+    "popup_event_text": "ARF, Festival del Fumetto 2026",
+    "coordinates": {
+      "latitude": 41.8989243,
+      "longitude": 12.4734153
+    },
+    "normalized_dates": {
+      "raw_date_text": "14 - 31 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-14",
+          "end_date": "2026-05-31",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "same_month_range"
+    }
+  },
+  {
     "title": "\"Bruci la città\", spettacolo al Teatro India",
     "detail_url": "https://www.comune.roma.it/web/it/evento/bruci-la-citta-spettacolo-teatro-india.page",
     "theme_text": "Eventi ad ingresso libero - Teatro",
     "raw_date_text": "19 maggio",
     "description": "©Teatro di Roma Il palcoscenico del Teatro India il 19 maggio (ore 20) si anima con Bruci la città , esito finale del laboratorio I ragazzi selvaggi condotto da Niccolò Fettarappa e Lorenzo Guerrieri con gli attori e le attrici del corso di perfezionamento del Teatro di Roma. Lo spettacolo racconta le contraddizioni delle pulsioni alla fuga e il rapporto conflittuale che si instaura più o meno consapevolmente verso lo spazio pubblico che ci circonda, che abitiamo e che soprattutto subiamo. In scena Angelica Accarino , Chiara Bono , Pietro Bovi, Diego Parlanti, Davide Papasidero , Alessandro Pocek , Emanuela Saccardi , Matteo Santinelli , Matteo Sbandi , Camilla Ventura , Sara Verteramo , Chiara Vinci nelle vesti di maldestri avventurieri, terroristi giocherelloni, sciamani metropolitani, principesse che amano il fango, hippie delusi, maniaci del turismo. Tutti con le valigie pronte, pronti a scappare lontano, a far esplodere tutto o, addirittura, a un pic-nic. “Condannati a nascere e morire in città frettolose e inospitali, ci siamo abituati a rinchiuderci in uffici, strade trafficate, postazioni da smartworking e a sentirci a casa. Ci piace dimenticare il corpo dietro i ritmi urbani, scavalcare il prossimo e non guardarlo in faccia. Ci siamo affezionati allo smog, allo stress, alla vita depressa e seduta. Finché qualcosa si fracassa e sentiamo il bisogno disperato di fuggire - dichiarano Niccolò Fettarappa e Lorenzo Guerrieri. L'utopia bussa e noi siamo presi dall'ansia\" . L'ingresso è libero con prenotazione obbligatoria a scuola@teatrodiroma.net Ulteriori informazioni alla pagina dedicata del Teatro di Roma.",
-    "location_text": null,
-    "popup_event_text": null,
-    "coordinates": null,
+    "location_text": "Lungotevere Vittorio Gassman",
+    "popup_event_text": "Brucila città",
+    "coordinates": {
+      "latitude": 41.8694767,
+      "longitude": 12.4722705
+    },
     "normalized_dates": {
       "raw_date_text": "19 maggio",
       "occurrences": [
@@ -18,6 +100,30 @@
         }
       ],
       "matched_pattern": "single_date"
+    }
+  },
+  {
+    "title": "Los de Ahì e Rabia, dittico di Claudio Tolcachir al Teatro India",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/claudio-tolcachir-dittico-teatro-india-2026.page",
+    "theme_text": "Teatro",
+    "raw_date_text": "20 - 24 maggio",
+    "description": "Claudio Tolcachir in Rabia Il Teatro India si prepara ad accogliere, dal 20 al 24 maggio, uno degli indiscussi protagonisti della scena internazionale, Claudio Tolcachi r, il regista e drammaturgo argentino, fondatore del Teatro Timbre 4 di Buenos Aires , torna a Roma con un dittico di spettacoli , Los de Ahì e Rabia , per esplorare le frustrazioni, le violenze silenziose e gli intricati legami affettivi che si consumano nella nostra quotidianità. Si inizia con Los de Ahì , in scena dal 20 al 24 maggio , (ore 21) con u na riflessione sulla brutalità dell’indifferenza e sull’immigrazione . L’opera segue quattro fattorini, in attesa di istruzioni da una macchina nel nulla, dove una biglietteria intelligente gestisce gli ordini che determinano il loro lavoro. Un racconto che mette in luce la solitudine e l’impotenza di chi è schiacciato da un sistema che li riduce a ingranaggi di una macchina che non riconosce la loro umanità. Sulla scena una brughiera poco lontana da una città straniera e una macchina situata nella boscaglia, una sorta di armadietto intelligente, organizza gli ordini. I protagonisti, Nuno, Munir, Dani ed Eduardo aspettano il segnale, il suono che annuncia la loro prossima destinazione. L’indirizzo della spedizione appare sulla mappa dei loro telefoni. Ritirano il pacco, salgono sulla bici e consegnano l’ordine, indovinando un po’ il percorso. Ignorando completamente ciò che viene trasportato e poi, di nuovo al punto di partenza. Fino a quando la macchina situata nella boccola non dà nuovamente il segnale. Son esseri invisibili in una città che attende i loro servizi , tessono la loro esistenza, organizzano, si prendono cura di sconosciuti, diffidano. Dal 21 al 24 maggio (ore 19) va in scena Rabia , tratto dalla novella di Sergio Bizzio, in cui Claudio Tolcachir trasforma il suo corpo in un campo di battaglia dove risolve ogni discussione su queste due discipline, così simili eppure così distinte. È opera di un alchimista: nel suo duplice ruolo di attore e regista, quest'ultimo insieme a Lautaro Perotti, trasforma un materiale di altra natura – la letteratura – in arte drammatica, e stabilisce una connessione ipnotica e profonda con lo spettatore. La regia, il suono, le luci, la scenografia, ogni aspetto rivela una maestria assoluta. «Ci sono progetti che si impossessano del nostro corpo in modo quasi ossessivo e non ci lasciano andare finché non si vede la luce. Rabia è uno di questi. Da quando ho letto il romanzo, sono rimasto intrappolato da immagini, sensazioni, momenti che mi hanno segnato profondamente, finché non ho intuito che il piacere morboso che mi procurava rivisitare la storia poteva essere una cerimonia teatrale unica e affascinante – afferma il regista – Raccontare questa storia significa immergersi nell’avventura più rischiosa. La storia del protagonista è rischiosa, così come lo è la missione di dispiegarla nello spazio. Ma perché fare teatro se non ci buttiamo nell’abisso, se non impazziamo d’amore e di paura? Se non tremiamo prima di iniziare, abbracciati da coloro che danno senso alla nostra vocazione e al nostro lavoro?» . Ulteriori informazioni e prenotazioni sul sito del Teatro di Roma. Los de Ahi, ©BSP",
+    "location_text": "Lungotevere Vittorio Gassman",
+    "popup_event_text": "Claudio Tolcachir, Rabia e Los de Ahi",
+    "coordinates": {
+      "latitude": 41.8694767,
+      "longitude": 12.4722705
+    },
+    "normalized_dates": {
+      "raw_date_text": "20 - 24 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-20",
+          "end_date": "2026-05-24",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "same_month_range"
     }
   },
   {
@@ -164,6 +270,30 @@
     }
   },
   {
+    "title": "Tancredi di Rossini torna dopo 22 anni al Teatro dell'Opera",
+    "detail_url": "https://www.comune.roma.it/web/it/evento/tancredi-di-rossini-torna-dopo-22-anni-al-teatro-opera-2026.page",
+    "theme_text": "Musica",
+    "raw_date_text": "19 - 29 maggio",
+    "description": "Tancredi, Figurini di Emma Dante e Chicca Ruocco Tancredi di Gioachino Rossini torna dopo ventidue anni al Teatro dell’Opera di Roma. Il melodramma eroico in due atti su libretto di Gaetano Rossi , tratto da Voltaire , è in scena dal 19 al 29 maggio 2026 al Costanzi. L'opera è proposta nella sua versione tragica, in un nuovo allestimento firmato da Emma Dante . La regista palermitana, Leone d’Oro alla carriera 2026 della Biennale di Venezia, rilegge il mito di Tancredi immaginandolo in un'opera di pupi siciliani . Alla guida dell'Orchestra del Teatro dell'Opera di Roma Michele Mariotti , che affronta per la prima volta il titolo e sceglie di affidare il ruolo del protagonista al controtenore Carlo Vistoli . Amenaide è il soprano in grande ascesa Martina Russomanno , al debutto al Costanzi. Carmine Maringola firma le scene, Emma Dante e Chicca Ruocco i costumi, Luigi Biondi le luci, Manuela Lo Sicco i movimenti coreografici. Il Coro del Teatro dell’Opera di Roma è diretto da Ciro Visco . Veste i panni di Argirio Enea Scala che torna all’Opera di Roma dopo aver cantato Gennaro in Lucrezia Borgia nel 2025. Luca Tittoto veste i panni di Orbazzano, già interprete per l’Opera di Roma nel 2022 in Alceste di Gluck. Completano il cast Ekaterine Buachidze (Isaura) e Maria Elena Pepi (Roggiero) giovani artiste del progetto \"Fabbrica\" Young Artist Program del Teatro dell'Opera di Roma. Composta da Rossini nel 1813, a soli 21 anni, l’opera racconta il conflitto tra virtù e sentimento, in cui trova spazio la vicenda dell’eroe esiliato Tancredi — ruolo originariamente affidato a un contralto en travesti — che torna in patria a Siracusa per difendere la città dagli invasori e riconquistare l’amata Amenaide, ingiustamente accusata di tradimento. Eros e Thanatos, lirismo e tensione drammatica, attraversano la scrittura rossiniana incontrando la forza visiva di Emma Dante in uno scontro fra umano e simbolico. Ulteriori informazioni e prenotazioni sul sito del Teatro dell'Opera.",
+    "location_text": "Piazza Beniamino Gigli",
+    "popup_event_text": "Tancredi di Gioacchino Rossini",
+    "coordinates": {
+      "latitude": 41.9006803,
+      "longitude": 12.4959803
+    },
+    "normalized_dates": {
+      "raw_date_text": "19 - 29 maggio",
+      "occurrences": [
+        {
+          "start_date": "2026-05-19",
+          "end_date": "2026-05-29",
+          "type": "range"
+        }
+      ],
+      "matched_pattern": "same_month_range"
+    }
+  },
+  {
     "title": "'Hotel Champagne' al Teatro Argentina",
     "detail_url": "https://www.comune.roma.it/web/it/evento/teatro-argentina-hotel-champagne-18-maggio-2026.page",
     "theme_text": "Eventi - Sociale - Iniziative",
@@ -206,30 +336,6 @@
         }
       ],
       "matched_pattern": "single_date"
-    }
-  },
-  {
-    "title": "Tancredi di Rossini torna dopo 22 anni al Teatro dell'Opera",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/tancredi-di-rossini-torna-dopo-22-anni-al-teatro-opera-2026.page",
-    "theme_text": "Musica",
-    "raw_date_text": "19 - 29 maggio",
-    "description": "Tancredi, Figurini di Emma Dante e Chicca Ruocco Tancredi di Gioachino Rossini torna dopo ventidue anni al Teatro dell’Opera di Roma. Il melodramma eroico in due atti su libretto di Gaetano Rossi , tratto da Voltaire , è in scena dal 19 al 29 maggio 2026 al Costanzi. L'opera è proposta nella sua versione tragica, in un nuovo allestimento firmato da Emma Dante . La regista palermitana, Leone d’Oro alla carriera 2026 della Biennale di Venezia, rilegge il mito di Tancredi immaginandolo in un'opera di pupi siciliani . Alla guida dell'Orchestra del Teatro dell'Opera di Roma Michele Mariotti , che affronta per la prima volta il titolo e sceglie di affidare il ruolo del protagonista al controtenore Carlo Vistoli . Amenaide è il soprano in grande ascesa Martina Russomanno , al debutto al Costanzi. Carmine Maringola firma le scene, Emma Dante e Chicca Ruocco i costumi, Luigi Biondi le luci, Manuela Lo Sicco i movimenti coreografici. Il Coro del Teatro dell’Opera di Roma è diretto da Ciro Visco . Veste i panni di Argirio Enea Scala che torna all’Opera di Roma dopo aver cantato Gennaro in Lucrezia Borgia nel 2025. Luca Tittoto veste i panni di Orbazzano, già interprete per l’Opera di Roma nel 2022 in Alceste di Gluck. Completano il cast Ekaterine Buachidze (Isaura) e Maria Elena Pepi (Roggiero) giovani artiste del progetto \"Fabbrica\" Young Artist Program del Teatro dell'Opera di Roma. Composta da Rossini nel 1813, a soli 21 anni, l’opera racconta il conflitto tra virtù e sentimento, in cui trova spazio la vicenda dell’eroe esiliato Tancredi — ruolo originariamente affidato a un contralto en travesti — che torna in patria a Siracusa per difendere la città dagli invasori e riconquistare l’amata Amenaide, ingiustamente accusata di tradimento. Eros e Thanatos, lirismo e tensione drammatica, attraversano la scrittura rossiniana incontrando la forza visiva di Emma Dante in uno scontro fra umano e simbolico. Ulteriori informazioni e prenotazioni sul sito del Teatro dell'Opera.",
-    "location_text": "Piazza Beniamino Gigli",
-    "popup_event_text": "Tancredi di Gioacchino Rossini",
-    "coordinates": {
-      "latitude": 41.9006803,
-      "longitude": 12.4959803
-    },
-    "normalized_dates": {
-      "raw_date_text": "19 - 29 maggio",
-      "occurrences": [
-        {
-          "start_date": "2026-05-19",
-          "end_date": "2026-05-29",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
     }
   },
   {
@@ -2288,106 +2394,6 @@
         }
       ],
       "matched_pattern": "cross_month_range"
-    }
-  },
-  {
-    "title": "Vasari e Roma, ai Musei Capitolini",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/vasari-e-roma-musei-capitolini-2026.page",
-    "theme_text": "Mostre",
-    "raw_date_text": "20 marzo - 19 luglio A conclusione delle celebrazioni per i 450 anni dalla morte di",
-    "description": "Giorgio Vasari (1511-1574), Roma rende omaggio a uno dei grandi protagonisti del Rinascimento con un progetto espositivo dedicato al profondo e duraturo legame tra l’artista aretino e la città eterna. La mostra, visitabile dal 20 marzo al 19 luglio ai Musei Capitolini, Palazzo Caffarelli, ricostruisce il percorso culturale e artistico compiuto da Giorgio Vasari nei suoi diversi soggiorni romani con l’intento di restituire al pubblico dei Musei Capitolini la ricchezza e la complessità della sua figura poliedrica di pittore, architetto, scenografo e biografo , ma anche di straordinario interprete e testimone delle vite di papi, signori, letterati e artisti del XVI secolo, grazie anche ai numerosi capolavori in prestito da importanti istituzioni italiane e internazionali tra cui Palazzo Barberini, il Vive – Palazzo Venezia, la Galleria degli Uffizi, l’Archivio di Stato di Firenze, la Pinacoteca Nazionale di Bologna, l’Archivio della Fondazione Casa Buonarroti, il Gabinetto dei Disegni e delle Stampe della Galleria degli Uffizi, la Biblioteca Apostolica Vaticana, il Museo e Real Bosco di Capodimonte, il Museo Nazionale di Siena e il Móra Ferenc Múzeum di Szeged (Ungheria). Il progetto mette in luce il ruolo determinante che Roma ebbe nella formazione del giovane Vasari, nel confronto con l’arte antica e con i grandi modelli della modernità – da Raffaello al Michelangelo “romano” – e nel rapido e straordinario sviluppo della sua carriera al servizio di prestigiosi prelati e pontefici. Ulteriori informazioni e prenotazioni sul sito dei Musei Capitolini.",
-    "location_text": "Piazza del Campidoglio",
-    "popup_event_text": "Vasari e RomA",
-    "coordinates": {
-      "latitude": 41.89308652769815,
-      "longitude": 12.48247186586692
-    },
-    "normalized_dates": {
-      "raw_date_text": "20 marzo - 19 luglio A conclusione delle celebrazioni per i 450 anni dalla morte di",
-      "occurrences": [],
-      "matched_pattern": "unparsed"
-    }
-  },
-  {
-    "title": "\"Abracadabra\"... e la magia ti prende per mano",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/abracadabra-teatro-india-2026.page",
-    "theme_text": "Teatro",
-    "raw_date_text": "18 - 22 marzo",
-    "description": "Abracadabra, © Eleonora Cavallo La compagnia Babilonia Teatri , fondata da Enrico Castellani e Valeria Raimondi , torna al Teatro India dal 18 al 22 marzo , con la loro nuova creazione Abracadabra , uno spettacolo in cui la magia si fa portavoce ed espressione di ciò che spesso le parole non riescono a dire. Per raccontare alcuni eventi della vita a teatro c’è bisogno a volte di un atto magico, un rito che trasforma il palco in un ponte che connette la vita alla morte grazie a un gioco di prestigio e a grandi illusioni. Abracadabra è una parola magica, fiabesca e arcana, un incantesimo che può far apparire quello che non c’è; è uno spettacolo di magia che ci prende per mano e ci accompagna in territori da cui spesso scappiamo e si interroga su che forma si possa dare al dolore. Si chiede come sia possibile venire a patti con la malattia, se un lutto vada elaborato e se i morti possano parlare. Il sipario si apre con un vero mago in scena che si connette con l’aldilà permettendo di nominare l’indicibile e di toccare l’impossibile attraverso la voce di Francesco Scimemi , prestigiatore di professione da trent’anni, che sta in mezzo al guado, che evoca la moglie scomparsa con tutti i colori del tragico, del grottesco e del poetico. In questo spettacolo la magia diventa, dunque, evocazione, strumento di collegamento, di connessione, di congiunzione, depone le sue armi davanti alla vita che si spegne e allo stesso tempo ci sorprende ancora una volta e ci accompagna oltre la soglia. Dichiara la sua finitezza, ma non rinuncia ai suoi segreti per scavare più a fondo nell’incomprensibile ovvietà che separa vita e morte. Ulteriori informazioni e prenotazioni alla pagina dedicata del Teatro di Roma.",
-    "location_text": "Lungotevere Vittorio Gassman",
-    "popup_event_text": "Abracadabra",
-    "coordinates": {
-      "latitude": 41.86903688779484,
-      "longitude": 12.472060892850424
-    },
-    "normalized_dates": {
-      "raw_date_text": "18 - 22 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-18",
-          "end_date": "2026-03-22",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
-    }
-  },
-  {
-    "title": "Casina di Raffaello compie 20 anni!",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/casina-raffaello-eventi-20-anni.page",
-    "theme_text": "Eventi per bambini e ragazzi",
-    "raw_date_text": "13, 14 e 15 marzo",
-    "description": "Casina di Raffaello festeggia 20 anni! Iil 10 marzo 2006 la ludoteca all'interno di Villa Borghese apriva al pubblico e avviava le sue attività ludico-creative dedicate ai più piccoli e alle famiglie. Per festeggiare il 13, 14 e 15 marzo si terranno tre giornate speciali animate da laboratori , incontri , mostre e conversazioni con la presenza e in collaborazione con i tanti “amici” che in questi anni hanno condiviso visioni, esperienze e pratiche educative al servizio di tutti i cittadini, dai piccoli agli adulti. L’iniziativa è organizzata in collaborazione con la Sovrintendenza Capitolina ai Beni Culturali, l’Ambasciata di Svezia a Roma, l’Associazione Italiana per l'arte naturalistica AIPAN, Cinecittà si Mostra, la casa editrice Fatatrac con l’Associazione Scosse, l’Istituto Giapponese di Cultura. Si ringrazia la Federazione Italiana Sport Equestri e Ludic – Game for active mind. I festeggiamenti si apriranno venerdì 13 marzo alle 17.30 con una conversazione condotta da Silvana Sperati e rivolta a insegnanti, educatori, operatori culturali e dedicata a Bruno Munari, che da sempre ha ispirato l’offerta educativa di Casina di Raffaello. Si continua sabato 14 marzo con un programma pensato per grandi e piccoli con laboratori e incontri dedicati alla storia di Casina di Raffaello e di Villa Borghese. Dopo i saluti istituzionali, tra gli eventi della giornata alle 10.15 verrà inaugurata la mostra Aquiloni e Trottole dal Giappone in collaborazione con l’Istituto Giapponese di Cultura di Roma, mentre alle 11.30 Silvana Sperati presenterà in esclusiva \" Il laboratorio delle casette \" di Bruno Munari. Dalle 10.00 alle 13.30, inoltre, la Federazione Italiana Sport Equestri con la \"mascotte Tony il Pony\" accoglierà il pubblico all’ingresso della ludoteca. La giornata di domenica 15 marzo prenderà avvio alle ore 10.00 con il video messaggio di auguri di Francesco Petretti , ornitologo e naturalista, mentre alle 11.30 verrà presentato il libro Storia di Topino (Mondadori, 2025) di Sveva Sagramola. La giornata continuerà all’insegna dell’offerta educativa con i contributi della casa editrice Fatatrac, di Cinecittà si Mostra e dell'Ambasciata di Svezia di Roma con un omaggio a Pippi Calzelunghe. Tutte le attività sono coordinate e condotte dallo Staff educativo di Casina di Raffaello. La prenotazione e il relativo pagamento online sono obbligatori telefonando al contact center 060608 (attivo tutti i giorni ore 9-19). Info e dettagli su programma, costi e orari sono consultabili sul sito casinadiraffaello.it e sulle relative pagine social.",
-    "location_text": "Viale Casina di Raffaello",
-    "popup_event_text": "Casina di Raffaello compie 20 anni!",
-    "coordinates": {
-      "latitude": 41.9128898149943,
-      "longitude": 12.486550993823451
-    },
-    "normalized_dates": {
-      "raw_date_text": "13, 14 e 15 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-13",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-03-14",
-          "end_date": null,
-          "type": "single"
-        },
-        {
-          "start_date": "2026-03-15",
-          "end_date": null,
-          "type": "single"
-        }
-      ],
-      "matched_pattern": "multiple_days_same_month"
-    }
-  },
-  {
-    "title": "Viaggio coreografico tra Novecento e contemporaneità",
-    "detail_url": "https://www.comune.roma.it/web/it/evento/viaggio-coreografico-tra-novecento-e-contemporaneita.page",
-    "theme_text": "Danza",
-    "raw_date_text": "17 - 22 marzo",
-    "description": "Spring and Fall, © Teatro dell'Opera Torna anche nella stagione 2025/26 il Trittico , fortemente voluto da Eleonora Abbagnato. Dopo due grandi classici, Lo schiaccianoci e La Bayadèr e, dal 17 al 22 marzo al Costanzi si esplorano il Novecento e la contemporaneità con tre coreografie presentate per la prima volta a Roma e interpretate dal Corpo di Ballo della Fondazione capitolina. Lo spettacolo, un nuovo allestimento del Teatro dell’Opera, si apre con Spring and Fall di John Neumeier: creato per l’Hamburg Ballett nel 1991 su musica di Antonín Dvořák , il balletto gioca sull’ambiguità del titolo richiamando la primavera e l’autunno ma anche la caduta e il recupero, i principi fondamentali del movimento elaborati da Doris Humphrey . Dal Novecento si passa a due creazioni della scorsa decade: Echoes from a Restless Soul (Dresden Frankfurt Dance Company, 2016) ripensato da Jacopo Godani per i ballerini della compagnia romana. Pièce astratta, in cui la musica di Maurice Ravel ha un ruolo di assoluto rilievo, è un manifesto della concezione artistica del coreografo, che cura anche scene, costumi e luci. Chiude il programma I Feel the Earth Move di Benjamin Millepied (American Ballet Theatre di New York, 2017) su musiche di Philip Glass : i danzatori fanno il loro ingresso su un palcoscenico completamente libero da scene e sipari, un espediente pensato dal coreografo francese per cercare di cambiare la percezione del balletto, da qualcosa che si nasconde a qualcosa di immediato. Il Trittico Neumeier/Godani/Millepied vede impegnate le étoiles Alessandra Amato e Susanna Salvi , le prime ballerine Federica Maine , Marianna Suriano , i primi ballerini Simone Agrò , Claudio Cocino e Michele Satriano , i solisti e il Corpo di Ballo del Teatro dell’Opera di Roma. Daniel Capps dirige l’Orchestra capitolina nella Serenata per archi di Dvořák in Spring and Fall . La musica di Ravel in Echoes from a Restless Soul è eseguita dal vivo dal pianista Massimo Spada , quella di Glass in I Feel the Earth Move è su base registrata. Dopo la prima di martedì 17 marzo alle ore 20.00, il trittico di balletti Neumeier/Godani/Millepied torna in scena mercoledì 18 (ore 20.00), giovedì 19 (ore 20.00), venerdì 20 (ore 20), sabato 21 (ore 15 e ore 20) e domenica 22 marzo (ore 16.30). Lo spettacolo è preceduto dall'Anteprima giovani, domenica 15 marzo (ore 16.30). Ulteriori informazioni e prenotazioni sul sito del Teatro dell'Opera.",
-    "location_text": "Piazza Beniamino Gigli",
-    "popup_event_text": "Viaggio coreografico tra Novecento e contemporaneità",
-    "coordinates": {
-      "latitude": 41.90079059575268,
-      "longitude": 12.495593922278088
-    },
-    "normalized_dates": {
-      "raw_date_text": "17 - 22 marzo",
-      "occurrences": [
-        {
-          "start_date": "2026-03-17",
-          "end_date": "2026-03-22",
-          "type": "range"
-        }
-      ],
-      "matched_pattern": "same_month_range"
     }
   }
 ]
