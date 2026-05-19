@@ -46,10 +46,6 @@ class EventService(
             )
     }
 
-    fun getEventsForMap(): List<EventListDto> {
-        return getAllEventsForList()
-    }
-
     fun getMapEvents(
         lat: Double,
         lon: Double,

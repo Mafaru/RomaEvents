@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
@@ -30,7 +31,7 @@ class EventsFragment : Fragment() {
     ): View {
         val root = LinearLayout(requireContext()).apply {
             orientation = LinearLayout.VERTICAL
-            setBackgroundColor(0xFFF7F7F7.toInt())
+            setBackgroundColor(0xFFF7FAFF.toInt())
         }
 
         val header = TextView(requireContext()).apply {
@@ -48,16 +49,12 @@ class EventsFragment : Fragment() {
             setPadding(28, 0, 28, 18)
         }
 
-        val loading = TextView(requireContext()).apply {
-            text = "Caricamento eventi..."
-            textSize = 18f
-            gravity = Gravity.CENTER
-        }
+        val loadingBox = createLoadingBox()
 
         root.addView(header)
         root.addView(subtitle)
         root.addView(
-            loading,
+            loadingBox,
             LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 0,
@@ -65,19 +62,51 @@ class EventsFragment : Fragment() {
             )
         )
 
-        loadEvents(root, loading)
+        loadEvents(root, loadingBox)
 
         return root
     }
 
-    private fun loadEvents(root: LinearLayout, loading: TextView) {
+    private fun createLoadingBox(): LinearLayout {
+        val loadingBox = LinearLayout(requireContext()).apply {
+            orientation = LinearLayout.VERTICAL
+            gravity = Gravity.CENTER
+            setPadding(32, 48, 32, 48)
+        }
+
+        val progressBar = ProgressBar(requireContext())
+
+        val loadingText = TextView(requireContext()).apply {
+            text = "Caricamento eventi..."
+            textSize = 17f
+            setTextColor(0xFF1565C0.toInt())
+            typeface = Typeface.DEFAULT_BOLD
+            gravity = Gravity.CENTER
+            setPadding(0, 20, 0, 6)
+        }
+
+        val loadingSubtitle = TextView(requireContext()).apply {
+            text = "Sto recuperando gli eventi da Roma Events"
+            textSize = 14f
+            setTextColor(0xFF666666.toInt())
+            gravity = Gravity.CENTER
+        }
+
+        loadingBox.addView(progressBar)
+        loadingBox.addView(loadingText)
+        loadingBox.addView(loadingSubtitle)
+
+        return loadingBox
+    }
+
+    private fun loadEvents(root: LinearLayout, loadingBox: LinearLayout) {
         viewLifecycleOwner.lifecycleScope.launch {
             try {
                 val events = withContext(Dispatchers.IO) {
                     repository.getEvents()
                 }
 
-                root.removeView(loading)
+                root.removeView(loadingBox)
 
                 val recyclerView = RecyclerView(requireContext()).apply {
                     layoutManager = LinearLayoutManager(requireContext())
@@ -100,8 +129,38 @@ class EventsFragment : Fragment() {
             } catch (e: Exception) {
                 Log.e("EVENTS", "Errore caricamento eventi", e)
 
-                loading.text = "Errore caricamento eventi:\n${e.message}"
-                loading.setPadding(32, 32, 32, 32)
+                root.removeView(loadingBox)
+
+                val errorBox = LinearLayout(requireContext()).apply {
+                    orientation = LinearLayout.VERTICAL
+                    gravity = Gravity.CENTER
+                    setPadding(40, 60, 40, 60)
+                }
+
+                errorBox.addView(TextView(requireContext()).apply {
+                    text = "Impossibile caricare gli eventi"
+                    textSize = 20f
+                    setTextColor(0xFFB00020.toInt())
+                    typeface = Typeface.DEFAULT_BOLD
+                    gravity = Gravity.CENTER
+                    setPadding(0, 0, 0, 12)
+                })
+
+                errorBox.addView(TextView(requireContext()).apply {
+                    text = "Se il server era inattivo, attendi qualche secondo e riapri la schermata."
+                    textSize = 15f
+                    setTextColor(0xFF666666.toInt())
+                    gravity = Gravity.CENTER
+                })
+
+                root.addView(
+                    errorBox,
+                    LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        0,
+                        1f
+                    )
+                )
             }
         }
     }
