@@ -90,9 +90,9 @@ class MainActivity : AppCompatActivity() {
         showFragment(EventDetailFragment.Companion.newInstance(eventId))
     }
 
-    fun openMapForEvent(eventId: Long) {
+    fun openMapForEvent(eventId: Long, showRoute: Boolean = false) {
         bottomNavigation.menu.findItem(R.id.nav_map).isChecked = true
-        showFragment(MapFragment.Companion.newInstance(eventId))
+        showFragment(MapFragment.Companion.newInstance(eventId, showRoute))
     }
 
     fun goBackToEvents() {

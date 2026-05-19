@@ -23,10 +23,7 @@ import io.ktor.client.statement.bodyAsText
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
-import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.jsonObject
-import kotlinx.serialization.json.jsonPrimitive
-import kotlinx.serialization.json.contentOrNull
+import kotlinx.serialization.json.*
 
 object ApiService {
 
@@ -53,7 +50,8 @@ object ApiService {
             handleResponseExceptionWithRequest { cause, _ ->
                 if (cause is ResponseException) {
                     val response = cause.response
-                    val message = errorMessageFromResponse(response)
+                    // Usiamo una funzione esterna per gestire il body suspend
+                    val message = "Errore server (${response.status.value})"
                     throw ApiException(response.status.value, message)
                 }
             }
@@ -61,17 +59,19 @@ object ApiService {
     }
 
     suspend fun getEvents(): List<Event> {
-        return client.get("$BASE_URL/events").body()
+        return handleRequest { client.get("$BASE_URL/events").body() }
     }
 
     suspend fun searchEvents(query: String): List<Event> {
-        return client.get("$BASE_URL/events/search") {
-            parameter("query", query)
-        }.body()
+        return handleRequest {
+            client.get("$BASE_URL/events/search") {
+                parameter("query", query)
+            }.body()
+        }
     }
 
     suspend fun getEventDetail(id: Long): EventDetail {
-        return client.get("$BASE_URL/events/$id").body()
+        return handleRequest { client.get("$BASE_URL/events/$id").body() }
     }
 
     suspend fun getMapEvents(
@@ -79,56 +79,66 @@ object ApiService {
         lon: Double,
         radiusKm: Double = 10.0
     ): List<EventMapItem> {
-        return client.get("$BASE_URL/events/map") {
-            parameter("lat", lat)
-            parameter("lon", lon)
-            parameter("radiusKm", radiusKm)
-        }.body()
+        return handleRequest {
+            client.get("$BASE_URL/events/map") {
+                parameter("lat", lat)
+                parameter("lon", lon)
+                parameter("radiusKm", radiusKm)
+            }.body()
+        }
     }
 
     suspend fun getWeather(lat: Double, lon: Double): WeatherResponse {
-        return client.get("$BASE_URL/weather") {
-            parameter("lat", lat)
-            parameter("lon", lon)
-        }.body()
+        return handleRequest {
+            client.get("$BASE_URL/weather") {
+                parameter("lat", lat)
+                parameter("lon", lon)
+            }.body()
+        }
     }
 
     suspend fun login(email: String, password: String): AuthResponse {
-        return client.post("$BASE_URL/auth/login") {
-            contentType(ContentType.Application.Json)
-            accept(ContentType.Application.Json)
-            setBody(LoginRequest(email, password))
-        }.body()
+        return handleRequest {
+            client.post("$BASE_URL/auth/login") {
+                contentType(ContentType.Application.Json)
+                accept(ContentType.Application.Json)
+                setBody(LoginRequest(email, password))
+            }.body()
+        }
     }
 
     suspend fun register(username: String, email: String, password: String): AuthResponse {
-        return client.post("$BASE_URL/auth/register") {
-            contentType(ContentType.Application.Json)
-            accept(ContentType.Application.Json)
-            setBody(RegisterRequest(username, email, password))
-        }.body()
-    }
-
-    private suspend fun errorMessageFromResponse(response: HttpResponse): String {
-        val body = response.bodyAsText()
-        return extractErrorMessage(body)
-    }
-
-    private fun extractErrorMessage(body: String): String {
-        if (body.isBlank()) {
-            return "Errore sconosciuto"
+        return handleRequest {
+            client.post("$BASE_URL/auth/register") {
+                contentType(ContentType.Application.Json)
+                accept(ContentType.Application.Json)
+                setBody(RegisterRequest(username, email, password))
+            }.body()
         }
+    }
 
+    private suspend inline fun <T> handleRequest(block: () -> T): T {
         return try {
-            val jsonElement = jsonConfig.parseToJsonElement(body)
-
-            val obj = jsonElement.jsonObject
-
-            obj["message"]?.jsonPrimitive?.contentOrNull
-                ?: obj["error"]?.jsonPrimitive?.contentOrNull
-                ?: body
+            block()
+        } catch (e: ResponseException) {
+            val body = e.response.bodyAsText()
+            val message = extractErrorMessage(body) ?: "Errore ${e.response.status.value}"
+            throw ApiException(e.response.status.value, message)
+        } catch (e: ApiException) {
+            throw e
         } catch (e: Exception) {
-            body
+            throw RuntimeException(e.message ?: "Errore di connessione")
+        }
+    }
+
+    private fun extractErrorMessage(body: String): String? {
+        if (body.isBlank()) return null
+        return try {
+            val json = jsonConfig.parseToJsonElement(body).jsonObject
+            json["message"]?.jsonPrimitive?.contentOrNull
+                ?: json["error"]?.jsonPrimitive?.contentOrNull
+        } catch (e: Exception) {
+            if (body.length < 100) body else null
         }
     }
 }

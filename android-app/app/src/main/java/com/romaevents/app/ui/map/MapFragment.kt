@@ -47,10 +47,13 @@ import org.osmdroid.tileprovider.tilesource.XYTileSource
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
+import org.osmdroid.views.overlay.Polyline
+import com.romaevents.app.data.remote.RouteService
 
 class MapFragment : Fragment() {
 
     private val repository = EventRepository()
+    private val routeService = RouteService()
 
     private lateinit var mapView: MapView
     private lateinit var fusedLocationClient: FusedLocationProviderClient
@@ -64,8 +67,12 @@ class MapFragment : Fragment() {
     private var rotationSensor: Sensor? = null
 
     private var userMarker: Marker? = null
+    private var routeLine: Polyline? = null
+    private var lastUserLocation: GeoPoint? = null
+
     private var hasLoadedEvents = false
     private var focusEventId: Long? = null
+    private var shouldShowRoute: Boolean = false
     private var selectedEventId: Long? = null
     private var userBearing: Float = 0f
 
@@ -87,12 +94,14 @@ class MapFragment : Fragment() {
 
     companion object {
         private const val ARG_EVENT_ID = "event_id"
+        private const val ARG_SHOW_ROUTE = "show_route"
         private const val LOCATION_PERMISSION_REQUEST = 2001
 
-        fun newInstance(eventId: Long): MapFragment {
+        fun newInstance(eventId: Long, showRoute: Boolean = false): MapFragment {
             return MapFragment().apply {
                 arguments = Bundle().apply {
                     putLong(ARG_EVENT_ID, eventId)
+                    putBoolean(ARG_SHOW_ROUTE, showRoute)
                 }
             }
         }
@@ -143,6 +152,7 @@ class MapFragment : Fragment() {
         rotationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR)
 
         focusEventId = arguments?.getLong(ARG_EVENT_ID)?.takeIf { it > 0 }
+        shouldShowRoute = arguments?.getBoolean(ARG_SHOW_ROUTE) ?: false
     }
 
     override fun onCreateView(
@@ -256,8 +266,13 @@ class MapFragment : Fragment() {
             setPadding(0, 0, 0, 22)
         }
 
+        val btnContainer = LinearLayout(requireContext()).apply {
+            orientation = LinearLayout.HORIZONTAL
+            gravity = Gravity.CENTER
+        }
+
         bottomDetailButton = Button(requireContext()).apply {
-            text = "Dettaglio evento"
+            text = "Dettagli"
             setOnClickListener {
                 selectedEventId?.let { id ->
                     hideBottomSheet()
@@ -265,6 +280,21 @@ class MapFragment : Fragment() {
                 }
             }
         }
+
+        val routeButton = Button(requireContext()).apply {
+            text = "Percorso"
+            setOnClickListener {
+                selectedEventId?.let { id ->
+                    val marker = mapView.overlays.filterIsInstance<Marker>().find { it.relatedObject == id }
+                    marker?.let { m ->
+                        drawRouteToEvent(m.position.latitude, m.position.longitude)
+                    }
+                }
+            }
+        }
+
+        btnContainer.addView(bottomDetailButton, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f).apply { setMargins(0,0,8,0) })
+        btnContainer.addView(routeButton, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
 
         val closeText = TextView(requireContext()).apply {
             text = "Chiudi"
@@ -279,7 +309,7 @@ class MapFragment : Fragment() {
 
         sheet.addView(bottomTitle)
         sheet.addView(bottomAddress)
-        sheet.addView(bottomDetailButton)
+        sheet.addView(btnContainer)
         sheet.addView(closeText)
 
         sheet.layoutParams = FrameLayout.LayoutParams(
@@ -308,6 +338,11 @@ class MapFragment : Fragment() {
     private fun hideBottomSheet() {
         selectedEventId = null
         bottomSheet.visibility = View.GONE
+        routeLine?.let {
+            mapView.overlays.remove(it)
+            routeLine = null
+            mapView.invalidate()
+        }
     }
 
     private fun checkLocationPermission() {
@@ -353,6 +388,7 @@ class MapFragment : Fragment() {
 
     private fun updateUserMarker(lat: Double, lon: Double) {
         val point = GeoPoint(lat, lon)
+        lastUserLocation = point
 
         if (userMarker == null) {
             userMarker = Marker(mapView).apply {
@@ -372,6 +408,61 @@ class MapFragment : Fragment() {
         }
 
         mapView.invalidate()
+    }
+
+    private fun drawRouteToEvent(eventLat: Double, eventLon: Double) {
+        val startPoint = lastUserLocation
+
+        if (startPoint == null) {
+            Toast.makeText(
+                requireContext(),
+                "Posizione utente non ancora disponibile",
+                Toast.LENGTH_SHORT
+            ).show()
+            return
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            try {
+                val routePoints = withContext(Dispatchers.IO) {
+                    routeService.getWalkingRoute(
+                        startLat = startPoint.latitude,
+                        startLon = startPoint.longitude,
+                        endLat = eventLat,
+                        endLon = eventLon
+                    )
+                }
+
+                routeLine?.let {
+                    mapView.overlays.remove(it)
+                }
+
+                if (routePoints.isNotEmpty()) {
+                    routeLine = Polyline().apply {
+                        setPoints(routePoints)
+                        width = 12f
+                        color = 0xFF1565C0.toInt()
+                    }
+
+                    mapView.overlays.add(routeLine)
+                    
+                    try {
+                        mapView.zoomToBoundingBox(routeLine!!.bounds, true, 160)
+                    } catch (e: Exception) {
+                        mapView.controller.animateTo(routePoints[0])
+                    }
+                }
+
+                mapView.invalidate()
+
+            } catch (e: Exception) {
+                Toast.makeText(
+                    requireContext(),
+                    "Errore calcolo percorso: ${e.message}",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        }
     }
 
     private fun loadEventsOnMap(lat: Double, lon: Double) {
@@ -409,6 +500,7 @@ class MapFragment : Fragment() {
                 snippet = event.address ?: "Indirizzo non disponibile"
                 icon = createEventMarkerIcon(markerColor)
                 setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
+                relatedObject = event.id
 
                 setOnMarkerClickListener { _, _ ->
                     val point = GeoPoint(event.latitude, event.longitude)
@@ -441,6 +533,10 @@ class MapFragment : Fragment() {
                     title = event.title,
                     address = event.address
                 )
+
+                if (shouldShowRoute) {
+                    drawRouteToEvent(event.latitude, event.longitude)
+                }
             }
         }
 

@@ -1,6 +1,5 @@
 package com.romaevents.app.ui.events
 
-import android.R
 import android.content.Intent
 import android.graphics.Typeface
 import android.net.Uri
@@ -11,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.button.MaterialButton
@@ -143,8 +141,6 @@ class EventDetailFragment : Fragment() {
                     setPadding(0, 0, 0, 60)
                 })
 
-
-
                 box.addView(TextView(requireContext()).apply {
                     text = detail.description ?: "Descrizione non disponibile"
                     textSize = 16f
@@ -154,103 +150,77 @@ class EventDetailFragment : Fragment() {
                 })
 
                 if (detail.latitude != null && detail.longitude != null) {
-                    val weather = withContext(Dispatchers.IO) {
-                        repository.getWeather(detail.latitude, detail.longitude)
-                    }
-
-                    val weatherCard = MaterialCardView(requireContext()).apply {
-                        radius = 22f
-                        cardElevation = 3f
-                        setCardBackgroundColor(0xFFEAF4FF.toInt())
-                        setContentPadding(24, 22, 24, 22)
-                    }
-
-                    val weatherBox = LinearLayout(requireContext()).apply {
-                        orientation = LinearLayout.VERTICAL
-                    }
-
-                    weatherBox.addView(TextView(requireContext()).apply {
-                        text = "Meteo vicino all'evento"
-                        textSize = 17f
-                        setTextColor(0xFF1B1B1B.toInt())
-                        typeface = Typeface.DEFAULT_BOLD
-                        setPadding(0, 0, 0, 10)
-                    })
-
-                    weatherBox.addView(TextView(requireContext()).apply {
-                        text = "🌡️ ${weather.temperature}°C  •  ${weather.description}"
-                        textSize = 16f
-                        setTextColor(0xFF333333.toInt())
-                        setPadding(0, 0, 0, 8)
-                    })
-
-                    weatherBox.addView(TextView(requireContext()).apply {
-                        text = "💧 Umidità ${weather.humidity}%   💨 Vento ${weather.windSpeed} m/s"
-                        textSize = 14f
-                        setTextColor(0xFF555555.toInt())
-                    })
-
-                    weatherCard.addView(weatherBox)
-
-                    box.addView(
-                        weatherCard,
-                        LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.MATCH_PARENT,
-                            LinearLayout.LayoutParams.WRAP_CONTENT
-                        ).apply {
-                            setMargins(0, 4, 0, 26)
+                    try {
+                        val weather = withContext(Dispatchers.IO) {
+                            repository.getWeather(detail.latitude, detail.longitude)
                         }
-                    )
+
+                        val weatherCard = MaterialCardView(requireContext()).apply {
+                            radius = 22f
+                            cardElevation = 3f
+                            setCardBackgroundColor(0xFFEAF4FF.toInt())
+                            setContentPadding(24, 22, 24, 22)
+                        }
+
+                        val weatherBox = LinearLayout(requireContext()).apply {
+                            orientation = LinearLayout.VERTICAL
+                        }
+
+                        weatherBox.addView(TextView(requireContext()).apply {
+                            text = "Meteo vicino all'evento"
+                            textSize = 17f
+                            setTextColor(0xFF1B1B1B.toInt())
+                            typeface = Typeface.DEFAULT_BOLD
+                            setPadding(0, 0, 0, 10)
+                        })
+
+                        weatherBox.addView(TextView(requireContext()).apply {
+                            text = "🌡️ ${weather.temperature}°C  •  ${weather.description}"
+                            textSize = 16f
+                            setTextColor(0xFF333333.toInt())
+                            setPadding(0, 0, 0, 8)
+                        })
+
+                        weatherBox.addView(TextView(requireContext()).apply {
+                            text = "💧 Umidità ${weather.humidity}%   💨 Vento ${weather.windSpeed} m/s"
+                            textSize = 14f
+                            setTextColor(0xFF555555.toInt())
+                        })
+
+                        weatherCard.addView(weatherBox)
+
+                        box.addView(
+                            weatherCard,
+                            LinearLayout.LayoutParams(
+                                LinearLayout.LayoutParams.MATCH_PARENT,
+                                LinearLayout.LayoutParams.WRAP_CONTENT
+                            ).apply {
+                                setMargins(0, 4, 0, 26)
+                            }
+                        )
+                    } catch (e: Exception) {
+                        // Ignoriamo errori meteo
+                    }
                 }
 
                 box.addView(MaterialButton(requireContext()).apply {
-                    text = "Vedi sulla mappa"
-                    setIconResource(R.drawable.ic_dialog_map)
+                    text = "Vedi percorso sulla mappa"
+                    // Usiamo icone standard senza android.R se possibile o specifichiamo bene
+                    setIconResource(android.R.drawable.ic_dialog_map)
 
                     setOnClickListener {
-                        (activity as? MainActivity)?.openMapForEvent(eventId)
-                    }
-                })
-
-                box.addView(MaterialButton(requireContext()).apply {
-                    text = "Apri indicazioni"
-                    setIconResource(R.drawable.ic_menu_directions)
-
-                    setOnClickListener {
-                        val lat = detail.latitude
-                        val lon = detail.longitude
-
-                        if (lat == null || lon == null) {
-                            Toast.makeText(
-                                requireContext(),
-                                "Coordinate evento non disponibili",
-                                Toast.LENGTH_LONG
-                            ).show()
-                            return@setOnClickListener
-                        }
-
-                        val uri = Uri.parse(
-                            "https://www.google.com/maps/dir/?api=1" +
-                                    "&destination=$lat,$lon" +
-                                    "&travelmode=walking"
-                        )
-
-                        startActivity(Intent(Intent.ACTION_VIEW, uri))
+                        (activity as? MainActivity)?.openMapForEvent(eventId, showRoute = true)
                     }
                 })
 
                 box.addView(MaterialButton(requireContext()).apply {
                     text = "Torna agli eventi"
-                    setIconResource(R.drawable.ic_media_previous)
+                    setIconResource(android.R.drawable.ic_media_previous)
 
                     setOnClickListener {
                         (activity as? MainActivity)?.goBackToEvents()
                     }
                 })
-
-
-
-
 
                 card.addView(box)
 
