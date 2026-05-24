@@ -57,10 +57,10 @@ class AuthService(
         val password = request.password
 
         val user = userRepository.findByEmail(email)
-            ?: throw ResponseStatusException(HttpStatus.UNAUTHORIZED, "Credenziali non valide")
+            ?: throw ResponseStatusException(HttpStatus.UNAUTHORIZED, "Email non registrata")
 
         if (user.passwordHash != hashPassword(password)) {
-            throw ResponseStatusException(HttpStatus.UNAUTHORIZED, "Credenziali non valide")
+            throw ResponseStatusException(HttpStatus.UNAUTHORIZED, "Password non valida")
         }
 
         return AuthResponse(
