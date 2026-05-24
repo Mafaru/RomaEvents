@@ -10,7 +10,6 @@ import com.romaevents.app.model.WeatherResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.android.Android
-import io.ktor.client.plugins.HttpResponseValidator
 import io.ktor.client.plugins.ResponseException
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.client.request.accept
@@ -44,17 +43,6 @@ object ApiService {
 
         install(ContentNegotiation) {
             json(jsonConfig)
-        }
-
-        HttpResponseValidator {
-            handleResponseExceptionWithRequest { cause, _ ->
-                if (cause is ResponseException) {
-                    val response = cause.response
-                    // Usiamo una funzione esterna per gestire il body suspend
-                    val message = "Errore server (${response.status.value})"
-                    throw ApiException(response.status.value, message)
-                }
-            }
         }
     }
 
