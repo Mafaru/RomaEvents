@@ -3,9 +3,11 @@ package com.romaevents.app.ui.scanner
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.content.res.ColorStateList
 import android.graphics.Typeface
 import android.os.Bundle
-import android.widget.Button
+import android.view.Gravity
+import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -20,8 +22,8 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.card.MaterialCardView
-import com.romaevents.app.ui.scanner.TextAnalyzer
+import com.google.android.material.button.MaterialButton
+import com.romaevents.app.R
 import com.romaevents.app.data.repository.EventRepository
 import com.romaevents.app.ui.events.EventAdapter
 import com.romaevents.app.ui.main.MainActivity
@@ -34,8 +36,7 @@ import java.util.concurrent.Executors
 class ScannerActivity : AppCompatActivity() {
 
     private lateinit var previewView: PreviewView
-    private lateinit var resultText: TextView
-    private lateinit var searchButton: Button
+    private lateinit var searchButton: MaterialButton
     private lateinit var resultsRecyclerView: RecyclerView
     private lateinit var cameraExecutor: ExecutorService
 
@@ -49,86 +50,81 @@ class ScannerActivity : AppCompatActivity() {
 
         cameraExecutor = Executors.newSingleThreadExecutor()
 
+        val orange = ContextCompat.getColor(this, R.color.roma_orange)
+        val bgDark = ContextCompat.getColor(this, R.color.background_dark)
+        val black = ContextCompat.getColor(this, R.color.black)
+
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setBackgroundColor(0xFFF7F7F7.toInt())
+            setBackgroundColor(bgDark)
         }
 
-        // 🔹 CAMERA PREVIEW
-        previewView = PreviewView(this)
-
-        root.addView(
-            previewView,
-            LinearLayout.LayoutParams(
+        // 🔹 SEZIONE CAMERA
+        val cameraContainer = FrameLayout(this).apply {
+            layoutParams = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 0,
-                1.2f
+                1.4f
             )
-        )
-
-        // 🔹 CARD OCR TEXT
-        val ocrCard = MaterialCardView(this).apply {
-            radius = 22f
-            cardElevation = 3f
-            setCardBackgroundColor(0xFFFFFFFF.toInt())
-            setContentPadding(24, 20, 24, 20)
         }
 
-        resultText = TextView(this).apply {
-            text = "Punta la camera su una locandina..."
-            textSize = 15f
-            setTextColor(0xFF1B1B1B.toInt())
-            maxLines = 4
-        }
+        previewView = PreviewView(this)
+        cameraContainer.addView(previewView)
 
-        ocrCard.addView(resultText)
-
-        root.addView(
-            ocrCard,
-            LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            ).apply {
-                setMargins(24, 20, 24, 12)
+        // Mirino Scanner
+        val frameView = FrameLayout(this).apply {
+            layoutParams = FrameLayout.LayoutParams(650, 450, Gravity.CENTER)
+            background = android.graphics.drawable.GradientDrawable().apply {
+                setStroke(6, orange)
+                cornerRadius = 48f
             }
-        )
+        }
+        cameraContainer.addView(frameView)
 
-        // 🔹 BUTTON
-        searchButton = Button(this).apply {
-            text = "🔍 Cerca evento"
+        root.addView(cameraContainer)
+
+        // 🔹 PANNELLO AZIONI
+        val infoPanel = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(40, 48, 40, 40)
+            background = android.graphics.drawable.GradientDrawable().apply {
+                setColor(ContextCompat.getColor(this@ScannerActivity, R.color.surface_dark))
+                cornerRadii = floatArrayOf(80f, 80f, 80f, 80f, 0f, 0f, 0f, 0f)
+            }
+        }
+
+        infoPanel.addView(TextView(this).apply {
+            text = "INQUADRA IL TITOLO E PREMI CERCA"
+            textSize = 12f
+            setTextColor(orange)
+            typeface = Typeface.create(Typeface.DEFAULT, Typeface.BOLD)
+            gravity = Gravity.CENTER
+            letterSpacing = 0.1f
+            setPadding(0, 0, 0, 32)
+        })
+
+        searchButton = MaterialButton(this).apply {
+            text = "CERCA EVENTO"
             textSize = 16f
-            setBackgroundColor(0xFF1565C0.toInt())
-            setTextColor(0xFFFFFFFF.toInt())
-            setPadding(20, 14, 20, 14)
+            cornerRadius = 40
+            backgroundTintList = ColorStateList.valueOf(orange)
+            setTextColor(black)
+            typeface = Typeface.DEFAULT_BOLD
+            setPadding(0, 36, 0, 36)
+            elevation = 15f
             setOnClickListener {
                 searchEventFromOcr()
             }
         }
 
-        root.addView(
-            searchButton,
-            LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            ).apply {
-                setMargins(24, 0, 24, 12)
-            }
-        )
+        infoPanel.addView(searchButton)
+        root.addView(infoPanel)
 
-        // 🔹 RISULTATI HEADER
-        val resultsTitle = TextView(this).apply {
-            text = "Risultati"
-            textSize = 18f
-            setTextColor(0xFF1B1B1B.toInt())
-            typeface = Typeface.DEFAULT_BOLD
-            setPadding(24, 10, 24, 6)
-        }
-
-        root.addView(resultsTitle)
-
-        // 🔹 LISTA RISULTATI
+        // 🔹 SEZIONE RISULTATI
         resultsRecyclerView = RecyclerView(this).apply {
             layoutManager = LinearLayoutManager(this@ScannerActivity)
+            setPadding(24, 24, 24, 60)
+            clipToPadding = false
         }
 
         root.addView(
@@ -136,7 +132,7 @@ class ScannerActivity : AppCompatActivity() {
             LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 0,
-                1f
+                0.8f
             )
         )
 
@@ -170,34 +166,29 @@ class ScannerActivity : AppCompatActivity() {
                 it.setSurfaceProvider(previewView.surfaceProvider)
             }
 
-            val imageAnalyzer = ImageAnalysis.Builder()
+            val imageAnalysis = ImageAnalysis.Builder()
                 .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                 .build()
 
-            imageAnalyzer.setAnalyzer(cameraExecutor, TextAnalyzer { text ->
+            imageAnalysis.setAnalyzer(cameraExecutor, TextAnalyzer { text ->
                 if (text.isNotBlank() && !text.startsWith("Errore OCR")) {
                     lastDetectedText = text
-                }
-
-                runOnUiThread {
-                    resultText.text =
-                        if (text.isBlank()) {
-                            "Nessun testo rilevato..."
-                        } else {
-                            text
-                        }
                 }
             })
 
             val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
-            cameraProvider.unbindAll()
-            cameraProvider.bindToLifecycle(
-                this,
-                cameraSelector,
-                preview,
-                imageAnalyzer
-            )
+            try {
+                cameraProvider.unbindAll()
+                cameraProvider.bindToLifecycle(
+                    this,
+                    cameraSelector,
+                    preview,
+                    imageAnalysis
+                )
+            } catch (e: Exception) {
+                Toast.makeText(this, "Errore Camera", Toast.LENGTH_SHORT).show()
+            }
 
         }, ContextCompat.getMainExecutor(this))
     }
@@ -206,11 +197,7 @@ class ScannerActivity : AppCompatActivity() {
         val query = cleanOcrText(lastDetectedText)
 
         if (query.length < 3) {
-            Toast.makeText(
-                this,
-                "Testo OCR non sufficiente",
-                Toast.LENGTH_SHORT
-            ).show()
+            Toast.makeText(this, "Punta il titolo dell'evento", Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -221,43 +208,27 @@ class ScannerActivity : AppCompatActivity() {
                 }
 
                 if (results.isEmpty()) {
-                    Toast.makeText(
-                        this@ScannerActivity,
-                        "Nessun evento trovato",
-                        Toast.LENGTH_LONG
-                    ).show()
-
+                    Toast.makeText(this@ScannerActivity, "Nessun evento trovato", Toast.LENGTH_SHORT).show()
                     resultsRecyclerView.adapter = null
                 } else {
                     resultsRecyclerView.adapter = EventAdapter(results) { event ->
                         val intent = Intent(this@ScannerActivity, MainActivity::class.java).apply {
                             putExtra("open_event_id", event.id)
-                            flags =
-                                Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+                            flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
                         }
-
                         startActivity(intent)
                         finish()
                     }
                 }
 
             } catch (e: Exception) {
-                Toast.makeText(
-                    this@ScannerActivity,
-                    "Errore: ${e.message}",
-                    Toast.LENGTH_LONG
-                ).show()
+                Toast.makeText(this@ScannerActivity, "Errore durante la ricerca", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     private fun cleanOcrText(text: String): String {
-        return text
-            .lowercase()
-            .replace("\n", " ")
-            .replace(Regex("\\s+"), " ")
-            .trim()
-            .take(120)
+        return text.lowercase().replace("\n", " ").trim().take(100)
     }
 
     override fun onDestroy() {
@@ -271,13 +242,10 @@ class ScannerActivity : AppCompatActivity() {
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-
-        if (requestCode == CAMERA_PERMISSION_CODE) {
-            if (allPermissionsGranted()) {
-                startCamera()
-            } else {
-                finish()
-            }
+        if (requestCode == CAMERA_PERMISSION_CODE && allPermissionsGranted()) {
+            startCamera()
+        } else if (requestCode == CAMERA_PERMISSION_CODE) {
+            finish()
         }
     }
 }

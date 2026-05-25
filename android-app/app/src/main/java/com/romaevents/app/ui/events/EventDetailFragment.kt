@@ -1,25 +1,30 @@
 package com.romaevents.app.ui.events
 
-import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.graphics.Typeface
-import android.net.Uri
 import android.os.Bundle
+import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.card.MaterialCardView
+import com.romaevents.app.R
 import com.romaevents.app.data.repository.EventRepository
 import com.romaevents.app.ui.main.MainActivity
 import com.romaevents.app.utils.DateUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.util.Locale
 
 class EventDetailFragment : Fragment() {
 
@@ -48,19 +53,27 @@ class EventDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        val backgroundDark = ContextCompat.getColor(requireContext(), R.color.background_dark)
+        val orange = ContextCompat.getColor(requireContext(), R.color.roma_orange)
+
         val scrollView = ScrollView(requireContext()).apply {
-            setBackgroundColor(0xFFF7F7F7.toInt())
+            setBackgroundColor(backgroundDark)
+            isFillViewport = true
         }
 
         val content = LinearLayout(requireContext()).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(24, 24, 24, 32)
+            setPadding(32, 40, 32, 48)
         }
 
         val loading = TextView(requireContext()).apply {
-            text = "Caricamento dettaglio..."
-            textSize = 18f
-            setPadding(20, 40, 20, 40)
+            text = "PREPARAZIONE DETTAGLI..."
+            textSize = 14f
+            setTextColor(orange)
+            typeface = Typeface.DEFAULT_BOLD
+            gravity = Gravity.CENTER
+            letterSpacing = 0.2f
+            setPadding(0, 150, 0, 0)
         }
 
         content.addView(loading)
@@ -78,166 +91,163 @@ class EventDetailFragment : Fragment() {
                     repository.getEventDetail(eventId)
                 }
 
+                if (!isAdded) return@launch
+
                 content.removeAllViews()
 
+                val orange = ContextCompat.getColor(requireContext(), R.color.roma_orange)
+                val surfaceDark = ContextCompat.getColor(requireContext(), R.color.surface_dark)
+                val white = ContextCompat.getColor(requireContext(), R.color.white)
+                val textSecondary = ContextCompat.getColor(requireContext(), R.color.text_secondary)
+                val black = ContextCompat.getColor(requireContext(), R.color.black)
+
+                // TITOLO HERO
+                content.addView(TextView(requireContext()).apply {
+                    text = detail.title.uppercase(Locale.ROOT)
+                    textSize = 34f
+                    setTextColor(orange)
+                    typeface = Typeface.create("sans-serif-black", Typeface.BOLD)
+                    letterSpacing = 0.05f
+                    setPadding(0, 0, 0, 32)
+                })
+
                 val card = MaterialCardView(requireContext()).apply {
-                    radius = 24f
-                    cardElevation = 5f
-                    setContentPadding(28, 28, 28, 28)
+                    radius = 48f
+                    cardElevation = 20f
+                    setCardBackgroundColor(surfaceDark)
+                    strokeWidth = 2
+                    setStrokeColor(ColorStateList.valueOf(0x1AFFFFFF))
+                    setContentPadding(40, 56, 40, 56)
                 }
 
                 val box = LinearLayout(requireContext()).apply {
                     orientation = LinearLayout.VERTICAL
                 }
 
-                box.addView(TextView(requireContext()).apply {
-                    text = detail.title
-                    textSize = 25f
-                    setTextColor(0xFF1B1B1B.toInt())
+                // CHIP CATEGORIA
+                val categoryTag = TextView(requireContext()).apply {
+                    text = (detail.category ?: "EVENTO").uppercase(Locale.ROOT)
+                    textSize = 11f
+                    setTextColor(black)
                     typeface = Typeface.DEFAULT_BOLD
-                    setPadding(0, 0, 0, 20)
-                })
-
-                box.addView(TextView(requireContext()).apply {
-                    text = detail.category ?: "Categoria non disponibile"
-                    textSize = 14f
-                    setTextColor(0xFF1A73E8.toInt())
-                    typeface = Typeface.DEFAULT_BOLD
-                    setPadding(0, 0, 0, 18)
-                })
-
-                box.addView(TextView(requireContext()).apply {
-                    text = "📅 ${DateUtils.formatDateRange(detail.nextOccurrenceStart, detail.nextOccurrenceEnd)}"
-                    textSize = 15f
-                    setTextColor(0xFF555555.toInt())
-                    setPadding(0, 0, 0, 10)
-                })
-
-                box.addView(TextView(requireContext()).apply {
-                    text = "📍 ${detail.address ?: "Indirizzo non disponibile"}"
-                    textSize = 15f
-                    setTextColor(0xFF555555.toInt())
-                    setPadding(0, 0, 0, 24)
-                })
-
-                box.addView(TextView(requireContext()).apply {
-                    text = when (detail.status) {
-                        "IN_CORSO" -> "● Evento in corso"
-                        "PROSSIMO" -> "● Evento prossimo"
-                        "PASSATO" -> "● Evento passato"
-                        else -> "● Stato non disponibile"
+                    letterSpacing = 0.1f
+                    setPadding(28, 10, 28, 10)
+                    background = android.graphics.drawable.GradientDrawable().apply {
+                        setColor(orange)
+                        cornerRadius = 100f
                     }
+                }
+                box.addView(LinearLayout(requireContext()).apply { addView(categoryTag) })
 
-                    setTextColor(
-                        when (detail.status) {
-                            "IN_CORSO" -> 0xFF2E7D32.toInt()
-                            "PROSSIMO" -> 0xFF1565C0.toInt()
-                            else -> 0xFF757575.toInt()
-                        }
-                    )
-
-                    textSize = 14f
+                // INFO PRINCIPALI
+                box.addView(TextView(requireContext()).apply {
+                    text = "📅  ${DateUtils.formatDateRange(detail.nextOccurrenceStart, detail.nextOccurrenceEnd)}"
+                    textSize = 17f
+                    setTextColor(white)
                     typeface = Typeface.DEFAULT_BOLD
-                    setPadding(0, 0, 0, 60)
+                    setPadding(0, 40, 0, 14)
                 })
 
                 box.addView(TextView(requireContext()).apply {
-                    text = detail.description ?: "Descrizione non disponibile"
+                    text = "📍  ${detail.address ?: "Roma, Italia"}"
                     textSize = 16f
-                    setTextColor(0xFF333333.toInt())
-                    setLineSpacing(4f, 1.1f)
-                    setPadding(0, 0, 0, 30)
+                    setTextColor(textSecondary)
+                    setPadding(0, 0, 0, 32)
                 })
 
+                // DIVISORE
+                box.addView(View(requireContext()).apply {
+                    layoutParams = LinearLayout.LayoutParams(-1, 2).apply { setMargins(0, 8, 0, 40) }
+                    setBackgroundColor(0x1AFFFFFF)
+                })
+
+                // DESCRIZIONE
+                box.addView(TextView(requireContext()).apply {
+                    text = detail.description ?: "Scopri l'incanto di questo evento nel cuore di Roma."
+                    textSize = 16f
+                    setTextColor(white)
+                    setLineSpacing(10f, 1.2f)
+                    setPadding(0, 0, 0, 56)
+                })
+
+                // BOX METEO PREMIUM
                 if (detail.latitude != null && detail.longitude != null) {
                     try {
                         val weather = withContext(Dispatchers.IO) {
                             repository.getWeather(detail.latitude, detail.longitude)
                         }
 
-                        val weatherCard = MaterialCardView(requireContext()).apply {
-                            radius = 22f
-                            cardElevation = 3f
-                            setCardBackgroundColor(0xFFEAF4FF.toInt())
-                            setContentPadding(24, 22, 24, 22)
-                        }
-
-                        val weatherBox = LinearLayout(requireContext()).apply {
+                        val weatherCard = LinearLayout(requireContext()).apply {
                             orientation = LinearLayout.VERTICAL
+                            setPadding(32, 32, 32, 32)
+                            background = android.graphics.drawable.GradientDrawable().apply {
+                                setColor(0x0DFFFFFF)
+                                cornerRadius = 40f
+                                setStroke(2, 0x1AFFFFFF)
+                            }
                         }
 
-                        weatherBox.addView(TextView(requireContext()).apply {
-                            text = "Meteo vicino all'evento"
-                            textSize = 17f
-                            setTextColor(0xFF1B1B1B.toInt())
+                        weatherCard.addView(TextView(requireContext()).apply {
+                            text = "METEO ATTUALE"
+                            textSize = 11f
+                            setTextColor(orange)
                             typeface = Typeface.DEFAULT_BOLD
-                            setPadding(0, 0, 0, 10)
+                            letterSpacing = 0.2f
+                            setPadding(0, 0, 0, 16)
                         })
 
-                        weatherBox.addView(TextView(requireContext()).apply {
-                            text = "🌡️ ${weather.temperature}°C  •  ${weather.description}"
-                            textSize = 16f
-                            setTextColor(0xFF333333.toInt())
-                            setPadding(0, 0, 0, 8)
+                        weatherCard.addView(TextView(requireContext()).apply {
+                            val desc = weather.description.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString() }
+                            text = "🌡️ ${weather.temperature}°C  |  $desc"
+                            textSize = 19f
+                            setTextColor(white)
+                            typeface = Typeface.DEFAULT_BOLD
                         })
 
-                        weatherBox.addView(TextView(requireContext()).apply {
-                            text = "💧 Umidità ${weather.humidity}%   💨 Vento ${weather.windSpeed} m/s"
-                            textSize = 14f
-                            setTextColor(0xFF555555.toInt())
-                        })
-
-                        weatherCard.addView(weatherBox)
-
-                        box.addView(
-                            weatherCard,
-                            LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.MATCH_PARENT,
-                                LinearLayout.LayoutParams.WRAP_CONTENT
-                            ).apply {
-                                setMargins(0, 4, 0, 26)
-                            }
-                        )
+                        box.addView(weatherCard, LinearLayout.LayoutParams(-1, -2).apply { setMargins(0, 0, 0, 56) })
                     } catch (e: Exception) {
-                        // Ignoriamo errori meteo
+                        Log.e("WEATHER", "Meteo non disponibile")
                     }
                 }
 
+                // CTA BUTTONS
                 box.addView(MaterialButton(requireContext()).apply {
-                    text = "Vedi percorso sulla mappa"
-                    // Usiamo icone standard senza android.R se possibile o specifichiamo bene
-                    setIconResource(android.R.drawable.ic_dialog_map)
-
+                    text = "MOSTRA IL PERCORSO"
+                    textSize = 16f
+                    cornerRadius = 40
+                    setTextColor(black)
+                    backgroundTintList = ColorStateList.valueOf(orange)
+                    typeface = Typeface.DEFAULT_BOLD
+                    setPadding(0, 36, 0, 36)
+                    elevation = 12f
                     setOnClickListener {
                         (activity as? MainActivity)?.openMapForEvent(eventId, showRoute = true)
                     }
                 })
 
-                box.addView(MaterialButton(requireContext()).apply {
-                    text = "Torna agli eventi"
-                    setIconResource(android.R.drawable.ic_media_previous)
-
+                box.addView(TextView(requireContext()).apply {
+                    text = "TORNA AGLI EVENTI"
+                    textSize = 13f
+                    setTextColor(textSecondary)
+                    typeface = Typeface.DEFAULT_BOLD
+                    gravity = Gravity.CENTER
+                    setPadding(0, 48, 0, 0)
+                    letterSpacing = 0.15f
                     setOnClickListener {
                         (activity as? MainActivity)?.goBackToEvents()
                     }
                 })
 
                 card.addView(box)
-
-                content.addView(
-                    card,
-                    LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT
-                    )
-                )
+                content.addView(card)
 
             } catch (e: Exception) {
                 content.removeAllViews()
                 content.addView(TextView(requireContext()).apply {
-                    text = "Errore dettaglio:\n${e.message}"
-                    textSize = 16f
-                    setPadding(32, 32, 32, 32)
+                    text = "Impossibile caricare i dettagli.\nRiprova più tardi."
+                    setTextColor(Color.WHITE)
+                    gravity = Gravity.CENTER
+                    setPadding(40, 150, 40, 0)
                 })
             }
         }
