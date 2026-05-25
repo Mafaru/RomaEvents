@@ -1,5 +1,6 @@
 package com.romaevents.app.ui.events
 
+import android.content.res.ColorStateList
 import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
@@ -10,10 +11,12 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.romaevents.app.R
 import com.romaevents.app.data.repository.EventRepository
 import com.romaevents.app.ui.main.MainActivity
 import kotlinx.coroutines.CancellationException
@@ -30,27 +33,32 @@ class EventsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        val orange = ContextCompat.getColor(requireContext(), R.color.roma_orange)
+        val backgroundDark = ContextCompat.getColor(requireContext(), R.color.background_dark)
+        val textSecondary = ContextCompat.getColor(requireContext(), R.color.text_secondary)
+
         val root = LinearLayout(requireContext()).apply {
             orientation = LinearLayout.VERTICAL
-            setBackgroundColor(0xFFF7FAFF.toInt())
+            setBackgroundColor(backgroundDark)
         }
 
         val header = TextView(requireContext()).apply {
-            text = "Eventi a Roma"
-            textSize = 26f
-            setTextColor(0xFF1B1B1B.toInt())
-            setPadding(28, 28, 28, 12)
-            typeface = Typeface.DEFAULT_BOLD
+            text = "EVENTI A ROMA"
+            textSize = 28f
+            setTextColor(orange)
+            setPadding(32, 40, 32, 8)
+            typeface = Typeface.create("sans-serif-black", Typeface.BOLD)
+            letterSpacing = 0.05f
         }
 
         val subtitle = TextView(requireContext()).apply {
-            text = "Scopri gli eventi disponibili in città"
+            text = "Scopri cosa succede nell'Eterna Città"
             textSize = 15f
-            setTextColor(0xFF666666.toInt())
-            setPadding(28, 0, 28, 18)
+            setTextColor(textSecondary)
+            setPadding(32, 0, 32, 24)
         }
 
-        val loadingBox = createLoadingBox()
+        val loadingBox = createLoadingBox(orange, textSecondary)
 
         root.addView(header)
         root.addView(subtitle)
@@ -68,28 +76,30 @@ class EventsFragment : Fragment() {
         return root
     }
 
-    private fun createLoadingBox(): LinearLayout {
+    private fun createLoadingBox(accentColor: Int, textColor: Int): LinearLayout {
         val loadingBox = LinearLayout(requireContext()).apply {
             orientation = LinearLayout.VERTICAL
             gravity = Gravity.CENTER
             setPadding(32, 48, 32, 48)
         }
 
-        val progressBar = ProgressBar(requireContext())
+        val progressBar = ProgressBar(requireContext()).apply {
+            indeterminateTintList = ColorStateList.valueOf(accentColor)
+        }
 
         val loadingText = TextView(requireContext()).apply {
             text = "Caricamento eventi..."
             textSize = 17f
-            setTextColor(0xFF1565C0.toInt())
+            setTextColor(accentColor)
             typeface = Typeface.DEFAULT_BOLD
             gravity = Gravity.CENTER
-            setPadding(0, 20, 0, 6)
+            setPadding(0, 24, 0, 6)
         }
 
         val loadingSubtitle = TextView(requireContext()).apply {
-            text = "Sto recuperando gli eventi da Roma Events"
+            text = "Sto interrogando i server imperiali"
             textSize = 14f
-            setTextColor(0xFF666666.toInt())
+            setTextColor(textColor)
             gravity = Gravity.CENTER
         }
 
@@ -107,9 +117,7 @@ class EventsFragment : Fragment() {
                     repository.getEvents()
                 }
 
-                if (!isAdded) {
-                    return@launch
-                }
+                if (!isAdded) return@launch
 
                 root.removeView(loadingBox)
 
@@ -119,7 +127,7 @@ class EventsFragment : Fragment() {
                         (activity as? MainActivity)?.openEventDetail(event.id)
                     }
                     clipToPadding = false
-                    setPadding(0, 4, 0, 24)
+                    setPadding(0, 8, 0, 48)
                 }
 
                 root.addView(
@@ -132,15 +140,11 @@ class EventsFragment : Fragment() {
                 )
 
             } catch (e: Exception) {
-                if (e is CancellationException) {
-                    throw e
-                }
+                if (e is CancellationException) throw e
 
                 Log.e("EVENTS", "Errore caricamento eventi", e)
 
-                if (!isAdded) {
-                    return@launch
-                }
+                if (!isAdded) return@launch
 
                 root.removeView(loadingBox)
 
@@ -153,16 +157,16 @@ class EventsFragment : Fragment() {
                 errorBox.addView(TextView(requireContext()).apply {
                     text = "Impossibile caricare gli eventi"
                     textSize = 20f
-                    setTextColor(0xFFB00020.toInt())
+                    setTextColor(ContextCompat.getColor(context, R.color.roma_orange))
                     typeface = Typeface.DEFAULT_BOLD
                     gravity = Gravity.CENTER
                     setPadding(0, 0, 0, 12)
                 })
 
                 errorBox.addView(TextView(requireContext()).apply {
-                    text = "Se il server era inattivo, attendi qualche secondo e riapri la schermata."
+                    text = "Verifica la tua connessione o riprova tra pochi secondi."
                     textSize = 15f
-                    setTextColor(0xFF666666.toInt())
+                    setTextColor(ContextCompat.getColor(context, R.color.text_secondary))
                     gravity = Gravity.CENTER
                 })
 
