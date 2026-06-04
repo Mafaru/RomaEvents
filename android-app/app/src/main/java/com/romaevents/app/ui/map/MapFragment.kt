@@ -185,7 +185,6 @@ class MapFragment : Fragment() {
             setPadding(20, 16, 20, 16)
         }
 
-        // Solo Attivo e Prossimo con i colori corretti (Arancio e Neretto)
         container.addView(createLegendItem("Attivo", orange))
         container.addView(createLegendItem("Prossimo", inactiveGray))
 

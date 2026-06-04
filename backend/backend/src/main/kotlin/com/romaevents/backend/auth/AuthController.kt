@@ -10,7 +10,7 @@ class AuthController(
 
     @PostMapping("/register")
     fun register(
-        @RequestBody request: RegisterRequest
+        @RequestBody request: RegisterRequest 
     ): AuthResponse {
         return authService.register(request)
     }

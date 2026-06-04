@@ -13,7 +13,7 @@ class EventService(
     private val eventRepository: EventRepository,
     private val eventOccurrenceRepository: EventOccurrenceRepository
 ) {
-
+    //function to get all events for list
     fun getAllEventsForList(): List<EventListDto> {
         val now = LocalDateTime.now()
 
@@ -30,6 +30,7 @@ class EventService(
             )
     }
 
+    //function to get events for list by category
     fun getEventsForListByCategory(categoryId: Long): List<EventListDto> {
         val now = LocalDateTime.now()
 
@@ -46,6 +47,7 @@ class EventService(
             )
     }
 
+    //function to get events for map based on user location and radius
     fun getMapEvents(
         lat: Double,
         lon: Double,
@@ -59,8 +61,8 @@ class EventService(
                 event.latitude != null && event.longitude != null
             }
             .mapNotNull { event ->
-                val eventLat = event.latitude ?: return@mapNotNull null
-                val eventLon = event.longitude ?: return@mapNotNull null
+                val eventLat = event.latitude ?: return@mapNotNull null 
+                val eventLon = event.longitude ?: return@mapNotNull null 
 
                 val distance = haversine(
                     lat1 = lat,
@@ -95,14 +97,15 @@ class EventService(
                     status = status
                 )
             }
-            .sortedWith(
+            .sortedWith( 
                 compareBy<EventMapResponse> { it.status != EventStatus.ACTIVE_NOW }
                     .thenBy { it.distanceKm }
                     .thenBy { it.nextOccurrenceStart }
             )
-            .toList()
+            .toList() 
     }
 
+    //function to get event details by id
     fun getEventById(id: Long): EventDetailDto {
         val now = LocalDateTime.now()
 
@@ -135,10 +138,11 @@ class EventService(
         )
     }
 
+    //function to search events by query
     private fun chooseRelevantOccurrence(
         occurrences: List<EventOccurrence>,
         now: LocalDateTime
-    ): EventOccurrence? {
+    ): EventOccurrence? { 
         val sorted = occurrences.sortedBy { it.startDatetime }
 
         val active = sorted.firstOrNull { occurrence ->
@@ -153,6 +157,7 @@ class EventService(
         return active ?: upcoming
     }
 
+    //function to convert EventOccurrence to EventListDto
     private fun toEventListDto(
         occurrence: EventOccurrence,
         now: LocalDateTime
@@ -175,6 +180,7 @@ class EventService(
         )
     }
 
+    //function to check if an occurrence is active now
     private fun isActiveNow(
         occurrence: EventOccurrence,
         now: LocalDateTime
@@ -190,6 +196,7 @@ class EventService(
         }
     }
 
+    //function to calculate the distance between two points using the haversine formula
     private fun haversine(
         lat1: Double,
         lon1: Double,
@@ -210,14 +217,14 @@ class EventService(
         return earthRadiusKm * c
     }
     
-    
+    //function to search events by query
     fun searchEvents(query: String): List<EventListDto> {
         val keywords = query
             .lowercase()
             .split(Regex("\\s+"))
-            .map { it.trim() }
+            .map { it.trim() } 
             .filter { it.length >= 4 }
-            .distinct()
+            .distinct() 
 
         if (keywords.isEmpty()) {
             return emptyList()
@@ -246,3 +253,4 @@ class EventService(
 
     
 }
+

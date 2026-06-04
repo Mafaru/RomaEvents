@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavigation = findViewById(R.id.bottomNavigation)
 
+        //questa funzione  gestisce l'interazione con il bottomNavigation
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_events -> {
@@ -87,12 +88,12 @@ class MainActivity : AppCompatActivity() {
 
     fun openEventDetail(eventId: Long) {
         bottomNavigation.menu.findItem(R.id.nav_events).isChecked = true
-        showFragment(EventDetailFragment.Companion.newInstance(eventId))
+        showFragment(EventDetailFragment.newInstance(eventId))
     }
 
     fun openMapForEvent(eventId: Long, showRoute: Boolean = false) {
         bottomNavigation.menu.findItem(R.id.nav_map).isChecked = true
-        showFragment(MapFragment.Companion.newInstance(eventId, showRoute))
+        showFragment(MapFragment.newInstance(eventId, showRoute))
     }
 
     fun goBackToEvents() {

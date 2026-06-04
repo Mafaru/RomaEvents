@@ -24,11 +24,11 @@ class Event(
     val latitude: Double? = null,
     val longitude: Double? = null,
 
-    @ManyToOne
+    @ManyToOne //because an event can have only one category, but a category can have many events
     @JoinColumn(name = "category_id")
     val category: Category? = null,
 
-    val sourceUrl: String? = null,
+    val sourceUrl: String? = null, 
 
     val createdAt: LocalDateTime? = null
 )

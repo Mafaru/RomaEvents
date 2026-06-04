@@ -36,7 +36,7 @@ class AuthService(
             throw ResponseStatusException(HttpStatus.CONFLICT, "Username già utilizzato")
         }
 
-        val user = userRepository.save(
+        val user = userRepository.save( 
             User(
                 username = username,
                 email = email,
@@ -44,7 +44,7 @@ class AuthService(
             )
         )
 
-        return AuthResponse(
+        return AuthResponse(  
             userId = user.id,
             username = user.username,
             email = user.email,

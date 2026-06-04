@@ -16,7 +16,7 @@ class EventController(
 
     @GetMapping
     fun getAllEvents(
-        @RequestParam(required = false) categoryId: Long?
+        @RequestParam(required = false) categoryId: Long? 
     ): List<EventListDto> {
         return if (categoryId != null) {
             eventService.getEventsForListByCategory(categoryId)
@@ -29,7 +29,7 @@ class EventController(
     fun getEventsForMap(
         @RequestParam lat: Double,
         @RequestParam lon: Double,
-        @RequestParam(defaultValue = "10.0") radiusKm: Double
+        @RequestParam(defaultValue = "10.0") radiusKm: Double 
     ): List<EventMapResponse> {
         return eventService.getMapEvents(
             lat = lat,

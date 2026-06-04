@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Roma Palette (Nero e Arancio) -->
+    <!-- RomaEvents Palette -->
     <color name="roma_orange">#F67221</color>
     <color name="roma_orange_dark">#C56000</color>
     <color name="roma_orange_light">#FFC046</color>
