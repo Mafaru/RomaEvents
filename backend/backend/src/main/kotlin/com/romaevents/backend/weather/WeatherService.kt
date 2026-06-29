@@ -12,13 +12,14 @@ class WeatherService(
 
     private val restTemplate = RestTemplate()
 
+    //This function constructs the URL for the OpenWeather API using the provided latitude and longitude, along with the API key. It sends a GET request to the API and parses the response to extract the temperature, weather description, humidity, and wind speed. If any of the expected data is missing from the response, it throws an exception.
     fun getWeather(lat: Double, lon: Double): WeatherResponse {
         val url =
             "https://api.openweathermap.org/data/2.5/weather" +
                     "?lat=$lat" +
                     "&lon=$lon" +
                     "&appid=$apiKey" +
-                    "&units=metric" +
+                    "&units=metric" + 
                     "&lang=it"
 
         val response = restTemplate.getForObject(url, Map::class.java)

@@ -4,8 +4,7 @@ import com.romaevents.backend.event.Event
 import jakarta.persistence.*
 import java.time.LocalDateTime
 
-//EventOccurrence è la classe che rappresenta le singole occorrenze di un evento, con data e ora di inizio e fine. Un evento può avere più occorrenze, ad esempio se si ripete ogni settimana o ogni mese. La classe contiene un riferimento all'evento a cui appartiene l'occorrenza, e i campi startDatetime e endDatetime che indicano quando inizia e quando finisce l'occorrenza.
-
+//Event occurrence is the actual instance of an event, with a specific date and time. An event can have multiple occurrences (e.g., a concert that happens on multiple days).
 @Entity
 @Table(name = "event_occurrences")
 class EventOccurrence(

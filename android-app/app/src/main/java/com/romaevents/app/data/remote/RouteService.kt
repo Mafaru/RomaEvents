@@ -11,7 +11,7 @@ import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.*
 import org.osmdroid.util.GeoPoint
-
+//this class is used to get the route from the server
 class RouteService {
 
     private val client = HttpClient(Android) {
@@ -24,6 +24,7 @@ class RouteService {
         expectSuccess = true
     }
 
+    //This function takes the starting and ending coordinates and calls the OpenRouteService API to get the walking route between them. It constructs the request with the necessary headers and body, sends the POST request, and returns the response as a string. If the API key is not configured or if the response is invalid, it throws an exception.
     suspend fun getWalkingRoute(
         startLat: Double,
         startLon: Double,

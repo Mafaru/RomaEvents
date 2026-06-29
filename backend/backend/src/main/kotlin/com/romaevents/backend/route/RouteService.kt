@@ -16,6 +16,7 @@ class RouteService(
 
     private val restTemplate = RestTemplate()
 
+    //This function takes the starting and ending coordinates and calls the OpenRouteService API to get the walking route between them. It constructs the request with the necessary headers and body, sends the POST request, and returns the response as a string. If the API key is not configured or if the response is invalid, it throws an exception.
     fun getWalkingRoute(startLat: Double, startLon: Double, endLat: Double, endLon: Double): String {
         if (apiKey.isBlank()) {
             throw IllegalStateException("OPENROUTESERVICE_API_KEY non configurata")
@@ -42,6 +43,6 @@ class RouteService(
             String::class.java
         )
 
-        return response.body ?: throw RuntimeException("Risposta route non valida")
+        return response.body ?: throw RuntimeException("Risposta route non valida")  
     }
 }

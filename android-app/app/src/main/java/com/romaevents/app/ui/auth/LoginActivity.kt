@@ -28,6 +28,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var sessionManager: SessionManager
 
+    //This activity is responsible for handling the user login process. It creates a user interface programmatically, which includes a logo, welcome text, input fields for email and password, a login button, and a registration prompt. When the user clicks the login button, it retrieves the entered email and password, makes an API call to authenticate the user, and if successful, saves the user information in the session manager and navigates to the main activity. If the login fails, it shows a toast message with the error. The registration prompt allows users to navigate to the registration activity if they don't have an account.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -153,6 +154,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    //This function creates a TextInputLayout with a TextInputEditText inside it, it takes parameters for the hint text, input type, accent color, text color, and hint color. It configures the TextInputLayout to have an outlined box style with custom stroke colors for focused and default states, sets the hint text and colors, and applies corner radii. The TextInputEditText is configured with the specified input type and text color. Finally, the EditText is added to the TextInputLayout and the layout is returned. This function is used to create the email and password input fields in the login form with consistent styling.
     private fun createMaterialInput(hintText: String, type: Int, accent: Int, textCol: Int, hintCol: Int): TextInputLayout {
         val layout = TextInputLayout(this).apply {
             hint = hintText
@@ -176,6 +178,7 @@ class LoginActivity : AppCompatActivity() {
         return layout
     }
 
+    // Extension function to add alpha to a color
     private fun Int.withAlpha(alpha: Int): Int {
         return (this and 0x00FFFFFF) or (alpha shl 24)
     }

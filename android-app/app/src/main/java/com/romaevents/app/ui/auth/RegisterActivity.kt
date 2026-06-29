@@ -26,6 +26,7 @@ import java.util.Locale
 
 class RegisterActivity : AppCompatActivity() {
 
+    //This activity is responsible for handling the user registration process. It creates a user interface programmatically, which includes a logo, welcome text, input fields for username, email, password, and confirm password, a register button, and a login prompt. When the user clicks the register button, it retrieves the entered information, validates it (checks if fields are filled and if passwords match), makes an API call to register the user, and if successful, saves the user information in the session manager and navigates to the main activity. If the registration fails, it shows a toast message with the error. The login prompt allows users to navigate back to the login activity if they already have an account.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -66,7 +67,7 @@ class RegisterActivity : AppCompatActivity() {
         })
 
         content.addView(TextView(this).apply {
-            text = "CREA IL TUO PROFILO IMPERIALE"
+            text = "CREA IL TUO ACCOUNT"
             textSize = 12f
             setTextColor(textSecondary)
             gravity = Gravity.CENTER
@@ -168,6 +169,7 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    //This function creates a TextInputLayout with a TextInputEditText inside it, it takes parameters for the hint text, input type, accent color, text color, and hint color. It configures the TextInputLayout to have an outlined box style with custom stroke colors for focused and default states, sets the hint text and colors, and applies corner radii. The TextInputEditText is configured with the specified input type and text color. Finally, the EditText is added to the TextInputLayout and the layout is returned. This function is used to create the username, email, password, and confirm password input fields in the registration form with consistent styling.
     private fun createMaterialInput(hintText: String, type: Int, accent: Int, textCol: Int, hintCol: Int): TextInputLayout {
         val layout = TextInputLayout(this).apply {
             hint = hintText
